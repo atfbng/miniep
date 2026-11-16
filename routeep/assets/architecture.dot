@@ -1,0 +1,59 @@
+digraph MiniEPArchitecture {
+  graph [
+    rankdir=TB, bgcolor="#F3F6FA", pad="0.40", nodesep="0.34",
+    ranksep="0.68", splines=polyline, outputorder=edgesfirst,
+    fontname="Noto Sans SC", fontsize=20,
+    label="ROUTEEP  |  vLLM MoE 执行架构",
+    labelloc=t, labeljust=l, fontcolor="#172635"
+  ];
+  node [
+    shape=box, style="rounded,filled", color="#C9D5DF", fillcolor="#FFFFFF",
+    penwidth=1.3, fontname="Noto Sans SC", fontsize=14,
+    fontcolor="#213247", margin="0.24,0.18"
+  ];
+  edge [color="#6B8192", penwidth=1.8, arrowsize=0.75,
+        fontname="Noto Sans SC", fontsize=10, fontcolor="#607181"];
+
+  request [label="推理请求", fillcolor="#E4F0F8", color="#92BBD1"];
+  output [label="模型输出", fillcolor="#E4F0F8", color="#92BBD1"];
+
+  subgraph cluster_vllm {
+    label="vLLM 推理引擎";
+    style="rounded,filled"; color="#B8D4E4"; fillcolor="#EAF4F9";
+    fontname="Noto Sans SC"; fontsize=14; fontcolor="#28739A";
+    engine [label="服务与调度\nAttention TP=2 · KV Cache"];
+  }
+
+  subgraph cluster_miniep {
+    label="ROUTEEP 后端";
+    style="rounded,filled"; color="#CDBDE5"; fillcolor="#F3EEFA";
+    fontname="Noto Sans SC"; fontsize=14; fontcolor="#7550A7";
+    route [label="Router / Top-K\n按目标 Rank 打包"];
+    combine [label="恢复 Token 顺序\nFP32 合并"];
+    subgraph cluster_ep {
+      label="EP 组  |  4 × H100";
+      style="rounded,filled"; color="#A9D4D0"; fillcolor="#EAF7F5";
+      fontname="Noto Sans SC"; fontsize=14; fontcolor="#287F78";
+      ranks [
+        shape=plain, margin=0,
+        label=<
+          <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="6" CELLPADDING="10" COLOR="#A9D4D0">
+            <TR>
+              <TD BGCOLOR="#FFFFFF">GPU 0 · EP Rank 0<BR/>本地 Expert</TD>
+              <TD BGCOLOR="#FFFFFF">GPU 1 · EP Rank 1<BR/>本地 Expert</TD>
+            </TR>
+            <TR>
+              <TD BGCOLOR="#FFFFFF">GPU 2 · EP Rank 2<BR/>本地 Expert</TD>
+              <TD BGCOLOR="#FFFFFF">GPU 3 · EP Rank 3<BR/>本地 Expert</TD>
+            </TR>
+          </TABLE>
+        >
+      ];
+    }
+    route -> ranks [label="NCCL All-to-All 分发"];
+    ranks -> combine [label="All-to-All 返回"];
+  }
+
+  request -> engine -> route;
+  combine -> output;
+}

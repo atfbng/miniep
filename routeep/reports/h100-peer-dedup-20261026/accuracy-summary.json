@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "numerical_cases": 240,
+  "all_exact_peer": true,
+  "max_abs_reference_error": 0,
+  "reference_tolerance": {
+    "atol": 0.02,
+    "rtol": 0.03
+  },
+  "owner_rounding_cases": 4,
+  "owner_rounding_rank_records": 12
+}

@@ -1,0 +1,15 @@
+{
+  "host": "172.16.240.13",
+  "container": "fuss-lesson07-scaling-20261014-020510",
+  "remote": "/tmp/fuss-lesson07-scaling-20261014-020510",
+  "physical_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "image": "nvcr.io/nvidia/pytorch:26.04-py3",
+  "experiment_exit_code": 0,
+  "local_results": "code/course7/results/h100_scaling_20261014",
+  "container_stopped": true
+}

@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant S as 来源 GPU：通信 CTA
+    participant R as 目标 GPU：Tile 计数
+    participant C as 目标 GPU：计算 CTA
+    participant O as 来源 GPU：Combine
+    S->>R: 写入 Tile 0 的 16 个列块，逐块 release
+    C->>R: acquire 等待计数达到本轮阈值
+    par 下一块输入
+        S->>R: 继续发送 Tile 1、Tile 2
+    and 已到达的输入
+        C->>C: TMA 加载 Tile 0，执行 Up 与 GELU
+    end
+    C->>C: 全 Grid 等待 Up 完成，执行 Down
+    C->>O: 写回来源地址，发布 done epoch
+    O->>O: 等待所有目标，恢复顺序并加权合并

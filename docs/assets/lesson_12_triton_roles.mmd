@@ -1,0 +1,10 @@
+flowchart TB
+    A[来源 GPU：已打包输入] --> B[通信 CTA：发送输入 Tile]
+    B --> C[目标 GPU：本地接收缓冲区]
+    B --> D[发布 Tile 就绪计数]
+    C --> E[计算 CTA：等待对应 Tile]
+    D --> E
+    E --> F[Up 与 GELU：写入本地激活]
+    F --> G[全 Grid 同步：所有 Up 完成]
+    G --> H[全部 CTA：Down 并直接写回来源]
+    H --> I[来源 GPU：Combine 恢复并加权]

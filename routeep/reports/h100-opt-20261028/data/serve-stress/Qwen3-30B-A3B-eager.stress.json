@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "healthy_after": true,
+  "requests": 3430,
+  "failures": [],
+  "failure_count": 0,
+  "per_kind": {
+    "abort": 353,
+    "long": 591,
+    "repeat": 323,
+    "sampled": 665,
+    "short": 1498
+  },
+  "greedy_repeat_distinct_outputs": 1,
+  "max_prompt_tokens": 1800,
+  "duration_s": 600.0,
+  "concurrency": 16
+}

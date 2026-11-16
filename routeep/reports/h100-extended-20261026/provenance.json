@@ -1,0 +1,441 @@
+{
+  "passed": true,
+  "source_jobs": [
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block0-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block0-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block1-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block1-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block2-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block2-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block3-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block3-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block4-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep2-block4-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block0-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block0-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block1-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block1-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block2-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block2-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block3-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block3-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block4-peer_dedup",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep2-block4-native",
+      "ep_size": 2,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block0-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block0-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block1-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block1-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block2-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block2-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block3-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block3-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block4-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3.5-35B-A3B-ep4-block4-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block0-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block0-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block1-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block1-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block2-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block2-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block3-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block3-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block4-peer_dedup",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    },
+    {
+      "job": "Qwen3-30B-A3B-ep4-block4-native",
+      "ep_size": 4,
+      "source_files": 70,
+      "matches_local": true
+    }
+  ],
+  "runtimes": {
+    "2": {
+      "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+      "platform": "Linux-5.15.0-119-generic-x86_64-with-glibc2.39",
+      "packages": {
+        "vllm": "0.29.0",
+        "torch": "2.13.0+cu130",
+        "triton": "3.7.1",
+        "transformers": "5.16.1",
+        "deep_ep": "2.0.0+local",
+        "nvidia-nccl-cu13": "2.30.7",
+        "nvidia-cuda-runtime-cu13": null
+      },
+      "deep_ep_files": {
+        "deep_ep/_C.cpython-312-x86_64-linux-gnu.so": {
+          "bytes": 40852192,
+          "sha256": "045bb3715feb213acdf81209defd36788f0f50d9bf124a8d3f78a7a32d5c7350"
+        },
+        "deep_ep/__init__.py": {
+          "bytes": 3490,
+          "sha256": "f090bbacc38c7d5dba29f07fd38a918eb820b6adac6f76903fe56273060e4870"
+        },
+        "deep_ep/buffers/__init__.py": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "deep_ep/buffers/elastic.py": {
+          "bytes": 46506,
+          "sha256": "a20347291581dde085e1a89a5084cf6c50b34c70e897525e148c98848ee71cf1"
+        },
+        "deep_ep/buffers/legacy.py": {
+          "bytes": 42917,
+          "sha256": "efc37e62c34418d2057e5df87a7729c67e88a8d3ca8a6dd969f0f60cde770a23"
+        },
+        "deep_ep/envs.py": {
+          "bytes": 63,
+          "sha256": "1059461b6fb8d175de9db587cfb36ee3502bac1c8b54201fa3edf262abcf6a5c"
+        },
+        "deep_ep/utils/__init__.py": {
+          "bytes": 97,
+          "sha256": "17eca447417b892ba186f9eb3b79a8d242ea860b22e1c704ea1937d062915c11"
+        },
+        "deep_ep/utils/comm.py": {
+          "bytes": 2268,
+          "sha256": "2fb573875f7a5d0333b340507d6f801d940892cdd27d6cc8c736e39bc4924f4f"
+        },
+        "deep_ep/utils/envs.py": {
+          "bytes": 8711,
+          "sha256": "fd79c48188857d1490f7e5593bde76574eb0deb57a1a841b216b67fb33fb6894"
+        },
+        "deep_ep/utils/event.py": {
+          "bytes": 3182,
+          "sha256": "61f23d87195e09bb670aef836f30d97b0e25d4fbe0f099f2d4d3d50afbce6ca4"
+        },
+        "deep_ep/utils/find_pkgs.py": {
+          "bytes": 2750,
+          "sha256": "c8ac512307abea0269b6dd4b7c8b64c3d7491b1ab55b250db6061b07b25e759f"
+        },
+        "deep_ep/utils/gate.py": {
+          "bytes": 8787,
+          "sha256": "5372e45604c53b0b347c14d4e56effa184c31185558a8fde502a7b592b23cc6e"
+        },
+        "deep_ep/utils/math.py": {
+          "bytes": 3576,
+          "sha256": "ed0dfb4bf98937694a04c162fa1e19fa42df4cd0f92fcb25cb1ec09511eded1f"
+        },
+        "deep_ep/utils/refs.py": {
+          "bytes": 12462,
+          "sha256": "c5f551b49e55b4481b68ba14d83fd5362a49e43e4ddf779a2c3c471482ff2fef"
+        },
+        "deep_ep/utils/semantic.py": {
+          "bytes": 822,
+          "sha256": "8115b73e1ecaf1f521217c9ded63c1c72c4868a492dfbe539890e290d09ca171"
+        },
+        "deep_ep/utils/testing.py": {
+          "bytes": 8204,
+          "sha256": "b1c3169dc3e2a0a8a72804f9ac29f15926545b766b56b4dfba86eb4a8f97738c"
+        }
+      },
+      "native_prepare_sources": {
+        "prepare_finalize/deepep_ht.py": {
+          "sha256": "465cdf1d6cee91b2ee8c2e43abbea6e8408976e3048c10f44c089f34b415bc60",
+          "bytes": 16374
+        }
+      },
+      "deep_ep_vcs": {}
+    },
+    "4": {
+      "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+      "platform": "Linux-5.15.0-174-generic-x86_64-with-glibc2.39",
+      "packages": {
+        "vllm": "0.29.0",
+        "torch": "2.13.0+cu130",
+        "triton": "3.7.1",
+        "transformers": "5.16.1",
+        "deep_ep": "2.0.0+local",
+        "nvidia-nccl-cu13": "2.30.7",
+        "nvidia-cuda-runtime-cu13": null
+      },
+      "deep_ep_files": {
+        "deep_ep/_C.cpython-312-x86_64-linux-gnu.so": {
+          "bytes": 40852192,
+          "sha256": "045bb3715feb213acdf81209defd36788f0f50d9bf124a8d3f78a7a32d5c7350"
+        },
+        "deep_ep/__init__.py": {
+          "bytes": 3490,
+          "sha256": "f090bbacc38c7d5dba29f07fd38a918eb820b6adac6f76903fe56273060e4870"
+        },
+        "deep_ep/buffers/__init__.py": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "deep_ep/buffers/elastic.py": {
+          "bytes": 46506,
+          "sha256": "a20347291581dde085e1a89a5084cf6c50b34c70e897525e148c98848ee71cf1"
+        },
+        "deep_ep/buffers/legacy.py": {
+          "bytes": 42917,
+          "sha256": "efc37e62c34418d2057e5df87a7729c67e88a8d3ca8a6dd969f0f60cde770a23"
+        },
+        "deep_ep/envs.py": {
+          "bytes": 63,
+          "sha256": "1059461b6fb8d175de9db587cfb36ee3502bac1c8b54201fa3edf262abcf6a5c"
+        },
+        "deep_ep/utils/__init__.py": {
+          "bytes": 97,
+          "sha256": "17eca447417b892ba186f9eb3b79a8d242ea860b22e1c704ea1937d062915c11"
+        },
+        "deep_ep/utils/comm.py": {
+          "bytes": 2268,
+          "sha256": "2fb573875f7a5d0333b340507d6f801d940892cdd27d6cc8c736e39bc4924f4f"
+        },
+        "deep_ep/utils/envs.py": {
+          "bytes": 8711,
+          "sha256": "fd79c48188857d1490f7e5593bde76574eb0deb57a1a841b216b67fb33fb6894"
+        },
+        "deep_ep/utils/event.py": {
+          "bytes": 3182,
+          "sha256": "61f23d87195e09bb670aef836f30d97b0e25d4fbe0f099f2d4d3d50afbce6ca4"
+        },
+        "deep_ep/utils/find_pkgs.py": {
+          "bytes": 2750,
+          "sha256": "c8ac512307abea0269b6dd4b7c8b64c3d7491b1ab55b250db6061b07b25e759f"
+        },
+        "deep_ep/utils/gate.py": {
+          "bytes": 8787,
+          "sha256": "5372e45604c53b0b347c14d4e56effa184c31185558a8fde502a7b592b23cc6e"
+        },
+        "deep_ep/utils/math.py": {
+          "bytes": 3576,
+          "sha256": "ed0dfb4bf98937694a04c162fa1e19fa42df4cd0f92fcb25cb1ec09511eded1f"
+        },
+        "deep_ep/utils/refs.py": {
+          "bytes": 12462,
+          "sha256": "c5f551b49e55b4481b68ba14d83fd5362a49e43e4ddf779a2c3c471482ff2fef"
+        },
+        "deep_ep/utils/semantic.py": {
+          "bytes": 822,
+          "sha256": "8115b73e1ecaf1f521217c9ded63c1c72c4868a492dfbe539890e290d09ca171"
+        },
+        "deep_ep/utils/testing.py": {
+          "bytes": 8204,
+          "sha256": "b1c3169dc3e2a0a8a72804f9ac29f15926545b766b56b4dfba86eb4a8f97738c"
+        }
+      },
+      "native_prepare_sources": {
+        "prepare_finalize/deepep_ht.py": {
+          "sha256": "465cdf1d6cee91b2ee8c2e43abbea6e8408976e3048c10f44c089f34b415bc60",
+          "bytes": 16374
+        }
+      },
+      "deep_ep_vcs": {}
+    }
+  },
+  "hardware": {
+    "2": {
+      "time": 1792957510.7209058,
+      "host": "gpu1",
+      "cpu": "Intel(R) Xeon(R) Platinum 8468",
+      "logical_cpus": 192,
+      "image": "sha256:082ca6f035279109041ffd3fe0695cb568b29bc580b35c4f297a66a08b216c1b",
+      "repo_digests": "[]\n",
+      "gpus": "index, name, uuid, driver_version, memory.used [MiB], utilization.gpu [%]\n4, NVIDIA H100 80GB HBM3, GPU-6346d7dc-047c-7c7a-0601-d33264f1b56a, 580.65.06, 3411 MiB, 0 %\n5, NVIDIA H100 80GB HBM3, GPU-4db4946a-c377-bb38-fced-2ce76a6484bb, 580.65.06, 3413 MiB, 0 %\n",
+      "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tNIC0\tNIC1\tNIC2\tNIC3\tNIC4\tNIC5\tNIC6\tNIC7\tNIC8\tNIC9\tNIC10\tNIC11\tNIC12\tNIC13\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tPIX\tPXB\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tPXB\tPIX\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNODE\tNODE\tPIX\tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNODE\tNODE\tPXB\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU4\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPIX\tPXB\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nGPU5\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPXB\tPIX\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nGPU6\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPIX\tPXB\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nGPU7\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\tPIX\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nNIC0\tPIX\tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t X \tPXB\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC1\tPXB\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tPXB\t X \tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC2\tNODE\tNODE\tPIX\tPXB\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC3\tNODE\tNODE\tPXB\tPIX\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\t X \tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC4\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\t X \tPIX\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC5\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tPIX\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC6\tSYS\tSYS\tSYS\tSYS\tPIX\tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t X \tPXB\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC7\tSYS\tSYS\tSYS\tSYS\tPXB\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPXB\t X \tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC8\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPIX\tPXB\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tPXB\tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC9\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\tPIX\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\t X \tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC10\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\t X \tPIX\tNODE\tNODE\t\t\t\t\nNIC11\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tPIX\t X \tNODE\tNODE\t\t\t\t\nNIC12\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t X \tPIX\t\t\t\t\nNIC13\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\tPIX\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n  NIC4: mlx5_4\n  NIC5: mlx5_5\n  NIC6: mlx5_6\n  NIC7: mlx5_7\n  NIC8: mlx5_8\n  NIC9: mlx5_9\n  NIC10: mlx5_10\n  NIC11: mlx5_11\n  NIC12: mlx5_12\n  NIC13: mlx5_13\n\n"
+    },
+    "4": {
+      "time": 1792958123.903644,
+      "host": "gpu5",
+      "cpu": "Intel(R) Xeon(R) Platinum 8468",
+      "logical_cpus": 192,
+      "image": "sha256:082ca6f035279109041ffd3fe0695cb568b29bc580b35c4f297a66a08b216c1b",
+      "repo_digests": "[\"swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/vllm/vllm-openai@sha256:082ca6f035279109041ffd3fe0695cb568b29bc580b35c4f297a66a08b216c1b\"]\n",
+      "gpus": "index, name, uuid, driver_version, memory.used [MiB], utilization.gpu [%]\n0, NVIDIA H100 80GB HBM3, GPU-a1b4acc1-53e5-afcf-c2c4-7a9214a35508, 580.65.06, 0 MiB, 0 %\n1, NVIDIA H100 80GB HBM3, GPU-034d2527-aa2f-d369-bcac-50f536bc8043, 580.65.06, 0 MiB, 0 %\n2, NVIDIA H100 80GB HBM3, GPU-87551781-05e0-a0b4-dc49-f107a9b70115, 580.65.06, 0 MiB, 0 %\n3, NVIDIA H100 80GB HBM3, GPU-2a49cae2-ec12-8cc4-28c0-50c66a9297d6, 580.65.06, 0 MiB, 0 %\n",
+      "topology": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tGPU4\tGPU5\tGPU6\tGPU7\tNIC0\tNIC1\tNIC2\tNIC3\tNIC4\tNIC5\tNIC6\tNIC7\tNIC8\tNIC9\tNIC10\tNIC11\tNIC12\tNIC13\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tPIX\tPXB\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU1\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tPXB\tPIX\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU2\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNV18\tNODE\tNODE\tPIX\tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU3\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tNV18\tNODE\tNODE\tPXB\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t0-47,96-143\t0\t\tN/A\nGPU4\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tNV18\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPIX\tPXB\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nGPU5\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tNV18\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPXB\tPIX\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nGPU6\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tNV18\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPIX\tPXB\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nGPU7\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\tNV18\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\tPIX\tNODE\tNODE\tNODE\tNODE\t48-95,144-191\t1\t\tN/A\nNIC0\tPIX\tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\t X \tPXB\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC1\tPXB\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tPXB\t X \tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC2\tNODE\tNODE\tPIX\tPXB\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC3\tNODE\tNODE\tPXB\tPIX\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\t X \tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC4\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\t X \tPIX\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC5\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tPIX\t X \tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t\t\t\t\nNIC6\tSYS\tSYS\tSYS\tSYS\tPIX\tPXB\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\t X \tPXB\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC7\tSYS\tSYS\tSYS\tSYS\tPXB\tPIX\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tPXB\t X \tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC8\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPIX\tPXB\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\t X \tPXB\tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC9\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\tPIX\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tPXB\t X \tNODE\tNODE\tNODE\tNODE\t\t\t\t\nNIC10\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\t X \tPIX\tNODE\tNODE\t\t\t\t\nNIC11\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tPIX\t X \tNODE\tNODE\t\t\t\t\nNIC12\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\t X \tPIX\t\t\t\t\nNIC13\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tSYS\tSYS\tSYS\tSYS\tSYS\tSYS\tNODE\tNODE\tNODE\tNODE\tNODE\tNODE\tPIX\t X \t\t\t\t\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n\nNIC Legend:\n\n  NIC0: mlx5_0\n  NIC1: mlx5_1\n  NIC2: mlx5_2\n  NIC3: mlx5_3\n  NIC4: mlx5_4\n  NIC5: mlx5_5\n  NIC6: mlx5_6\n  NIC7: mlx5_7\n  NIC8: mlx5_8\n  NIC9: mlx5_9\n  NIC10: mlx5_10\n  NIC11: mlx5_11\n  NIC12: mlx5_12\n  NIC13: mlx5_13\n\n"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.0.1 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.10/unittest/__main__.py", line 18, in <module>
+    main(module=None)
+  File "/usr/lib/python3.10/unittest/main.py", line 100, in __init__
+    self.parseArgs(argv)
+  File "/usr/lib/python3.10/unittest/main.py", line 124, in parseArgs
+    self._do_discovery(argv[2:])
+  File "/usr/lib/python3.10/unittest/main.py", line 244, in _do_discovery
+    self.createTests(from_discovery=True, Loader=Loader)
+  File "/usr/lib/python3.10/unittest/main.py", line 154, in createTests
+    self.test = loader.discover(self.start, self.pattern, self.top)
+  File "/usr/lib/python3.10/unittest/loader.py", line 349, in discover
+    tests = list(self._find_tests(start_dir, pattern))
+  File "/usr/lib/python3.10/unittest/loader.py", line 405, in _find_tests
+    tests, should_recurse = self._find_test_path(
+  File "/usr/lib/python3.10/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.10/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/data/application/fuss/miniep1/code/course13/checks/test_exact_alignment.py", line 10, in <module>
+    import torch
+  File "/usr/local/lib/python3.10/dist-packages/torch/__init__.py", line 1477, in <module>
+    from .functional import *  # noqa: F403
+  File "/usr/local/lib/python3.10/dist-packages/torch/functional.py", line 9, in <module>
+    import torch.nn.functional as F
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/__init__.py", line 35, in <module>
+    from .transformer import TransformerEncoder, TransformerDecoder, \
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/transformer.py", line 20, in <module>
+    device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+/usr/local/lib/python3.10/dist-packages/torch/nn/modules/transformer.py:20: UserWarning: Failed to initialize NumPy: _ARRAY_API not found (Triggered internally at ../torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: torch.device = torch.device(torch._C._get_default_device()),  # torch.device('cpu'),
+.............ssssssss.....................
+----------------------------------------------------------------------
+Ran 42 tests in 0.135s
+
+OK (skipped=8)

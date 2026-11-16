@@ -1,0 +1,80 @@
+{
+  "lesson": 9,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/09_triton_dispatch.py",
+      "original_sha256": "b9b0aa88ed3335e52f47e60ff3747daabeaa4d03071f12e9db6ca62cc2e9fbcd",
+      "sha256": "b9b0aa88ed3335e52f47e60ff3747daabeaa4d03071f12e9db6ca62cc2e9fbcd",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "366013ec2277656364297aa96cf5ad3fda1ac953420976ad08fb664dc88fcc29",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "source": "mini_ep/kernels/dispatch_triton.py",
+      "original_sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/histogram_triton.py": {
+      "source": "mini_ep/kernels/histogram_triton.py",
+      "original_sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_kernels.py": {
+      "source": "benchmarks/benchmark_kernels.py",
+      "original_sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "source": "mini_ep/kernels/combine_triton.py",
+      "original_sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/reference.py": {
+      "source": "mini_ep/kernels/grouped_gemm/reference.py",
+      "original_sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "source": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "original_sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {},
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

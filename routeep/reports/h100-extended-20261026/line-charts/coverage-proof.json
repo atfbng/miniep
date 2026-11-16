@@ -1,0 +1,229 @@
+{
+  "passed": true,
+  "extended_scenarios": 108,
+  "pilot_scenarios": 12,
+  "charts": 12,
+  "omitted": [],
+  "manifest": [
+    {
+      "filename": "qwen35-ep2-prefill-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3.5-35B-A3B",
+      "ep_size": 2,
+      "phase": "prefill",
+      "scenarios": 19,
+      "cases": [
+        "prefill_b16_s128",
+        "prefill_b16_s2048",
+        "prefill_b16_s512",
+        "prefill_b1_s128",
+        "prefill_b1_s2048",
+        "prefill_b1_s4096",
+        "prefill_b1_s512",
+        "prefill_b32_s1024",
+        "prefill_b32_s128",
+        "prefill_b32_s512",
+        "prefill_b4_s128",
+        "prefill_b4_s2048",
+        "prefill_b4_s4096",
+        "prefill_b4_s512",
+        "prefill_b8_s128",
+        "prefill_b8_s2048",
+        "prefill_b8_s4096",
+        "prefill_b8_s512",
+        "ragged_b8_o1"
+      ]
+    },
+    {
+      "filename": "qwen35-ep2-decode-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3.5-35B-A3B",
+      "ep_size": 2,
+      "phase": "decode",
+      "scenarios": 8,
+      "cases": [
+        "decode_b16_s128",
+        "decode_b16_s2048",
+        "decode_b1_s128",
+        "decode_b1_s2048",
+        "decode_b32_s128",
+        "decode_b4_s128",
+        "decode_b8_s128",
+        "ragged_b8_o64"
+      ]
+    },
+    {
+      "filename": "qwen35-ep4-prefill-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3.5-35B-A3B",
+      "ep_size": 4,
+      "phase": "prefill",
+      "scenarios": 19,
+      "cases": [
+        "prefill_b16_s128",
+        "prefill_b16_s2048",
+        "prefill_b16_s512",
+        "prefill_b1_s128",
+        "prefill_b1_s2048",
+        "prefill_b1_s4096",
+        "prefill_b1_s512",
+        "prefill_b32_s1024",
+        "prefill_b32_s128",
+        "prefill_b32_s512",
+        "prefill_b4_s128",
+        "prefill_b4_s2048",
+        "prefill_b4_s4096",
+        "prefill_b4_s512",
+        "prefill_b8_s128",
+        "prefill_b8_s2048",
+        "prefill_b8_s4096",
+        "prefill_b8_s512",
+        "ragged_b8_o1"
+      ]
+    },
+    {
+      "filename": "qwen35-ep4-decode-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3.5-35B-A3B",
+      "ep_size": 4,
+      "phase": "decode",
+      "scenarios": 8,
+      "cases": [
+        "decode_b16_s128",
+        "decode_b16_s2048",
+        "decode_b1_s128",
+        "decode_b1_s2048",
+        "decode_b32_s128",
+        "decode_b4_s128",
+        "decode_b8_s128",
+        "ragged_b8_o64"
+      ]
+    },
+    {
+      "filename": "qwen3-ep2-prefill-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3-30B-A3B",
+      "ep_size": 2,
+      "phase": "prefill",
+      "scenarios": 19,
+      "cases": [
+        "prefill_b16_s128",
+        "prefill_b16_s2048",
+        "prefill_b16_s512",
+        "prefill_b1_s128",
+        "prefill_b1_s2048",
+        "prefill_b1_s4096",
+        "prefill_b1_s512",
+        "prefill_b32_s1024",
+        "prefill_b32_s128",
+        "prefill_b32_s512",
+        "prefill_b4_s128",
+        "prefill_b4_s2048",
+        "prefill_b4_s4096",
+        "prefill_b4_s512",
+        "prefill_b8_s128",
+        "prefill_b8_s2048",
+        "prefill_b8_s4096",
+        "prefill_b8_s512",
+        "ragged_b8_o1"
+      ]
+    },
+    {
+      "filename": "qwen3-ep2-decode-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3-30B-A3B",
+      "ep_size": 2,
+      "phase": "decode",
+      "scenarios": 8,
+      "cases": [
+        "decode_b16_s128",
+        "decode_b16_s2048",
+        "decode_b1_s128",
+        "decode_b1_s2048",
+        "decode_b32_s128",
+        "decode_b4_s128",
+        "decode_b8_s128",
+        "ragged_b8_o64"
+      ]
+    },
+    {
+      "filename": "qwen3-ep4-prefill-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3-30B-A3B",
+      "ep_size": 4,
+      "phase": "prefill",
+      "scenarios": 19,
+      "cases": [
+        "prefill_b16_s128",
+        "prefill_b16_s2048",
+        "prefill_b16_s512",
+        "prefill_b1_s128",
+        "prefill_b1_s2048",
+        "prefill_b1_s4096",
+        "prefill_b1_s512",
+        "prefill_b32_s1024",
+        "prefill_b32_s128",
+        "prefill_b32_s512",
+        "prefill_b4_s128",
+        "prefill_b4_s2048",
+        "prefill_b4_s4096",
+        "prefill_b4_s512",
+        "prefill_b8_s128",
+        "prefill_b8_s2048",
+        "prefill_b8_s4096",
+        "prefill_b8_s512",
+        "ragged_b8_o1"
+      ]
+    },
+    {
+      "filename": "qwen3-ep4-decode-lines.png",
+      "dataset": "extended",
+      "model": "Qwen3-30B-A3B",
+      "ep_size": 4,
+      "phase": "decode",
+      "scenarios": 8,
+      "cases": [
+        "decode_b16_s128",
+        "decode_b16_s2048",
+        "decode_b1_s128",
+        "decode_b1_s2048",
+        "decode_b32_s128",
+        "decode_b4_s128",
+        "decode_b8_s128",
+        "ragged_b8_o64"
+      ]
+    },
+    {
+      "filename": "qwen35-pilot-prefill-lines.png",
+      "dataset": "pilot",
+      "model": "Qwen3.5-35B-A3B",
+      "ep_size": 4,
+      "phase": "prefill",
+      "scenarios": 3
+    },
+    {
+      "filename": "qwen35-pilot-decode-lines.png",
+      "dataset": "pilot",
+      "model": "Qwen3.5-35B-A3B",
+      "ep_size": 4,
+      "phase": "decode",
+      "scenarios": 3
+    },
+    {
+      "filename": "qwen3-pilot-prefill-lines.png",
+      "dataset": "pilot",
+      "model": "Qwen3-30B-A3B",
+      "ep_size": 4,
+      "phase": "prefill",
+      "scenarios": 3
+    },
+    {
+      "filename": "qwen3-pilot-decode-lines.png",
+      "dataset": "pilot",
+      "model": "Qwen3-30B-A3B",
+      "ep_size": 4,
+      "phase": "decode",
+      "scenarios": 3
+    }
+  ]
+}

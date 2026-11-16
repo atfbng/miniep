@@ -1,0 +1,37 @@
+{
+  "cpu-ep2": {
+    "rank_records": 180,
+    "numeric_records": 180,
+    "peer_exact_records": 0,
+    "original_exact_records": 0,
+    "max_abs_error_reference": 0.0
+  },
+  "cpu-ep4": {
+    "rank_records": 432,
+    "numeric_records": 432,
+    "peer_exact_records": 0,
+    "original_exact_records": 0,
+    "max_abs_error_reference": 0.0
+  },
+  "nccl-no-p2p-ep2": {
+    "rank_records": 360,
+    "numeric_records": 360,
+    "peer_exact_records": 0,
+    "original_exact_records": 360,
+    "max_abs_error_reference": 0.000244140625
+  },
+  "nccl-peer-ep4": {
+    "rank_records": 876,
+    "numeric_records": 864,
+    "peer_exact_records": 12,
+    "original_exact_records": 864,
+    "max_abs_error_reference": 0.000244140625
+  },
+  "passed": true,
+  "unit_tests": 13,
+  "gpu_rank_records": 1236,
+  "cpu_semantic_records": 612,
+  "gpu_performance_measured": false,
+  "physical_rtx_tested": false,
+  "source_sha256": "4472812ff72ee7150393ab2e4d5d225a7ece8a077d117cd33dbb03aee8ce0e89"
+}

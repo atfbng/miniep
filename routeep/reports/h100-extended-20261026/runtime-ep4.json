@@ -1,0 +1,86 @@
+{
+  "python": "3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]",
+  "platform": "Linux-5.15.0-174-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "vllm": "0.29.0",
+    "torch": "2.13.0+cu130",
+    "triton": "3.7.1",
+    "transformers": "5.16.1",
+    "deep_ep": "2.0.0+local",
+    "nvidia-nccl-cu13": "2.30.7",
+    "nvidia-cuda-runtime-cu13": null
+  },
+  "deep_ep_files": {
+    "deep_ep/_C.cpython-312-x86_64-linux-gnu.so": {
+      "bytes": 40852192,
+      "sha256": "045bb3715feb213acdf81209defd36788f0f50d9bf124a8d3f78a7a32d5c7350"
+    },
+    "deep_ep/__init__.py": {
+      "bytes": 3490,
+      "sha256": "f090bbacc38c7d5dba29f07fd38a918eb820b6adac6f76903fe56273060e4870"
+    },
+    "deep_ep/buffers/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "deep_ep/buffers/elastic.py": {
+      "bytes": 46506,
+      "sha256": "a20347291581dde085e1a89a5084cf6c50b34c70e897525e148c98848ee71cf1"
+    },
+    "deep_ep/buffers/legacy.py": {
+      "bytes": 42917,
+      "sha256": "efc37e62c34418d2057e5df87a7729c67e88a8d3ca8a6dd969f0f60cde770a23"
+    },
+    "deep_ep/envs.py": {
+      "bytes": 63,
+      "sha256": "1059461b6fb8d175de9db587cfb36ee3502bac1c8b54201fa3edf262abcf6a5c"
+    },
+    "deep_ep/utils/__init__.py": {
+      "bytes": 97,
+      "sha256": "17eca447417b892ba186f9eb3b79a8d242ea860b22e1c704ea1937d062915c11"
+    },
+    "deep_ep/utils/comm.py": {
+      "bytes": 2268,
+      "sha256": "2fb573875f7a5d0333b340507d6f801d940892cdd27d6cc8c736e39bc4924f4f"
+    },
+    "deep_ep/utils/envs.py": {
+      "bytes": 8711,
+      "sha256": "fd79c48188857d1490f7e5593bde76574eb0deb57a1a841b216b67fb33fb6894"
+    },
+    "deep_ep/utils/event.py": {
+      "bytes": 3182,
+      "sha256": "61f23d87195e09bb670aef836f30d97b0e25d4fbe0f099f2d4d3d50afbce6ca4"
+    },
+    "deep_ep/utils/find_pkgs.py": {
+      "bytes": 2750,
+      "sha256": "c8ac512307abea0269b6dd4b7c8b64c3d7491b1ab55b250db6061b07b25e759f"
+    },
+    "deep_ep/utils/gate.py": {
+      "bytes": 8787,
+      "sha256": "5372e45604c53b0b347c14d4e56effa184c31185558a8fde502a7b592b23cc6e"
+    },
+    "deep_ep/utils/math.py": {
+      "bytes": 3576,
+      "sha256": "ed0dfb4bf98937694a04c162fa1e19fa42df4cd0f92fcb25cb1ec09511eded1f"
+    },
+    "deep_ep/utils/refs.py": {
+      "bytes": 12462,
+      "sha256": "c5f551b49e55b4481b68ba14d83fd5362a49e43e4ddf779a2c3c471482ff2fef"
+    },
+    "deep_ep/utils/semantic.py": {
+      "bytes": 822,
+      "sha256": "8115b73e1ecaf1f521217c9ded63c1c72c4868a492dfbe539890e290d09ca171"
+    },
+    "deep_ep/utils/testing.py": {
+      "bytes": 8204,
+      "sha256": "b1c3169dc3e2a0a8a72804f9ac29f15926545b766b56b4dfba86eb4a8f97738c"
+    }
+  },
+  "native_prepare_sources": {
+    "prepare_finalize/deepep_ht.py": {
+      "sha256": "465cdf1d6cee91b2ee8c2e43abbea6e8408976e3048c10f44c089f34b415bc60",
+      "bytes": 16374
+    }
+  },
+  "deep_ep_vcs": {}
+}

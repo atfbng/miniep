@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580">
+<rect width="1000" height="580" fill="white"/>
+<text x="32" y="42" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#243247" font-weight="700">一个输出 Tile，沿 K 分两轮累加</text>
+<text x="32" y="81" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#64748b">M_tile=64，N_tile=64，K=64；每轮处理 32 个累加元素</text>
+<text x="74" y="132" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">A 的 64 行</text>
+<text x="388" y="132" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">B 的 64 列</text>
+<text x="720" y="132" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">C 的输出 Tile</text>
+<rect x="64" y="157" width="118" height="185" rx="0" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<rect x="182" y="157" width="118" height="185" rx="0" fill="#ffedd5" stroke="#fb923c" stroke-width="2"/>
+<text x="79" y="219" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">K=0:32</text>
+<text x="193" y="219" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#243247">K=32:64</text>
+<text x="90" y="255" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">64×32</text>
+<text x="200" y="255" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">64×32</text>
+<text x="326" y="259" font-family="Noto Sans SC, sans-serif" font-size="35" fill="#243247">×</text>
+<rect x="382" y="157" width="236" height="92" rx="0" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<rect x="382" y="249" width="236" height="93" rx="0" fill="#ffedd5" stroke="#fb923c" stroke-width="2"/>
+<text x="409" y="195" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">K=0:32</text>
+<text x="409" y="229" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">32×64</text>
+<text x="409" y="286" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">K=32:64</text>
+<text x="409" y="321" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">32×64</text>
+<text x="648" y="259" font-family="Noto Sans SC, sans-serif" font-size="34" fill="#243247">→</text>
+<rect x="704" y="157" width="236" height="185" rx="0" fill="#dcfce7" stroke="#34d399" stroke-width="2"/>
+<text x="759" y="221" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#065f46" font-weight="700">64×64</text>
+<text x="727" y="268" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#065f46">累加两轮的贡献</text>
+<circle cx="46" cy="400" r="8" fill="#60a5fa"/>
+<text x="66" y="409" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247">第 1 轮：A[:,0:32] × B[0:32,:] → 输出部分和</text>
+<circle cx="46" cy="452" r="8" fill="#fb923c"/>
+<text x="66" y="461" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247">第 2 轮：A[:,32:64] × B[32:64,:] → 加到同一部分和</text>
+<line x1="32" y1="490" x2="966" y2="490" stroke="#64748b" stroke-width="2"/>
+<text x="32" y="528" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">输入片段可以逐轮覆盖；覆盖前等待本轮读取结束。</text>
+<text x="32" y="564" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#065f46" font-weight="700">输出累加值一直保留，两轮完成后再写回 C。</text>
+</svg>

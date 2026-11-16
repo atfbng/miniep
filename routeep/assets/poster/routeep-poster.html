@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>RouteEP · 大模型 MoE 专家并行实战</title>
+<style>
+  :root {
+    --bg: #f5f8fa;
+    --ink: #0f2233;
+    --body: #3d5363;
+    --mute: #6a7f8e;
+    --line: rgba(15, 34, 51, 0.10);
+    --teal: #0e8f8c;
+    --blue: #2f6fe0;
+    --mono: "DejaVu Sans Mono", "Liberation Mono", monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1620px; background: var(--bg); }
+  body {
+    font-family: "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+    color: var(--ink); position: relative; overflow: hidden;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(15, 100, 140, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 100, 140, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(180deg, #000 0%, transparent 60%);
+  }
+  .glow {
+    position: absolute; width: 820px; height: 820px; right: -300px; top: -320px;
+    background: radial-gradient(circle, rgba(47, 111, 224, 0.14), transparent 65%);
+  }
+  .page {
+    position: relative; height: 100%; padding: 72px 88px 60px;
+    display: flex; flex-direction: column;
+  }
+
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-family: var(--mono); font-size: 30px; font-weight: bold; }
+  .brand b { color: var(--teal); }
+  .tag { font-size: 20px; color: var(--mute); letter-spacing: 2px; }
+
+  .hero { margin-top: 84px; }
+  .kicker { font-family: var(--mono); font-size: 20px; letter-spacing: 4px; color: var(--teal); }
+  h1 { margin-top: 22px; font-size: 108px; line-height: 1.12; font-weight: 900; letter-spacing: 2px; }
+  h1 .grad {
+    background: linear-gradient(90deg, var(--teal), var(--blue));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .sub { margin-top: 26px; font-size: 29px; line-height: 1.6; color: var(--body); }
+
+  /* 核心指标：三列，竖线分隔 */
+  .stats { margin-top: 72px; display: grid; grid-template-columns: repeat(3, 1fr); }
+  .stat { padding: 0 28px; border-left: 1px solid var(--line); }
+  .stat:first-child { padding-left: 0; border-left: none; }
+  .stat .num { font-family: var(--mono); font-size: 72px; font-weight: bold; line-height: 1; }
+  .stat .num small { font-size: 34px; }
+  .stat:nth-child(1) .num { color: var(--teal); }
+  .stat:nth-child(2) .num { color: var(--blue); }
+  .stat .lab { margin-top: 16px; font-size: 23px; }
+  .stat .note { margin-top: 8px; font-size: 18px; color: var(--mute); }
+
+  .sec { margin-top: 68px; display: flex; justify-content: space-between; align-items: baseline; }
+  .sec h2 { font-size: 28px; font-weight: 700; }
+  .sec h2 span { font-family: var(--mono); color: var(--teal); font-size: 20px; margin-right: 12px; }
+  .sec .aside { font-family: var(--mono); font-size: 16px; color: var(--mute); letter-spacing: 1px; }
+
+  /* 数据流：节点在一条线上 */
+  .flow { margin-top: 30px; position: relative; display: flex; justify-content: space-between; }
+  .flow::before {
+    content: ""; position: absolute; left: 7px; right: 7px; top: 7px; height: 2px;
+    background: linear-gradient(90deg, var(--teal), var(--blue));
+    opacity: .35;
+  }
+  .step { position: relative; width: 150px; text-align: center; }
+  .step:first-child { text-align: left; }
+  .step:last-child { text-align: right; }
+  .dot {
+    width: 16px; height: 16px; border-radius: 50%; background: var(--bg);
+    border: 3px solid var(--teal); margin: 0 auto;
+  }
+  .step:first-child .dot { margin-left: 0; }
+  .step:last-child .dot { margin-right: 0; }
+  .step.comm .dot { border-color: var(--blue); background: var(--blue); }
+  .step .en { margin-top: 16px; font-family: var(--mono); font-size: 19px; font-weight: bold; }
+  .step.comm .en { color: var(--blue); }
+  .step .zh { margin-top: 6px; font-size: 17px; color: var(--mute); }
+
+  /* 课程路线：五列 */
+  .stages { margin-top: 28px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .stage { border-top: 2px solid var(--line); padding-top: 16px; }
+  .stage.final { border-top-color: var(--teal); }
+  .stage .range { font-family: var(--mono); font-size: 16px; color: var(--teal); }
+  .stage h3 { margin-top: 8px; font-size: 24px; font-weight: 700; }
+  .stage p { margin-top: 12px; font-size: 17px; line-height: 1.75; color: var(--body); }
+
+  .foot {
+    margin-top: auto; padding-top: 22px; border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .foot .stack { font-family: var(--mono); font-size: 18px; letter-spacing: 1px; }
+  .foot .method { font-size: 16px; color: var(--mute); }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="glow"></div>
+
+<div class="page" id="poster">
+  <div class="top">
+    <div class="brand">Route<b>EP</b></div>
+    <div class="tag">vLLM 实战项目 · 13 课</div>
+  </div>
+
+  <section class="hero">
+    <div class="kicker">EXPERT PARALLEL × vLLM</div>
+    <h1>大模型 MoE<br><span class="grad">专家并行实战</span></h1>
+    <p class="sub">从 Router 写到 NCCL All-to-All，自研 EP 后端接入 vLLM，<br>在 4 × H100 上跑通 Qwen3.5-35B-A3B 真实推理服务。</p>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <div class="num">98.5<small>%</small></div>
+      <div class="lab">Decode 对标 DeepEP</div>
+      <div class="note">三个场景 98.1%–98.8%</div>
+    </div>
+    <div class="stat">
+      <div class="num">83.4<small>%</small></div>
+      <div class="lab">Prefill 对标 DeepEP</div>
+      <div class="note">三个场景 77.3%–88.8%</div>
+    </div>
+    <div class="stat">
+      <div class="num">64,164</div>
+      <div class="lab">逐 Token 输出一致</div>
+      <div class="note">生成位置，与 DeepEP 对齐</div>
+    </div>
+  </section>
+
+  <div class="sec">
+    <h2><span>01</span>亲手实现的数据流</h2>
+    <div class="aside">TP=2 · DP=2 · EP=4</div>
+  </div>
+  <div class="flow">
+    <div class="step"><div class="dot"></div><div class="en">Router</div><div class="zh">Top-K 路由</div></div>
+    <div class="step"><div class="dot"></div><div class="en">Dispatch</div><div class="zh">按 Rank 打包</div></div>
+    <div class="step comm"><div class="dot"></div><div class="en">All-to-All</div><div class="zh">NCCL 分发</div></div>
+    <div class="step"><div class="dot"></div><div class="en">Experts</div><div class="zh">Grouped GEMM</div></div>
+    <div class="step comm"><div class="dot"></div><div class="en">All-to-All</div><div class="zh">NCCL 返回</div></div>
+    <div class="step"><div class="dot"></div><div class="en">Combine</div><div class="zh">加权合并</div></div>
+  </div>
+
+  <div class="sec">
+    <h2><span>02</span>课程路线</h2>
+    <div class="aside">REFERENCE → SYSTEM</div>
+  </div>
+  <div class="stages">
+    <div class="stage"><div class="range">L01–03</div><h3>MoE 基础</h3><p>单 GPU MoE<br>Router · Top-K<br>CUDA 与 GEMM</p></div>
+    <div class="stage"><div class="range">L04–05</div><h3>集合通信</h3><p>NCCL 通信<br>All-to-All</p></div>
+    <div class="stage"><div class="range">L06–08</div><h3>EP 系统</h3><p>Mini-EP V1<br>EP Scaling<br>负载与 Profiling</p></div>
+    <div class="stage"><div class="range">L09–12</div><h3>Kernel 优化</h3><p>Triton Dispatch<br>Triton Combine<br>Grouped GEMM<br>通信计算重叠</p></div>
+    <div class="stage final"><div class="range">L13</div><h3>vLLM 实战</h3><p>接入 vLLM<br>Qwen MoE 推理<br>DeepEP 对标</p></div>
+  </div>
+
+  <div class="foot">
+    <div class="stack">PyTorch · NCCL · Triton · vLLM</div>
+    <div class="method">4 × H100 80GB · BF16 · 取四 Rank 最大端到端延迟的中位数</div>
+  </div>
+</div>
+</body>
+</html>

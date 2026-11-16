@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>按阶段对比：DeepEP HT / RouteEP NCCL / RouteEP Peer（11876eb，EP4）</title>
+<style>
+.viz-root { color-scheme: light; --surface-1:#fcfcfb; --surface-2:#f3f2ef; --text-primary:#0b0b0b;
+  --text-secondary:#52514e; --text-muted:#7a7974; --grid:#e4e3df; --axis:#c9c8c3;
+  --deepep:#2a78d6; --nccl:#eb6834; --peer:#1baf7a; }
+@media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .viz-root { color-scheme: dark;
+  --surface-1:#1a1a19; --surface-2:#242423; --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#94938b;
+  --grid:#33332f; --axis:#4a4945; --deepep:#3987e5; --nccl:#d95926; --peer:#199e70; } }
+:root[data-theme="dark"] .viz-root { color-scheme: dark; --surface-1:#1a1a19; --surface-2:#242423; --text-primary:#f0efec;
+  --text-secondary:#c3c2b7; --text-muted:#94938b; --grid:#33332f; --axis:#4a4945; --deepep:#3987e5; --nccl:#d95926; --peer:#199e70; }
+body { margin:0; }
+.viz-root { background:var(--surface-1); color:var(--text-primary); font:14px/1.5 "Noto Sans SC",system-ui,sans-serif; padding:24px; }
+h1 { font-size:18px; margin:0 0 4px; font-weight:600; } .sub { color:var(--text-secondary); margin:0 0 12px; font-size:13px; }
+.legend { display:flex; gap:20px; flex-wrap:wrap; margin:0 0 12px; font-size:13px; color:var(--text-secondary); }
+.legend span { display:inline-flex; align-items:center; gap:6px; } .legend svg { width:12px; height:12px; flex:none; }
+.controls { margin:0 0 12px; } .controls button { font:inherit; font-size:13px; color:var(--text-primary); background:var(--surface-2);
+  border:1px solid var(--grid); border-radius:6px; padding:4px 10px; cursor:pointer; }
+.panels { display:grid; grid-template-columns:repeat(auto-fit,minmax(460px,1fr)); gap:24px; }
+.panel h2 { font-size:14px; font-weight:600; margin:0 0 4px; }
+.panel svg { width:100%; height:auto; display:block; overflow:visible; }
+.grid-line { stroke:var(--grid); stroke-width:1; } .axis-line { stroke:var(--axis); stroke-width:1; }
+.tick { fill:var(--text-muted); font-size:11px; } .value { fill:var(--text-secondary); font-size:11px; }
+.series-name { fill:var(--text-primary); font-size:10px; font-weight:600; }
+.whisker { stroke:var(--text-secondary); stroke-width:1; }
+.bar { outline:none; } .bar:hover .mark, .bar:focus .mark { opacity:.8; } .bar:focus .hit { stroke:var(--text-primary); stroke-width:1.5; }
+.texture { display:none; pointer-events:none; } .viz-root[data-texture="on"] .texture { display:inline; }
+.hatch line { stroke:var(--text-primary); stroke-opacity:.45; }
+@media print { .texture { display:inline; } .controls, .tooltip { display:none !important; } }
+@media (forced-colors: active) { .texture { display:inline; } .hatch line { stroke:CanvasText; } .mark { fill:Canvas; stroke:CanvasText; } }
+.tooltip { position:fixed; pointer-events:none; background:var(--surface-2); color:var(--text-primary); border:1px solid var(--grid);
+  border-radius:6px; padding:8px 10px; font-size:12px; box-shadow:0 2px 8px rgba(0,0,0,.15); display:none; z-index:10; min-width:220px; }
+.tooltip .v { font-size:15px; font-weight:600; } .tooltip .row { display:flex; align-items:center; gap:6px; color:var(--text-secondary); }
+.tooltip .row b { color:var(--text-primary); font-weight:600; margin-left:auto; } .tooltip .k { width:12px; height:2px; display:inline-block; }
+table { border-collapse:collapse; margin-top:8px; font-size:13px; font-variant-numeric:tabular-nums; }
+th, td { padding:4px 10px; border-bottom:1px solid var(--grid); text-align:right; } th:first-child, td:first-child { text-align:left; }
+th { color:var(--text-secondary); font-weight:600; } .note { color:var(--text-muted); font-size:12px; margin-top:16px; }
+details { margin-top:20px; } summary { cursor:pointer; color:var(--text-secondary); }
+</style></head>
+<body><div class="viz-root">
+<h1>按阶段对比：DeepEP HT / RouteEP NCCL / RouteEP Peer（11876eb，EP4）</h1>
+<p class="sub">EP4（TP2/DP2），4×H100 80GB，三条路径都是 eager。Prefill 场景为 prefill 阶段耗时，Decode 场景为每步耗时；越低越好。柱 = 9 个样本中位数，细须 = min–max。只标出 Peer 的数值，悬停或 Tab 聚焦可看每根柱，完整数值见下方数据表。</p>
+<div class="legend" aria-hidden="true">
+ <span><svg viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="var(--deepep)"/></svg>DeepEP HT</span>
+ <span><svg viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="var(--nccl)"/><rect width="12" height="12" rx="2" fill="url(#h45)" class="texture"/></svg>RouteEP NCCL</span>
+ <span><svg viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="var(--peer)"/><rect width="12" height="12" rx="2" fill="url(#h135)" class="texture"/></svg>RouteEP Peer</span>
+</div>
+<div class="controls"><button type="button" id="tex" aria-pressed="false">纹理：关</button></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+ <pattern id="h45" class="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke-width="2"/></pattern>
+ <pattern id="h135" class="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><line x1="0" y1="0" x2="0" y2="6" stroke-width="2"/></pattern>
+</defs></svg>
+<div class="panels" id="panels"></div>
+<details open><summary>数据表</summary><div id="tables"></div></details>
+<p class="note">样本来源：benchmarks/peer_suite.py，三条路径在同一台空闲的 4×H100 上交替运行（每模型 3 个 trial × 3 次测量，trial 间轮换顺序）；三条路径的自由生成 Token 完全一致。DeepEP 为 HT 后端，DP&gt;1 时 vLLM 不允许它开 CUDA Graph。</p>
+<div class="tooltip" id="tip" role="status" aria-live="polite"></div>
+</div>
+<script>
+const DATA = {"Qwen3-30B-A3B": {"prefill": {"prefill_b1_long": {"deepep": {"median": 70.36028802394867, "min": 67.56665650755167, "max": 74.44272004067898, "n": 9}, "nccl": {"median": 100.8895980194211, "min": 100.22544488310814, "max": 103.75812742859125, "n": 9}, "peer": {"median": 69.34849731624126, "min": 66.36289972811937, "max": 126.11645087599754, "n": 9}}, "prefill_b4_short": {"deepep": {"median": 69.2201741039753, "min": 68.09828989207745, "max": 74.14374966174364, "n": 9}, "nccl": {"median": 79.87425476312637, "min": 76.80382393300533, "max": 82.48894289135933, "n": 9}, "peer": {"median": 67.6138587296009, "min": 65.72221498936415, "max": 75.93982387334108, "n": 9}}, "prefill_b4_long": {"deepep": {"median": 182.32561461627483, "min": 181.87867477536201, "max": 186.5804260596633, "n": 9}, "nccl": {"median": 170.79375311732292, "min": 169.52574253082275, "max": 171.3866638019681, "n": 9}, "peer": {"median": 136.86098530888557, "min": 135.11515222489834, "max": 142.04026944935322, "n": 9}}}, "decode": {"decode_b1": {"deepep": {"median": 68.3732382718503, "min": 67.79136752167086, "max": 69.84177080723714, "n": 9}, "nccl": {"median": 74.03695611209851, "min": 73.88768138319958, "max": 74.57890021284734, "n": 9}, "peer": {"median": 66.40493558118428, "min": 65.03409340860337, "max": 69.02779394570064, "n": 9}}, "decode_b4": {"deepep": {"median": 67.69505976955956, "min": 67.60025212878551, "max": 79.2655027654814, "n": 9}, "nccl": {"median": 73.30796212749922, "min": 73.07012018373632, "max": 74.43730666588141, "n": 9}, "peer": {"median": 65.86213220702851, "min": 64.90655020466001, "max": 66.2197510044523, "n": 9}}, "decode_b32": {"deepep": {"median": 68.0542064126669, "min": 67.85579288275693, "max": 69.0099320073766, "n": 9}, "nccl": {"median": 73.50279096015326, "min": 73.1398200718906, "max": 78.25812833809007, "n": 9}, "peer": {"median": 66.11287991303628, "min": 64.6472278923735, "max": 67.67662056523749, "n": 9}}}}, "Qwen3.5-35B-A3B": {"prefill": {"prefill_b1_long": {"deepep": {"median": 94.21748854219913, "min": 92.2733023762703, "max": 102.40697581321001, "n": 9}, "nccl": {"median": 119.80813834816217, "min": 116.86800234019756, "max": 123.77411779016256, "n": 9}, "peer": {"median": 93.2692103087902, "min": 90.18242731690407, "max": 101.375637575984, "n": 9}}, "prefill_b4_short": {"deepep": {"median": 93.93336903303862, "min": 91.72186441719532, "max": 101.04751866310835, "n": 9}, "nccl": {"median": 100.84431990981102, "min": 97.77197148650885, "max": 109.74468477070332, "n": 9}, "peer": {"median": 89.35360889881849, "min": 88.1163589656353, "max": 102.14393772184849, "n": 9}}, "prefill_b4_long": {"deepep": {"median": 166.6252939030528, "min": 165.94220884144306, "max": 170.16903311014175, "n": 9}, "nccl": {"median": 165.04101268947124, "min": 161.93439718335867, "max": 167.12942626327276, "n": 9}, "peer": {"median": 136.8265151977539, "min": 135.8504807576537, "max": 143.22458766400814, "n": 9}}}, "decode": {"decode_b1": {"deepep": {"median": 78.00113158227187, "min": 76.78386758954271, "max": 80.25293779654766, "n": 9}, "nccl": {"median": 79.95513124816765, "min": 78.10809485995628, "max": 80.74199395826248, "n": 9}, "peer": {"median": 73.22799288997734, "min": 71.91684242983268, "max": 77.66369876899118, "n": 9}}, "decode_b4": {"deepep": {"median": 78.16487937931001, "min": 77.15242083265086, "max": 79.41770007261844, "n": 9}, "nccl": {"median": 81.13402792611929, "min": 80.25551938605825, "max": 90.85679569787632, "n": 9}, "peer": {"median": 73.89343136144201, "min": 72.82901495900445, "max": 76.27510586680155, "n": 9}}, "decode_b32": {"deepep": {"median": 79.64002964358161, "min": 79.19130493395441, "max": 80.79201860837345, "n": 9}, "nccl": {"median": 81.30405667259937, "min": 80.70638822024966, "max": 84.93767029745138, "n": 9}, "peer": {"median": 75.60428931546492, "min": 74.36881840639697, "max": 77.41367637993783, "n": 9}}}}}, PHASES = [{"key": "prefill", "title": "Prefill 阶段耗时", "cases": ["prefill_b1_long", "prefill_b4_short", "prefill_b4_long"]}, {"key": "decode", "title": "Decode 每步耗时", "cases": ["decode_b1", "decode_b4", "decode_b32"]}], SERIES = ["deepep","nccl","peer"];
+const NAMES = {deepep:"DeepEP HT", nccl:"RouteEP NCCL", peer:"RouteEP Peer"};
+const SHORT = {deepep:"HT", nccl:"NCCL", peer:"Peer"}, HATCH = {nccl:"h45", peer:"h135"};
+const NS = "http://www.w3.org/2000/svg", W = 520, H = 280, M = {t:20, r:8, b:36, l:44};
+const tip = document.getElementById("tip");
+function el(t, a, p) { const n = document.createElementNS(NS, t); for (const [k,v] of Object.entries(a||{})) n.setAttribute(k, v); if (p) p.appendChild(n); return n; }
+function nice(v) { for (const s of [10,20,25,50,100]) { const step = s * Math.pow(10, Math.floor(Math.log10(v)) - 1); if (v / step <= 6) return step; } return v / 5; }
+function show(e, model, phase, cs, s) {
+  const d = DATA[model][phase.key][cs]; tip.replaceChildren();
+  const h = document.createElement("div"); h.style.color = "var(--text-secondary)"; h.textContent = model + " · " + cs; tip.append(h);
+  const v = document.createElement("div"); v.className = "v"; v.textContent = d[s].median.toFixed(1) + " ms  " + NAMES[s]; tip.append(v);
+  for (const k of SERIES) { const r = document.createElement("div"); r.className = "row";
+    const key = document.createElement("i"); key.className = "k"; key.style.background = "var(--" + k + ")";
+    const n = document.createElement("span"); n.textContent = NAMES[k];
+    const b = document.createElement("b"); b.textContent = d[k].median.toFixed(1) + " ms [" + d[k].min.toFixed(1) + ", " + d[k].max.toFixed(1) + "]";
+    r.append(key, n, b); tip.append(r); }
+  const f = document.createElement("div"); f.style.color = "var(--text-muted)"; f.textContent = "中位数 [min, max]，n=" + d[s].n + "；" + phase.title; tip.append(f);
+  tip.style.display = "block";
+  let x, y; if (e.type === "focus") { const b = e.target.getBoundingClientRect(); x = b.right + 8; y = b.top; } else { x = e.clientX + 14; y = e.clientY + 14; }
+  tip.style.left = Math.min(x, innerWidth - tip.offsetWidth - 8) + "px"; tip.style.top = Math.min(y, innerHeight - tip.offsetHeight - 8) + "px";
+}
+function hide() { tip.style.display = "none"; }
+function panel(model, phase) {
+  const wrap = document.createElement("div"); wrap.className = "panel";
+  const h = document.createElement("h2"); h.textContent = model + " · " + phase.title; wrap.append(h);
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, role:"img", "aria-label": model + " " + phase.title + " 三条路径对比"}, wrap);
+  const iw = W - M.l - M.r, ih = H - M.t - M.b;
+  const top = Math.max(...phase.cases.flatMap(c => SERIES.map(s => DATA[model][phase.key][c][s].max)));
+  const step = nice(top * 1.15), ymax = Math.ceil(top * 1.15 / step) * step, Y = v => M.t + ih - v / ymax * ih;
+  for (let v = 0; v <= ymax + 1e-9; v += step) {
+    el("line", {x1:M.l, x2:W-M.r, y1:Y(v), y2:Y(v), class: v ? "grid-line" : "axis-line"}, svg);
+    el("text", {x:M.l-6, y:Y(v)+4, "text-anchor":"end", class:"tick"}, svg).textContent = +v.toFixed(1);
+  }
+  const band = iw / phase.cases.length, bw = Math.min(30, band * 0.24), gap = 2;
+  phase.cases.forEach((cs, i) => {
+    const cx = M.l + band * (i + .5);
+    SERIES.forEach((s, k) => {
+      const d = DATA[model][phase.key][cs][s], x = cx + (k - 1) * (bw + gap) - bw / 2, t = Y(d.median), r = 4;
+      const g = el("g", {class:"bar", tabindex:0, role:"graphics-symbol", "aria-label": `${cs} ${NAMES[s]} ${d.median.toFixed(1)} ms`}, svg);
+      el("rect", {class:"hit", x:x-gap, y:M.t, width:bw+gap*2, height:ih, fill:"transparent", rx:3}, g);
+      const shape = `M${x},${Y(0)} V${t+r} Q${x},${t} ${x+r},${t} H${x+bw-r} Q${x+bw},${t} ${x+bw},${t+r} V${Y(0)} Z`;
+      el("path", {class:"mark", fill:`var(--${s})`, d:shape}, g);
+      if (HATCH[s]) el("path", {class:"texture", fill:`url(#${HATCH[s]})`, d:shape}, g);
+      const mx = x + bw / 2;
+      el("line", {class:"whisker", x1:mx, x2:mx, y1:Y(d.min), y2:Y(d.max)}, g);
+      for (const v of [d.min, d.max]) el("line", {class:"whisker", x1:mx-3, x2:mx+3, y1:Y(v), y2:Y(v)}, g);
+      if (s === "peer") el("text", {x:mx, y:Y(d.max)-4, "text-anchor":"middle", class:"value"}, g).textContent = d.median.toFixed(1);
+      if (i === 0) el("text", {x:mx, y:Y(0)-6, "text-anchor":"start", class:"series-name",
+        transform:`rotate(-90 ${mx+3} ${Y(0)-6})`}, g).textContent = SHORT[s];
+      g.addEventListener("pointermove", e => show(e, model, phase, cs, s)); g.addEventListener("pointerleave", hide);
+      g.addEventListener("focus", e => show(e, model, phase, cs, s)); g.addEventListener("blur", hide);
+    });
+    el("text", {x:cx, y:H-M.b+16, "text-anchor":"middle", class:"tick"}, svg).textContent = cs;
+  });
+  el("text", {x:4, y:M.t-6, class:"tick"}, svg).textContent = "ms";
+  return wrap;
+}
+function table(model, phase) {
+  const w = document.createElement("div"), h = document.createElement("h2"); h.style.fontSize = "13px";
+  h.textContent = model + " · " + phase.title + "（ms，中位数 [min, max]）"; w.append(h);
+  const t = document.createElement("table"), hr = t.createTHead().insertRow();
+  for (const s of ["场景", "DeepEP HT", "RouteEP NCCL", "RouteEP Peer", "Peer 相对 HT"]) { const th = document.createElement("th"); th.textContent = s; hr.append(th); }
+  const b = t.createTBody();
+  for (const cs of phase.cases) { const d = DATA[model][phase.key][cs], r = b.insertRow();
+    for (const v of [cs, ...SERIES.map(s => `${d[s].median.toFixed(1)} [${d[s].min.toFixed(1)}, ${d[s].max.toFixed(1)}]`),
+        ((d.peer.median / d.deepep.median - 1) * 100).toFixed(1) + "%"]) r.insertCell().textContent = v; }
+  w.append(t); return w;
+}
+const panels = document.getElementById("panels"), tables = document.getElementById("tables");
+for (const m of Object.keys(DATA)) for (const p of PHASES) { panels.append(panel(m, p)); tables.append(table(m, p)); }
+const root = document.querySelector(".viz-root"), tb = document.getElementById("tex");
+tb.addEventListener("click", () => { const on = tb.getAttribute("aria-pressed") !== "true"; tb.setAttribute("aria-pressed", String(on));
+  tb.textContent = on ? "纹理：开" : "纹理：关"; root.dataset.texture = on ? "on" : "off"; });
+</script></body></html>

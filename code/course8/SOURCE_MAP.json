@@ -1,0 +1,135 @@
+{
+  "lesson": 8,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/08_profile_ep.py",
+      "original_sha256": "be40fe5dee624cff00930c8a451e1e130babed564ad28627860a16af084621e9",
+      "sha256": "be40fe5dee624cff00930c8a451e1e130babed564ad28627860a16af084621e9",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_overlap_analysis.py": {
+      "source": "tests/test_overlap_analysis.py",
+      "original_sha256": "12aa4ff9180a26521f916426086a215456a93187d881fd90c4ed3dfb975f40cb",
+      "sha256": "12aa4ff9180a26521f916426086a215456a93187d881fd90c4ed3dfb975f40cb",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/analyze_overlap.py": {
+      "source": "benchmarks/analyze_overlap.py",
+      "original_sha256": "b14ba50c4f93a502f337e5576ab767d9add7d823b12d9d1daa07b8aa78b814ce",
+      "sha256": "b14ba50c4f93a502f337e5576ab767d9add7d823b12d9d1daa07b8aa78b814ce",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "95a501f84d782007bff6a901a53f1b1a4b204a9336b1bccc3fc80f43e324d90d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_ep.py": {
+      "source": "benchmarks/benchmark_ep.py",
+      "original_sha256": "2c9a49aaa4a9bf37d2d10534969f39677a106a4f7be6742a90f0f328c8e1238e",
+      "sha256": "27bb15d4c45819e5f0747a7d8a1c5ee04248549cf384b6d16d96e4f764c69d78",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "new",
+      "description": "Course 8 benchmark extended with clock warm-up, per-rank stage medians, and profiler key-average serialization."
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "nccl_distributed": [
+        "mini_ep.distributed.groups",
+        "nccl_distributed"
+      ],
+      "DispatchOutput": [
+        "mini_ep.distributed.dispatch",
+        "DispatchOutput"
+      ],
+      "dispatch_reference": [
+        "mini_ep.distributed.dispatch",
+        "dispatch_reference"
+      ],
+      "pack_by_destination_rank": [
+        "mini_ep.distributed.dispatch",
+        "pack_by_destination_rank"
+      ],
+      "all_gather_expert_counts": [
+        "mini_ep.distributed.all_to_all",
+        "all_gather_expert_counts"
+      ],
+      "build_receive_layout": [
+        "mini_ep.distributed.topology",
+        "build_receive_layout"
+      ],
+      "variable_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "variable_split_all_to_all"
+      ],
+      "combine_reference": [
+        "mini_ep.distributed.dispatch",
+        "combine_reference"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

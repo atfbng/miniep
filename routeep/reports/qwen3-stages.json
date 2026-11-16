@@ -1,0 +1,1554 @@
+{
+  "native": {
+    "cases": {
+      "decode_b1": {
+        "prefill": {
+          "milliseconds_per_layer": {
+            "whole_moe_selected3": {
+              "median": 1.098133345444997,
+              "minimum": 1.046240011850993,
+              "maximum": 5.478560129801433,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 0.9693013355135918,
+              "minimum": 0.9578906657795111,
+              "maximum": 2.077428013086319,
+              "repeats": 5
+            }
+          }
+        },
+        "decode": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9850138163003396,
+              "minimum": 0.9477245358364006,
+              "maximum": 1.0542679209839014,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.0095298682923706,
+              "minimum": 0.9681537004280591,
+              "maximum": 1.0813665937563879,
+              "repeats": 5
+            }
+          }
+        },
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9847263281505244,
+              "minimum": 0.9478700837062206,
+              "maximum": 1.0536419111303985,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.0097090826990704,
+              "minimum": 0.9687076662667096,
+              "maximum": 1.081286583871891,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "decode_b4": {
+        "prefill": {
+          "milliseconds_per_layer": {
+            "whole_moe_selected3": {
+              "median": 1.1403200030326843,
+              "minimum": 1.1006399989128113,
+              "maximum": 1.2849706808725994,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.008507323761781,
+              "minimum": 0.9930646667877833,
+              "maximum": 1.0300493327279885,
+              "repeats": 5
+            }
+          }
+        },
+        "decode": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9457133175546103,
+              "minimum": 0.9431551077019354,
+              "maximum": 0.9479522309278253,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 0.9654111923195245,
+              "minimum": 0.964879034228838,
+              "maximum": 0.9666735539286155,
+              "repeats": 5
+            }
+          }
+        },
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9463019113851866,
+              "minimum": 0.9438339688349515,
+              "maximum": 0.9483782082776694,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 0.9677558334854742,
+              "minimum": 0.9657402501131097,
+              "maximum": 0.9680301668122411,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "decode_b32": {
+        "prefill": {
+          "milliseconds_per_layer": {
+            "whole_moe_selected3": {
+              "median": 1.6462186177571614,
+              "minimum": 1.632159948348999,
+              "maximum": 1.7824639876683552,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.5080679953098297,
+              "minimum": 1.507594662408034,
+              "maximum": 1.5153826648990314,
+              "repeats": 5
+            }
+          }
+        },
+        "decode": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9495741473486418,
+              "minimum": 0.948357805961699,
+              "maximum": 0.950874860948465,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 0.9750477286774343,
+              "minimum": 0.9740074316034792,
+              "maximum": 0.9800844924656424,
+              "repeats": 5
+            }
+          }
+        },
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9539174586728526,
+              "minimum": 0.9527289272712854,
+              "maximum": 0.9552850781668288,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 0.9801177514406542,
+              "minimum": 0.9794080816209316,
+              "maximum": 0.9852001657709479,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "prefill_b1_long": {
+        "prefill": {
+          "milliseconds_per_layer": {
+            "whole_moe_selected3": {
+              "median": 1.4433280229568481,
+              "minimum": 1.3910400072733562,
+              "maximum": 1.6368213494618733,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.3133320088187854,
+              "minimum": 1.3071046695113182,
+              "maximum": 1.3385139976938565,
+              "repeats": 5
+            }
+          }
+        },
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 1.3133320088187854,
+              "minimum": 1.3071046695113182,
+              "maximum": 1.3385139976938565,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.4433280229568481,
+              "minimum": 1.3910400072733562,
+              "maximum": 1.6368213494618733,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "prefill_b4_short": {
+        "prefill": {
+          "milliseconds_per_layer": {
+            "whole_moe_selected3": {
+              "median": 1.0905920068422954,
+              "minimum": 1.0874773263931274,
+              "maximum": 1.1981333494186401,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 0.9928273372352123,
+              "minimum": 0.9818426668643951,
+              "maximum": 1.0143006605406601,
+              "repeats": 5
+            }
+          }
+        },
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 0.9928273372352123,
+              "minimum": 0.9818426668643951,
+              "maximum": 1.0143006605406601,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.0905920068422954,
+              "minimum": 1.0874773263931274,
+              "maximum": 1.1981333494186401,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "prefill_b4_long": {
+        "prefill": {
+          "milliseconds_per_layer": {
+            "whole_moe_selected3": {
+              "median": 2.8326187133789062,
+              "minimum": 2.7335360050201416,
+              "maximum": 2.8755306402842202,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 2.6972679843505225,
+              "minimum": 2.693895330031713,
+              "maximum": 2.7078353265921273,
+              "repeats": 5
+            }
+          }
+        },
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "whole_moe_all48": {
+              "median": 2.6972679843505225,
+              "minimum": 2.693895330031713,
+              "maximum": 2.7078353265921273,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 2.8326187133789062,
+              "minimum": 2.7335360050201416,
+              "maximum": 2.8755306402842202,
+              "repeats": 5
+            }
+          }
+        }
+      }
+    },
+    "phase_attribution_errors": [],
+    "native_detailed_stages": "not observed",
+    "selected_layers": [
+      0,
+      24,
+      47
+    ],
+    "statistic": "per-rank mean over observed layer calls, per-repetition maximum rank, then median across repetitions",
+    "payload_scope": "layout payload including padding; cross_rank excludes self; no protocol overhead or native DeepEP bytes inferred",
+    "timing_scope": "separate profiling only; intervals include dependencies and host submission gaps; no overlap conclusion"
+  },
+  "miniep": {
+    "cases": {
+      "decode_b1": {
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "COMBINE": {
+              "median": 0.040005499959079316,
+              "minimum": 0.015233916639166031,
+              "maximum": 0.04757133325741355,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.14377933347471603,
+              "minimum": 0.12486566635440492,
+              "maximum": 0.4022792507021222,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.3605514169806459,
+              "minimum": 0.23018883379215063,
+              "maximum": 0.3756509163067676,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.10400158323318465,
+              "minimum": 0.0754640834396317,
+              "maximum": 0.12233149938401766,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.6605415736169864,
+              "minimum": 1.605479182044898,
+              "maximum": 1.7388317865940432,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.7458505012715857,
+              "minimum": 1.6485086670145392,
+              "maximum": 1.9758193334564567,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 1.1409653328203906,
+              "minimum": 1.0829843332758173,
+              "maximum": 1.539001168916002,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.29827133316818316,
+              "minimum": 0.13132766693403633,
+              "maximum": 0.3379510003045046,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 147082.66666666666,
+              "minimum": 147082.66666666666,
+              "maximum": 147082.66666666666,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 110434.59375,
+              "minimum": 110434.59375,
+              "maximum": 110434.59375,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 110752,
+              "minimum": 110752,
+              "maximum": 110752,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 0.25,
+              "minimum": 0.25,
+              "maximum": 0.25,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 146861,
+              "minimum": 146861,
+              "maximum": 146861,
+              "repeats": 5
+            }
+          }
+        },
+        "decode": {
+          "milliseconds_per_layer": {
+            "DISPATCH": {
+              "median": 0.14240587941490682,
+              "minimum": 0.12334269779218542,
+              "maximum": 0.38501157010282117,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.10376709700852946,
+              "minimum": 0.07502874549664068,
+              "maximum": 0.12316564767770567,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.36232172205965973,
+              "minimum": 0.23170242566136237,
+              "maximum": 0.3775303723422561,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.040269186310812326,
+              "minimum": 0.01530204721655589,
+              "maximum": 0.04748245661716488,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.7469561800869118,
+              "minimum": 1.6489926723670458,
+              "maximum": 1.9465099422950445,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 1.1465910755273865,
+              "minimum": 1.0880947400500456,
+              "maximum": 1.5093523169283478,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.6627450452975714,
+              "minimum": 1.584020283366517,
+              "maximum": 1.741524414890238,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.29795729119594644,
+              "minimum": 0.13093182183508797,
+              "maximum": 0.3373141000805095,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 131072,
+              "minimum": 131072,
+              "maximum": 131072,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 98592,
+              "minimum": 98592,
+              "maximum": 98592,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 98304,
+              "minimum": 98304,
+              "maximum": 98304,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 0,
+              "minimum": 0,
+              "maximum": 0,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 131456,
+              "minimum": 131456,
+              "maximum": 131456,
+              "repeats": 5
+            }
+          }
+        },
+        "prefill": {
+          "milliseconds_per_layer": {
+            "A2A_RETURN": {
+              "median": 0.14561066528161368,
+              "minimum": 0.05875200033187866,
+              "maximum": 0.36958932876586914,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.13378133376439413,
+              "minimum": 0.05832533289988836,
+              "maximum": 0.21088000138600668,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 2.222325325012207,
+              "minimum": 1.5870399872461955,
+              "maximum": 5.746005376180013,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 1.2401706675688426,
+              "minimum": 0.4339626729488373,
+              "maximum": 5.3044053713480634,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.3968679929773014,
+              "minimum": 1.3453793327013652,
+              "maximum": 4.330759314199288,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.40215466419855755,
+              "minimum": 0.18159999450047812,
+              "maximum": 0.545440008242925,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.05885866656899452,
+              "minimum": 0.006837333242098491,
+              "maximum": 0.09121066828568776,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.3182079990704854,
+              "minimum": 0.3129599988460541,
+              "maximum": 2.5952746868133545,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 2103296,
+              "minimum": 2103296,
+              "maximum": 2103296,
+              "repeats": 5
+            },
+            "return_total": {
+              "median": 2180437.3333333335,
+              "minimum": 2180437.3333333335,
+              "maximum": 2180437.3333333335,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 1614444,
+              "minimum": 1614444,
+              "maximum": 1614444,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 1691648,
+              "minimum": 1691648,
+              "maximum": 1691648,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "decode_b4": {
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "COMBINE": {
+              "median": 0.04335791675960839,
+              "minimum": 0.041830499956025356,
+              "maximum": 0.04498708336541313,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.13710408362870416,
+              "minimum": 0.13143849987682188,
+              "maximum": 0.14288874968042364,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.3729783325494888,
+              "minimum": 0.36498200000884634,
+              "maximum": 0.3762660824189273,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.10252925006110065,
+              "minimum": 0.09909416680117526,
+              "maximum": 0.1071127500908915,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.5488464582983095,
+              "minimum": 1.5391157558575894,
+              "maximum": 1.5865096251945943,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.5882787499576807,
+              "minimum": 1.5673218332231045,
+              "maximum": 1.6177876684814692,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 1.0311096670726936,
+              "minimum": 1.0248133322844903,
+              "maximum": 1.072150830955555,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.32070974961000803,
+              "minimum": 0.3132122498936951,
+              "maximum": 0.3295497500609296,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 328640,
+              "minimum": 328640,
+              "maximum": 328640,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 246084.17708333334,
+              "minimum": 246084.17708333334,
+              "maximum": 246084.17708333334,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 246432,
+              "minimum": 246432,
+              "maximum": 246432,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 0.25,
+              "minimum": 0.25,
+              "maximum": 0.25,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 326586,
+              "minimum": 326586,
+              "maximum": 326586,
+              "repeats": 5
+            }
+          }
+        },
+        "decode": {
+          "milliseconds_per_layer": {
+            "DISPATCH": {
+              "median": 0.13578381133204684,
+              "minimum": 0.1300781521129757,
+              "maximum": 0.1416029393149838,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.10233516018749692,
+              "minimum": 0.09864701326017383,
+              "maximum": 0.10695307096588642,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.3747829913193472,
+              "minimum": 0.3667228556485001,
+              "maximum": 0.3781843980348955,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.04323166414357116,
+              "minimum": 0.041850288671116266,
+              "maximum": 0.04488734911829038,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.5881701623360942,
+              "minimum": 1.5673123779572213,
+              "maximum": 1.618387151577967,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 1.0344094070862597,
+              "minimum": 1.0299281459155045,
+              "maximum": 1.0774438611947958,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.5502732756139412,
+              "minimum": 1.5400930820252952,
+              "maximum": 1.5884274332698562,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.32005408885363207,
+              "minimum": 0.3123404093458271,
+              "maximum": 0.3289138058156479,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 262144,
+              "minimum": 262144,
+              "maximum": 262144,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 197184,
+              "minimum": 197184,
+              "maximum": 197184,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 196608,
+              "minimum": 196608,
+              "maximum": 196608,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 0,
+              "minimum": 0,
+              "maximum": 0,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 262912,
+              "minimum": 262912,
+              "maximum": 262912,
+              "repeats": 5
+            }
+          }
+        },
+        "prefill": {
+          "milliseconds_per_layer": {
+            "A2A_RETURN": {
+              "median": 0.14366933206717172,
+              "minimum": 0.1298026666045189,
+              "maximum": 0.14460800339778265,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.12950400014718375,
+              "minimum": 0.12759466717640558,
+              "maximum": 0.15588266650835672,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.5509973367055256,
+              "minimum": 1.5232106844584148,
+              "maximum": 1.6300480365753174,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.3999359905719757,
+              "minimum": 0.37162665526072186,
+              "maximum": 0.6120426853497823,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.3950433358550072,
+              "minimum": 1.3429479996363323,
+              "maximum": 1.4453413287798564,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.4039786656697591,
+              "minimum": 0.39662933349609375,
+              "maximum": 0.423935999472936,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.05542399982611338,
+              "minimum": 0.03931733313947916,
+              "maximum": 0.05939199899633726,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.30477866530418396,
+              "minimum": 0.30390398701032,
+              "maximum": 0.31334400177001953,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 8413184,
+              "minimum": 8413184,
+              "maximum": 8413184,
+              "repeats": 5
+            },
+            "return_total": {
+              "median": 8773632,
+              "minimum": 8773632,
+              "maximum": 8773632,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 6456406.666666667,
+              "minimum": 6456406.666666667,
+              "maximum": 6456406.666666667,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 6574080,
+              "minimum": 6574080,
+              "maximum": 6574080,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "decode_b32": {
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "COMBINE": {
+              "median": 0.04946199996387198,
+              "minimum": 0.030525833376790008,
+              "maximum": 0.05214308333597728,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.27941975024684024,
+              "minimum": 0.27367683286623407,
+              "maximum": 1.2711930009924497,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.14376491653577736,
+              "minimum": 0.12531408339176173,
+              "maximum": 0.1833497493644245,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.11004199987655738,
+              "minimum": 0.07982500019716099,
+              "maximum": 0.11430908330657985,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.439974395732861,
+              "minimum": 1.361977943025219,
+              "maximum": 3.1373817184454915,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.6728447529797752,
+              "minimum": 1.5900698341429234,
+              "maximum": 3.5437747510150075,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.5915599175107976,
+              "minimum": 0.5544300844582418,
+              "maximum": 2.7481726723878332,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.3315559162486655,
+              "minimum": 0.2496127500392807,
+              "maximum": 0.34868516710897285,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 1220842.6666666667,
+              "minimum": 1220842.6666666667,
+              "maximum": 1220842.6666666667,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 812410.4895833334,
+              "minimum": 812410.4895833334,
+              "maximum": 812410.4895833334,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 917973.3333333334,
+              "minimum": 917973.3333333334,
+              "maximum": 917973.3333333334,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 1047540,
+              "minimum": 1047540,
+              "maximum": 1047540,
+              "repeats": 5
+            }
+          }
+        },
+        "decode": {
+          "milliseconds_per_layer": {
+            "DISPATCH": {
+              "median": 0.2787661944709112,
+              "minimum": 0.2728720626102032,
+              "maximum": 1.278176252884189,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.11039042509261157,
+              "minimum": 0.07998395818248978,
+              "maximum": 0.11470983725950473,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.1425420261352394,
+              "minimum": 0.11996799994387182,
+              "maximum": 0.18208688648119373,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.049553301808695625,
+              "minimum": 0.03047113915357807,
+              "maximum": 0.052258771649877155,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.6690958143845005,
+              "minimum": 1.5862347094092781,
+              "maximum": 3.5520659328445676,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.5925424049689075,
+              "minimum": 0.5550106048114657,
+              "maximum": 2.7652257485339646,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.4347279737862388,
+              "minimum": 1.3564006722387991,
+              "maximum": 3.1453836637981762,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.32802628823543784,
+              "minimum": 0.24511848818364107,
+              "maximum": 0.3452043257986154,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 665884.8923884515,
+              "minimum": 665884.8923884515,
+              "maximum": 665884.8923884515,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 412503.58005249343,
+              "minimum": 412503.58005249343,
+              "maximum": 412503.58005249343,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 502700.6824146982,
+              "minimum": 502700.6824146982,
+              "maximum": 502700.6824146982,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 525824,
+              "minimum": 525824,
+              "maximum": 525824,
+              "repeats": 5
+            }
+          }
+        },
+        "prefill": {
+          "milliseconds_per_layer": {
+            "A2A_RETURN": {
+              "median": 0.4016213317712148,
+              "minimum": 0.39710932970046997,
+              "maximum": 0.8042666812737783,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.06435200137396653,
+              "minimum": 0.062037333846092224,
+              "maximum": 0.0841920009503762,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 2.1489599545796714,
+              "minimum": 2.0796906550725303,
+              "maximum": 2.4907946586608887,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.6122879981994629,
+              "minimum": 0.48425599932670593,
+              "maximum": 0.8611626724402109,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 2.114272008339564,
+              "minimum": 2.1099166547258696,
+              "maximum": 2.136498654882113,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.7894720037778219,
+              "minimum": 0.7819413542747498,
+              "maximum": 0.8203840057055155,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.04306133215626081,
+              "minimum": 0.04292266691724459,
+              "maximum": 0.04346666609247526,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.3843200107415517,
+              "minimum": 0.37994666894276935,
+              "maximum": 0.39577601353327435,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 67305472,
+              "minimum": 67305472,
+              "maximum": 67305472,
+              "repeats": 5
+            },
+            "return_total": {
+              "median": 71700480,
+              "minimum": 71700480,
+              "maximum": 71700480,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 52303056,
+              "minimum": 52303056,
+              "maximum": 52303056,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 53657600,
+              "minimum": 53657600,
+              "maximum": 53657600,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "prefill_b1_long": {
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "COMBINE": {
+              "median": 0.025045332809289295,
+              "minimum": 0.025002666438619297,
+              "maximum": 0.025130666171511013,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.4086933334668477,
+              "minimum": 0.3956800003846486,
+              "maximum": 0.4095893402894338,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.2566186686356862,
+              "minimum": 0.24873600651820502,
+              "maximum": 0.27458133300145465,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.12792533139387766,
+              "minimum": 0.12695466975371042,
+              "maximum": 0.14974933365980783,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.7760133370757103,
+              "minimum": 1.738650657236576,
+              "maximum": 1.8220213328798611,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.8942826986312866,
+              "minimum": 1.866751988728841,
+              "maximum": 2.125792066256205,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.4198933442433675,
+              "minimum": 0.3819306592146556,
+              "maximum": 0.7732053399085999,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.5695360004901886,
+              "minimum": 0.5625173250834147,
+              "maximum": 0.5937280058860779,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 38742698.666666664,
+              "minimum": 38742698.666666664,
+              "maximum": 38742698.666666664,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 26210409.333333332,
+              "minimum": 26210409.333333332,
+              "maximum": 26210409.333333332,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 28981930.666666668,
+              "minimum": 28981930.666666668,
+              "maximum": 28981930.666666668,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 33652736,
+              "minimum": 33652736,
+              "maximum": 33652736,
+              "repeats": 5
+            }
+          }
+        },
+        "prefill": {
+          "milliseconds_per_layer": {
+            "A2A_RETURN": {
+              "median": 0.2566186686356862,
+              "minimum": 0.24873600651820502,
+              "maximum": 0.27458133300145465,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.12792533139387766,
+              "minimum": 0.12695466975371042,
+              "maximum": 0.14974933365980783,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.8942826986312866,
+              "minimum": 1.866751988728841,
+              "maximum": 2.125792066256205,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.4198933442433675,
+              "minimum": 0.3819306592146556,
+              "maximum": 0.7732053399085999,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.7760133370757103,
+              "minimum": 1.738650657236576,
+              "maximum": 1.8220213328798611,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.5695360004901886,
+              "minimum": 0.5625173250834147,
+              "maximum": 0.5937280058860779,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.025045332809289295,
+              "minimum": 0.025002666438619297,
+              "maximum": 0.025130666171511013,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.4086933334668477,
+              "minimum": 0.3956800003846486,
+              "maximum": 0.4095893402894338,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 33652736,
+              "minimum": 33652736,
+              "maximum": 33652736,
+              "repeats": 5
+            },
+            "return_total": {
+              "median": 38742698.666666664,
+              "minimum": 38742698.666666664,
+              "maximum": 38742698.666666664,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 26210409.333333332,
+              "minimum": 26210409.333333332,
+              "maximum": 26210409.333333332,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 28981930.666666668,
+              "minimum": 28981930.666666668,
+              "maximum": 28981930.666666668,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "prefill_b4_short": {
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "COMBINE": {
+              "median": 0.049855999648571014,
+              "minimum": 0.04580266618480285,
+              "maximum": 0.058282667150100075,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.2995520035425822,
+              "minimum": 0.2941653331120809,
+              "maximum": 0.30323199431101483,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 0.12475733707348506,
+              "minimum": 0.10306133329868317,
+              "maximum": 0.1719573363661766,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.12710400174061456,
+              "minimum": 0.1247466653585434,
+              "maximum": 0.12973866860071817,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.3795626610517502,
+              "minimum": 1.2932826702793438,
+              "maximum": 1.3839053412278493,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.5183359781901042,
+              "minimum": 1.472490668296814,
+              "maximum": 2.1430293321609497,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.36827734112739563,
+              "minimum": 0.3333866596221924,
+              "maximum": 1.025216003259023,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.4002026617527008,
+              "minimum": 0.3655466636021932,
+              "maximum": 0.40349865953127545,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 8773632,
+              "minimum": 8773632,
+              "maximum": 8773632,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 6456406.666666667,
+              "minimum": 6456406.666666667,
+              "maximum": 6456406.666666667,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 6574080,
+              "minimum": 6574080,
+              "maximum": 6574080,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 8413184,
+              "minimum": 8413184,
+              "maximum": 8413184,
+              "repeats": 5
+            }
+          }
+        },
+        "prefill": {
+          "milliseconds_per_layer": {
+            "A2A_RETURN": {
+              "median": 0.12475733707348506,
+              "minimum": 0.10306133329868317,
+              "maximum": 0.1719573363661766,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.12710400174061456,
+              "minimum": 0.1247466653585434,
+              "maximum": 0.12973866860071817,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 1.5183359781901042,
+              "minimum": 1.472490668296814,
+              "maximum": 2.1430293321609497,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.36827734112739563,
+              "minimum": 0.3333866596221924,
+              "maximum": 1.025216003259023,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 1.3795626610517502,
+              "minimum": 1.2932826702793438,
+              "maximum": 1.3839053412278493,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 0.4002026617527008,
+              "minimum": 0.3655466636021932,
+              "maximum": 0.40349865953127545,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.049855999648571014,
+              "minimum": 0.04580266618480285,
+              "maximum": 0.058282667150100075,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.2995520035425822,
+              "minimum": 0.2941653331120809,
+              "maximum": 0.30323199431101483,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 8413184,
+              "minimum": 8413184,
+              "maximum": 8413184,
+              "repeats": 5
+            },
+            "return_total": {
+              "median": 8773632,
+              "minimum": 8773632,
+              "maximum": 8773632,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 6456406.666666667,
+              "minimum": 6456406.666666667,
+              "maximum": 6456406.666666667,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 6574080,
+              "minimum": 6574080,
+              "maximum": 6574080,
+              "repeats": 5
+            }
+          }
+        }
+      },
+      "prefill_b4_long": {
+        "all_calls": {
+          "milliseconds_per_layer": {
+            "COMBINE": {
+              "median": 0.0799573337038358,
+              "minimum": 0.07947733501593272,
+              "maximum": 0.08058666934569676,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.4137599964936574,
+              "minimum": 0.3930240074793498,
+              "maximum": 0.41996800899505615,
+              "repeats": 5
+            },
+            "A2A_RETURN": {
+              "median": 1.1699733237425487,
+              "minimum": 1.1660906573136647,
+              "maximum": 1.1719680031140645,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.05219199943045775,
+              "minimum": 0.03833600009481112,
+              "maximum": 0.05935999937355518,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 3.6386026541392007,
+              "minimum": 3.619390681385994,
+              "maximum": 3.6502200017372766,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 3.8615787029266357,
+              "minimum": 3.7958079973856607,
+              "maximum": 3.884490648905436,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.8550613323847452,
+              "minimum": 0.7696106632550558,
+              "maximum": 0.8998400171597799,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 1.6330666542053223,
+              "minimum": 1.6322239637374878,
+              "maximum": 1.636021335919698,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "return_total": {
+              "median": 151868757.33333334,
+              "minimum": 151868757.33333334,
+              "maximum": 151868757.33333334,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 105870006.66666667,
+              "minimum": 105870006.66666667,
+              "maximum": 105870006.66666667,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 113721344,
+              "minimum": 113721344,
+              "maximum": 113721344,
+              "repeats": 5
+            },
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 134610944,
+              "minimum": 134610944,
+              "maximum": 134610944,
+              "repeats": 5
+            }
+          }
+        },
+        "prefill": {
+          "milliseconds_per_layer": {
+            "A2A_RETURN": {
+              "median": 1.1699733237425487,
+              "minimum": 1.1660906573136647,
+              "maximum": 1.1719680031140645,
+              "repeats": 5
+            },
+            "ROUTER": {
+              "median": 0.05219199943045775,
+              "minimum": 0.03833600009481112,
+              "maximum": 0.05935999937355518,
+              "repeats": 5
+            },
+            "whole_moe_selected3": {
+              "median": 3.8615787029266357,
+              "minimum": 3.7958079973856607,
+              "maximum": 3.884490648905436,
+              "repeats": 5
+            },
+            "A2A_FORWARD": {
+              "median": 0.8550613323847452,
+              "minimum": 0.7696106632550558,
+              "maximum": 0.8998400171597799,
+              "repeats": 5
+            },
+            "whole_moe_all48": {
+              "median": 3.6386026541392007,
+              "minimum": 3.619390681385994,
+              "maximum": 3.6502200017372766,
+              "repeats": 5
+            },
+            "EXPERT": {
+              "median": 1.6330666542053223,
+              "minimum": 1.6322239637374878,
+              "maximum": 1.636021335919698,
+              "repeats": 5
+            },
+            "COMBINE": {
+              "median": 0.0799573337038358,
+              "minimum": 0.07947733501593272,
+              "maximum": 0.08058666934569676,
+              "repeats": 5
+            },
+            "DISPATCH": {
+              "median": 0.4137599964936574,
+              "minimum": 0.3930240074793498,
+              "maximum": 0.41996800899505615,
+              "repeats": 5
+            }
+          },
+          "payload_bytes_per_layer": {
+            "count_total": {
+              "median": 32,
+              "minimum": 32,
+              "maximum": 32,
+              "repeats": 5
+            },
+            "forward_total": {
+              "median": 134610944,
+              "minimum": 134610944,
+              "maximum": 134610944,
+              "repeats": 5
+            },
+            "return_total": {
+              "median": 151868757.33333334,
+              "minimum": 151868757.33333334,
+              "maximum": 151868757.33333334,
+              "repeats": 5
+            },
+            "forward_cross_rank": {
+              "median": 105870006.66666667,
+              "minimum": 105870006.66666667,
+              "maximum": 105870006.66666667,
+              "repeats": 5
+            },
+            "return_cross_rank": {
+              "median": 113721344,
+              "minimum": 113721344,
+              "maximum": 113721344,
+              "repeats": 5
+            }
+          }
+        }
+      }
+    },
+    "phase_attribution_errors": [],
+    "native_detailed_stages": "not observed",
+    "selected_layers": [
+      0,
+      24,
+      47
+    ],
+    "statistic": "per-rank mean over observed layer calls, per-repetition maximum rank, then median across repetitions",
+    "payload_scope": "layout payload including padding; cross_rank excludes self; no protocol overhead or native DeepEP bytes inferred",
+    "timing_scope": "separate profiling only; intervals include dependencies and host submission gaps; no overlap conclusion"
+  }
+}

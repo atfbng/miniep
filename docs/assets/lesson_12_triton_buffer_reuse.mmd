@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant S as 来源 GPU 的调用者 Stream
+    participant T as 目标 GPU 的融合 Kernel
+    S->>T: start 轮次 1：输入已经产生
+    T->>S: 回传结果，发布 done 轮次 1
+    S->>S: Combine 轮次 1 读取 returned
+    S->>T: start 轮次 2：上一轮读取结束
+    T->>S: 写入下一轮结果，发布 done 轮次 2
+    S->>S: Combine 轮次 2

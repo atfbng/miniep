@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "jobs": [
+    {
+      "name": "unit",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "checks",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792543146.4270976,
+      "exit_code": 0,
+      "ended": 1792543159.160017
+    },
+    {
+      "name": "tp-dp",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "checks/tp_dp.py"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792543159.1607456,
+      "exit_code": 0,
+      "ended": 1792543180.7563236
+    },
+    {
+      "name": "return-transport",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "checks/return_transport.py"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792543180.7571235,
+      "exit_code": 1,
+      "ended": 1792543185.5291753
+    },
+    {
+      "name": "return-transport-retry1",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "checks/return_transport.py",
+        "--output",
+        "/experiment/core-cleanup-20261021/return-transport"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792543223.9031198,
+      "exit_code": 0,
+      "ended": 1792543237.1875787
+    },
+    {
+      "name": "exact-corpus",
+      "command": [
+        "python3",
+        "test/deepep_alignment.py",
+        "--model",
+        "/model",
+        "--output",
+        "/experiment/core-cleanup-20261021/accuracy",
+        "--checkpoint-manifest",
+        "/experiment/default-exact-v3/deep4-full/checkpoint.json",
+        "--jobs",
+        "candidate-rotated-13-r1",
+        "--reuse-completed",
+        "/experiment/default-exact-v3/deep4-full",
+        "--audit-native-reuse"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792543237.1884658,
+      "exit_code": 0,
+      "ended": 1792544482.094138
+    },
+    {
+      "name": "bench-0-before",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "benchmarks/deepep_latency_run.py",
+        "--model",
+        "/model",
+        "--output",
+        "/experiment/core-cleanup-20261021/bench-0-before",
+        "--checkpoint-manifest",
+        "/experiment/default-exact-v3/deep4-full/checkpoint.json",
+        "--backend",
+        "miniep",
+        "--label",
+        "before",
+        "--warmup",
+        "3",
+        "--repeats",
+        "5",
+        "--cases",
+        "decode_b1",
+        "decode_b32",
+        "prefill_b4_long"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/before",
+      "started": 1792544482.0956056,
+      "exit_code": 0,
+      "ended": 1792544887.1021204
+    },
+    {
+      "name": "bench-0-after",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "benchmarks/deepep_latency_run.py",
+        "--model",
+        "/model",
+        "--output",
+        "/experiment/core-cleanup-20261021/bench-0-after",
+        "--checkpoint-manifest",
+        "/experiment/default-exact-v3/deep4-full/checkpoint.json",
+        "--backend",
+        "miniep",
+        "--label",
+        "after",
+        "--warmup",
+        "3",
+        "--repeats",
+        "5",
+        "--cases",
+        "decode_b1",
+        "decode_b32",
+        "prefill_b4_long"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792544887.1031964,
+      "exit_code": 0,
+      "ended": 1792545184.5813255
+    },
+    {
+      "name": "bench-1-after",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "benchmarks/deepep_latency_run.py",
+        "--model",
+        "/model",
+        "--output",
+        "/experiment/core-cleanup-20261021/bench-1-after",
+        "--checkpoint-manifest",
+        "/experiment/default-exact-v3/deep4-full/checkpoint.json",
+        "--backend",
+        "miniep",
+        "--label",
+        "after",
+        "--warmup",
+        "3",
+        "--repeats",
+        "5",
+        "--cases",
+        "decode_b1",
+        "decode_b32",
+        "prefill_b4_long"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/after",
+      "started": 1792545184.5822613,
+      "exit_code": 0,
+      "ended": 1792545502.933735
+    },
+    {
+      "name": "bench-1-before",
+      "command": [
+        "torchrun",
+        "--standalone",
+        "--nproc-per-node=4",
+        "benchmarks/deepep_latency_run.py",
+        "--model",
+        "/model",
+        "--output",
+        "/experiment/core-cleanup-20261021/bench-1-before",
+        "--checkpoint-manifest",
+        "/experiment/default-exact-v3/deep4-full/checkpoint.json",
+        "--backend",
+        "miniep",
+        "--label",
+        "before",
+        "--warmup",
+        "3",
+        "--repeats",
+        "5",
+        "--cases",
+        "decode_b1",
+        "decode_b32",
+        "prefill_b4_long"
+      ],
+      "cwd": "/experiment/core-cleanup-20261021/before",
+      "started": 1792545502.9519618,
+      "exit_code": 0,
+      "ended": 1792545875.2666664
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# DeepEP HT binary used by the native comparison path.
+# Install the matching CUDA/PyTorch/NVSHMEM wheel or use the pinned Docker image.
+deep-ep==2.0.0+local
+nvidia-nvshmem-cu13==3.4.5

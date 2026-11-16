@@ -1,0 +1,48 @@
+{
+ "seed": 13,
+ "corpus": 0,
+ "cases": [
+  {
+   "name": "decode_b1_s128",
+   "batch_size": 1,
+   "seq_len": 128,
+   "steps": 64
+  },
+  {
+   "name": "decode_b2_s128",
+   "batch_size": 2,
+   "seq_len": 128,
+   "steps": 64
+  },
+  {
+   "name": "decode_b4_s128",
+   "batch_size": 4,
+   "seq_len": 128,
+   "steps": 64
+  },
+  {
+   "name": "decode_b8_s128",
+   "batch_size": 8,
+   "seq_len": 128,
+   "steps": 64
+  },
+  {
+   "name": "decode_b16_s128",
+   "batch_size": 16,
+   "seq_len": 128,
+   "steps": 64
+  },
+  {
+   "name": "decode_b32_s128",
+   "batch_size": 32,
+   "seq_len": 128,
+   "steps": 64
+  },
+  {
+   "name": "decode_b64_s128",
+   "batch_size": 64,
+   "seq_len": 128,
+   "steps": 64
+  }
+ ]
+}

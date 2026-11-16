@@ -1,0 +1,61 @@
+{
+  "lesson": 2,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/02_router_dispatch.py",
+      "original_sha256": "0ad14f4a40eaed293db51ec6d99400224b1ca847d3227f1d965758de12556a39",
+      "sha256": "0ad14f4a40eaed293db51ec6d99400224b1ca847d3227f1d965758de12556a39",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_router_dispatch.py": {
+      "source": "tests/test_router_dispatch.py",
+      "original_sha256": "96a8aa4153c8bf50eefc437aa7ff5c50717ea21c8884c0d24a7be0602f0fb7bf",
+      "sha256": "96a8aa4153c8bf50eefc437aa7ff5c50717ea21c8884c0d24a7be0602f0fb7bf",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "combine_reference": [
+        "mini_ep.distributed.dispatch",
+        "combine_reference"
+      ],
+      "dispatch_reference": [
+        "mini_ep.distributed.dispatch",
+        "dispatch_reference"
+      ]
+    },
+    "mini_ep.model": {
+      "TopKRouter": [
+        "mini_ep.model.router",
+        "TopKRouter"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

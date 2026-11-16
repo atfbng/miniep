@@ -1,0 +1,109 @@
+{
+  "model": "Qwen3.5-35B-A3B",
+  "dtype": "bfloat16",
+  "topology": {
+    "tp": 2,
+    "dp": 2,
+    "ep": 4
+  },
+  "backend": "deepep_high_throughput",
+  "checkpoint_digest": "c69008f9e401431ed60348891272214cb051aebd6399009bfa6853c0cd28ba3c",
+  "full_suite_status": "passed",
+  "performance_workload_status": "selected_jobs_passed",
+  "full_jobs": 16,
+  "performance_accuracy_jobs": 2,
+  "candidate_request_sequences": 902,
+  "candidate_generation_positions": 64164,
+  "all_passed": true,
+  "versions": {
+    "vllm": "0.29.0",
+    "torch": "2.13.0+cu130",
+    "triton": "3.7.1",
+    "transformers": "5.16.1"
+  },
+  "algorithm_source_sha256": {
+    "mini_ep/profiler/stages.py": "405976c5ef9e13c9a580caf770f2fa76cb0618e065aefda8903c403f5d4ef11c",
+    "mini_ep/profiler/__init__.py": "c3747a9e08ff3159195896d0672fde615939f0b532d15a6c57ab3830b5dbff46",
+    "mini_ep/model/expert.py": "afc372ee7e5efabe596a0218de74b7e18350c6fff2754b95cc5bcab4654382b2",
+    "mini_ep/model/moe.py": "c8b5e4d21be26cea1debcd7b58a3caf15b4853e304dfb0a50291744a5e48df54",
+    "mini_ep/model/__init__.py": "af676af7731f2fedc967d4c1252769976d01f286f6bb4a398e47ba0d8ced0a66",
+    "mini_ep/model/contracts.py": "eb84ffc90d86cef435cc2255e41257193c6bfa51f6aced640a60430a35f61a22",
+    "mini_ep/model/router.py": "39f6cb7aa694e1ebf6638b5d479b0910d173534eb509ee0a194ae13076523bf5",
+    "mini_ep/kernels/swiglu_triton.py": "16715032da5ba0ca20cd875a7aa907902be28dfe96df0cb3d5bc72a37d7341fe",
+    "mini_ep/kernels/combine_triton.py": "acc836096d4447c8f8f76076d96afe610bd3aaf8ad88ee152b23cd484125dccf",
+    "mini_ep/kernels/__init__.py": "6948aa3520bc747e701e9229bbd135533cb750cef6c73770eb0db3b980f3fefb",
+    "mini_ep/kernels/dispatch_triton.py": "2e32e43445c3dd0f27823f036dcd740ff9741c37123236d1253729242144d475",
+    "mini_ep/distributed/all_to_all.py": "f34a4636b7162c1bda33db1101c47bad2ec0829b6903400b0a02175bf1e3f994",
+    "mini_ep/distributed/__init__.py": "556381dda31f53ed404b4ece18d2704a9d6741cdfaae865f9faa0eaed8b6f8c7",
+    "mini_ep/distributed/topology.py": "0c109a2d32f5e28ae048eb0daf16fb0e3ead22246f9b604aeba26dda814f6c02",
+    "mini_ep/distributed/dispatch.py": "75133d6f5673b97fa0b709b1e54f5089b756754625dd35fe8ff99fba787505ee",
+    "mini_ep/kernels/grouped_gemm/plan.py": "10bdd954a0894750ddacc3471955a00d4a53900a73714845d8f1fef00cd1ed3d",
+    "mini_ep/kernels/grouped_gemm/__init__.py": "7cba262d73a724d3587587aa8a4085160a0ea8d645899e7562cb6eb4d40e28a0",
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": "aea0f227558becb7e1d540b2872d683c349f7b0fb2c39b34a23895fbac3f3b60"
+  },
+  "candidates": [
+    {
+      "name": "candidate-same-13-r1",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 128,
+      "generation_positions": 8192
+    },
+    {
+      "name": "candidate-rotated-13-r1",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 128,
+      "generation_positions": 8192
+    },
+    {
+      "name": "candidate-boundaries-13",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 26,
+      "generation_positions": 1426
+    },
+    {
+      "name": "candidate-long-13",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 16,
+      "generation_positions": 4096
+    },
+    {
+      "name": "candidate-rotated-13-r2",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 128,
+      "generation_positions": 8192
+    },
+    {
+      "name": "candidate-rotated-13-r3",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 128,
+      "generation_positions": 8192
+    },
+    {
+      "name": "candidate-rotated-37",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 128,
+      "generation_positions": 8192
+    },
+    {
+      "name": "candidate-rotated-123",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 128,
+      "generation_positions": 8192
+    },
+    {
+      "name": "candidate-performance-13",
+      "passed": true,
+      "errors": [],
+      "request_sequences": 92,
+      "generation_positions": 9490
+    }
+  ]
+}

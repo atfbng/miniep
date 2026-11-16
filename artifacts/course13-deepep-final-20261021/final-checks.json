@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "precision_configurations": 9,
+  "precision_unique_candidate_sequences": 902,
+  "precision_unique_generated_tokens": 64164,
+  "h100_unit_tests": {
+    "run": 42,
+    "passed": 42,
+    "skipped": 0,
+    "log": "v7-startup-unit/job0.log"
+  },
+  "local_unit_tests": {
+    "run": 42,
+    "passed": 34,
+    "skipped": 8,
+    "log": "workspace-unit.log"
+  },
+  "core_nccl": {
+    "ep_sizes": [
+      1,
+      2,
+      4
+    ],
+    "cases_per_rank": 432
+  },
+  "negative_collective": {
+    "ranks": 4,
+    "cases_per_rank": 16
+  },
+  "actual_empty_layer_api": {
+    "ranks": 4,
+    "layers": 48,
+    "cases_per_rank": 768,
+    "actual_empty_per_rank": 384
+  },
+  "static_isolation": "workspace-final-layout.json",
+  "compileall": true,
+  "git_diff_check": true,
+  "dual_source_maps_valid": true,
+  "earlier_courses_unchanged": true,
+  "core_numerical_identity": "core-docstring-only-audit.json",
+  "final_performance_suite": "passed",
+  "before_after_comparison": "passed",
+  "required_unfinished": [],
+  "not_claimed": [
+    "other model/dtype/topology/backend versions",
+    "Qwen3.5 new DeepEP accuracy",
+    "native detailed stages/transport bytes",
+    "Nsight or overlap"
+  ]
+}

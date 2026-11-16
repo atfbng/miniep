@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "basis": "Only two wrapper docstrings corrected; all executable ASTs, signatures, constants, defaults and kernel math unchanged",
+  "files": [
+    {
+      "file": "mini_ep/kernels/__init__.py",
+      "validated_source_sha256": "6948aa3520bc747e701e9229bbd135533cb750cef6c73770eb0db3b980f3fefb",
+      "delivery_source_sha256": "6948aa3520bc747e701e9229bbd135533cb750cef6c73770eb0db3b980f3fefb",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/kernels/combine_triton.py",
+      "validated_source_sha256": "acc836096d4447c8f8f76076d96afe610bd3aaf8ad88ee152b23cd484125dccf",
+      "delivery_source_sha256": "acc836096d4447c8f8f76076d96afe610bd3aaf8ad88ee152b23cd484125dccf",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/kernels/grouped_gemm/__init__.py",
+      "validated_source_sha256": "7cba262d73a724d3587587aa8a4085160a0ea8d645899e7562cb6eb4d40e28a0",
+      "delivery_source_sha256": "7cba262d73a724d3587587aa8a4085160a0ea8d645899e7562cb6eb4d40e28a0",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/kernels/grouped_gemm/plan.py",
+      "validated_source_sha256": "10bdd954a0894750ddacc3471955a00d4a53900a73714845d8f1fef00cd1ed3d",
+      "delivery_source_sha256": "10bdd954a0894750ddacc3471955a00d4a53900a73714845d8f1fef00cd1ed3d",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "validated_source_sha256": "f3d23d10f62fa7f4b3061a49b42634a0bac8a0f13858663382ffe6c968848ca1",
+      "delivery_source_sha256": "aea0f227558becb7e1d540b2872d683c349f7b0fb2c39b34a23895fbac3f3b60",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/kernels/swiglu_triton.py",
+      "validated_source_sha256": "16715032da5ba0ca20cd875a7aa907902be28dfe96df0cb3d5bc72a37d7341fe",
+      "delivery_source_sha256": "16715032da5ba0ca20cd875a7aa907902be28dfe96df0cb3d5bc72a37d7341fe",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/kernels/dispatch_triton.py",
+      "validated_source_sha256": "d82772c77a0b3ce19be6ab387674180650603b4c6041c6d7fe4bb4237a3f850f",
+      "delivery_source_sha256": "2e32e43445c3dd0f27823f036dcd740ff9741c37123236d1253729242144d475",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/integration/runner.py",
+      "validated_source_sha256": "82420aacaadee2f4128b8bca0b497a278c0873b2c0892e4a23efb0781a2fb4ab",
+      "delivery_source_sha256": "82420aacaadee2f4128b8bca0b497a278c0873b2c0892e4a23efb0781a2fb4ab",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/integration/plugin.py",
+      "validated_source_sha256": "1cf1d49eb74b0cde34d6465a4f3616814b2078c8280235bc7e2811c6dac0e23d",
+      "delivery_source_sha256": "1cf1d49eb74b0cde34d6465a4f3616814b2078c8280235bc7e2811c6dac0e23d",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/integration/config.py",
+      "validated_source_sha256": "cb308cc5b7da93fe49cbb9f3314d96aca8496ff50e25306bcf1a8e17f1213c8c",
+      "delivery_source_sha256": "cb308cc5b7da93fe49cbb9f3314d96aca8496ff50e25306bcf1a8e17f1213c8c",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/integration/__init__.py",
+      "validated_source_sha256": "b2747fd3bdd7eb14f5bb3f339dcdb91c137fd0949a3d03fd4de93f7b2806abc3",
+      "delivery_source_sha256": "b2747fd3bdd7eb14f5bb3f339dcdb91c137fd0949a3d03fd4de93f7b2806abc3",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/integration/input_layout.py",
+      "validated_source_sha256": "0c39559649054e4e2f013dd5d825bd8cd955e8b921ecb1573bf2bd97d25b4c0e",
+      "delivery_source_sha256": "0c39559649054e4e2f013dd5d825bd8cd955e8b921ecb1573bf2bd97d25b4c0e",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/distributed/dispatch.py",
+      "validated_source_sha256": "75133d6f5673b97fa0b709b1e54f5089b756754625dd35fe8ff99fba787505ee",
+      "delivery_source_sha256": "75133d6f5673b97fa0b709b1e54f5089b756754625dd35fe8ff99fba787505ee",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/distributed/__init__.py",
+      "validated_source_sha256": "556381dda31f53ed404b4ece18d2704a9d6741cdfaae865f9faa0eaed8b6f8c7",
+      "delivery_source_sha256": "556381dda31f53ed404b4ece18d2704a9d6741cdfaae865f9faa0eaed8b6f8c7",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/distributed/all_to_all.py",
+      "validated_source_sha256": "f34a4636b7162c1bda33db1101c47bad2ec0829b6903400b0a02175bf1e3f994",
+      "delivery_source_sha256": "f34a4636b7162c1bda33db1101c47bad2ec0829b6903400b0a02175bf1e3f994",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/distributed/topology.py",
+      "validated_source_sha256": "0c109a2d32f5e28ae048eb0daf16fb0e3ead22246f9b604aeba26dda814f6c02",
+      "delivery_source_sha256": "0c109a2d32f5e28ae048eb0daf16fb0e3ead22246f9b604aeba26dda814f6c02",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/__init__.py",
+      "validated_source_sha256": "72a1c823970b85bf8616486f9c4492bba46c3a671da922de9cc04f616c25075c",
+      "delivery_source_sha256": "72a1c823970b85bf8616486f9c4492bba46c3a671da922de9cc04f616c25075c",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/model/moe.py",
+      "validated_source_sha256": "5fd17b1e109ed5e07c6ba71bd074781ca473a412122391c38793186eb881ef45",
+      "delivery_source_sha256": "5fd17b1e109ed5e07c6ba71bd074781ca473a412122391c38793186eb881ef45",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/model/router.py",
+      "validated_source_sha256": "9d57cbbdabcc784914f30cd0d63244e6dcbae3e8b5b6c24614c07ce6c0019861",
+      "delivery_source_sha256": "9d57cbbdabcc784914f30cd0d63244e6dcbae3e8b5b6c24614c07ce6c0019861",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/model/contracts.py",
+      "validated_source_sha256": "eb84ffc90d86cef435cc2255e41257193c6bfa51f6aced640a60430a35f61a22",
+      "delivery_source_sha256": "eb84ffc90d86cef435cc2255e41257193c6bfa51f6aced640a60430a35f61a22",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/model/__init__.py",
+      "validated_source_sha256": "af676af7731f2fedc967d4c1252769976d01f286f6bb4a398e47ba0d8ced0a66",
+      "delivery_source_sha256": "af676af7731f2fedc967d4c1252769976d01f286f6bb4a398e47ba0d8ced0a66",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/model/expert.py",
+      "validated_source_sha256": "c99d64fdb044bafa8c2d20f5c895442db64457f12bfcc5c67767ea16444bbfe5",
+      "delivery_source_sha256": "c99d64fdb044bafa8c2d20f5c895442db64457f12bfcc5c67767ea16444bbfe5",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/profiler/__init__.py",
+      "validated_source_sha256": "c3747a9e08ff3159195896d0672fde615939f0b532d15a6c57ab3830b5dbff46",
+      "delivery_source_sha256": "c3747a9e08ff3159195896d0672fde615939f0b532d15a6c57ab3830b5dbff46",
+      "same_execution_ast": true
+    },
+    {
+      "file": "mini_ep/profiler/stages.py",
+      "validated_source_sha256": "405976c5ef9e13c9a580caf770f2fa76cb0618e065aefda8903c403f5d4ef11c",
+      "delivery_source_sha256": "405976c5ef9e13c9a580caf770f2fa76cb0618e065aefda8903c403f5d4ef11c",
+      "same_execution_ast": true
+    }
+  ]
+}

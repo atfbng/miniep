@@ -1,0 +1,72 @@
+{
+  "label": "l6-commit-r1-var",
+  "expert_backend": "grouped",
+  "fixed": false,
+  "ep_size": 2,
+  "hidden_size": 2048,
+  "expert_hidden_size": 768,
+  "num_experts": 128,
+  "top_k": 8,
+  "skew": 0.0,
+  "dtype": "bfloat16",
+  "layers_per_repeat": 8,
+  "warmup": 5,
+  "repeats": 20,
+  "statistic": "per-repeat max-rank mean ms/layer, median over repeats",
+  "routing": "synthetic softmax top-k",
+  "device": "NVIDIA H100 80GB HBM3",
+  "torch": "2.13.0+cu130",
+  "nccl": "2.29.7",
+  "results": [
+    {
+      "tokens_per_rank": 4,
+      "ms_per_layer_median": 1.2289040088653564,
+      "ms_per_layer_min": 1.1304800510406494,
+      "ms_per_layer_max": 2.486020088195801,
+      "host_ms_per_layer_rank0": 1.2194577720947564,
+      "send_rows": 8,
+      "recv_rows": 8,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 32,
+      "ms_per_layer_median": 1.2711960077285767,
+      "ms_per_layer_min": 1.1433919668197632,
+      "ms_per_layer_max": 1.841204047203064,
+      "host_ms_per_layer_rank0": 1.2685824767686427,
+      "send_rows": 64,
+      "recv_rows": 64,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 256,
+      "ms_per_layer_median": 1.1928679943084717,
+      "ms_per_layer_min": 1.1352399587631226,
+      "ms_per_layer_max": 1.849176049232483,
+      "host_ms_per_layer_rank0": 1.1951011256314814,
+      "send_rows": 511,
+      "recv_rows": 511,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 2048,
+      "ms_per_layer_median": 1.765116035938263,
+      "ms_per_layer_min": 1.7253400087356567,
+      "ms_per_layer_max": 2.149807929992676,
+      "host_ms_per_layer_rank0": 1.7674615373834968,
+      "send_rows": 4085,
+      "recv_rows": 4092,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 8192,
+      "ms_per_layer_median": 3.982775926589966,
+      "ms_per_layer_min": 3.937999963760376,
+      "ms_per_layer_max": 4.223728179931641,
+      "host_ms_per_layer_rank0": 3.9830036112107337,
+      "send_rows": 16328,
+      "recv_rows": 16330,
+      "received_branches": null
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "lesson": 7,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/07_ep_scaling.py",
+      "original_sha256": "3798d97465827f92861e83eea609f176dc401787244d41cdbda5975ca9b63677",
+      "sha256": "3798d97465827f92861e83eea609f176dc401787244d41cdbda5975ca9b63677",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "95a501f84d782007bff6a901a53f1b1a4b204a9336b1bccc3fc80f43e324d90d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_ep.py": {
+      "source": "benchmarks/benchmark_ep.py",
+      "original_sha256": "2c9a49aaa4a9bf37d2d10534969f39677a106a4f7be6742a90f0f328c8e1238e",
+      "sha256": "564dd63def0483165be14a82e4e0122c9fd9a7f802f6352d29e9d0cd8eeedb8c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Added routing fingerprints, stage samples and the Dispatch-breakdown benchmark hook."
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "326bedf1c12b9ab3e342dc2c3a7288c6477326f3f1acd1b2d248b3a92120cd73",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Added nested Dispatch scopes and receive-layout hooks for lesson 7 profiling."
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "nccl_distributed": [
+        "mini_ep.distributed.groups",
+        "nccl_distributed"
+      ],
+      "DispatchOutput": [
+        "mini_ep.distributed.dispatch",
+        "DispatchOutput"
+      ],
+      "dispatch_reference": [
+        "mini_ep.distributed.dispatch",
+        "dispatch_reference"
+      ],
+      "pack_by_destination_rank": [
+        "mini_ep.distributed.dispatch",
+        "pack_by_destination_rank"
+      ],
+      "all_gather_expert_counts": [
+        "mini_ep.distributed.all_to_all",
+        "all_gather_expert_counts"
+      ],
+      "build_receive_layout": [
+        "mini_ep.distributed.topology",
+        "build_receive_layout"
+      ],
+      "variable_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "variable_split_all_to_all"
+      ],
+      "combine_reference": [
+        "mini_ep.distributed.dispatch",
+        "combine_reference"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+  "local_additions": {
+    "benchmarks/run_scaling_experiment.py": {
+      "sha256": "bf38c98b030c36a11120f02c174c9d45079ec7e18fc4837c7b7c6cc8e351c9a6",
+      "purpose": "Run repeated fixed-global-load EP experiments and validate rank reports"
+    },
+    "benchmarks/plot_scaling_experiment.py": {
+      "sha256": "dc272266879b0216fd72de0ba10a6defdfd95175dc84edd06929548925acfa19",
+      "purpose": "Generate latency, speedup and stage PNG/SVG charts from JSON"
+    },
+    "checks/test_scaling_experiment.py": {
+      "sha256": "2ba2ca608f7cf7518f165d73895168f3b00a47924f4d36b1cf97734939142050",
+      "purpose": "CPU tests for experiment summary invariants"
+    },
+    "requirements-plot.txt": {
+      "sha256": "b1357ae6a5a36c25ee9068241225869c736cf9b0720622a0212918a681034be6",
+      "purpose": "Optional plotting dependencies"
+    },
+    "benchmarks/dispatch_breakdown.py": {
+      "sha256": "3587118d45d7d639decdea2cc4aa71372450b6573736768300113e7d0db1724b",
+      "purpose": "Dispatch timings, CPU-metadata control, and scalar-read profile"
+    },
+    "benchmarks/analyze_dispatch.py": {
+      "sha256": "586d2ee3ea89c36d518309fc8f70842db105facceddb095d3762327d126f8e37",
+      "purpose": "Same-Rank same-repetition attribution"
+    },
+    "benchmarks/plot_dispatch.py": {
+      "sha256": "e714c4857e2f16e582efeeb3fad19457c91f824364628a4eeb6938d811af57df",
+      "purpose": "Measured sub-stage and control plots"
+    },
+    "checks/test_dispatch_breakdown.py": {
+      "sha256": "3e957e6cd5417763e7f4c88fe1c27fd6d52f24f9553d579c7a745d52bc1eb212",
+      "purpose": "Layout and paired-attribution regression tests"
+    },
+    "test/demo_scaling_layout.py": {
+      "sha256": "90c1ac4218f9092440040fc6fa722b5291cecc1952dd6cf911f301b76e1c9188",
+      "purpose": "CPU data counterparts for placement, route, strong/weak, payload and timing figures"
+    },
+    "checks/test_scaling_layout_demo.py": {
+      "sha256": "9a9ebd3412e9c9a3d9368c96bb738d8fdf06ce593751c2d75364c1e49ee624c6",
+      "purpose": "Checks illustrative counts, routes, Top-1/Top-2 and weak-scaling batches"
+    }
+  }
+}

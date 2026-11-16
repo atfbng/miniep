@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "requests": [
+    {
+      "stream": false,
+      "text": " Paris.\nThe capital of France is"
+    },
+    {
+      "stream": true,
+      "text": " Paris.\nThe capital of France is"
+    },
+    {
+      "chat": true,
+      "text": "A mixture of experts is a machine learning architecture that combines multiple specialized sub-models"
+    },
+    {
+      "stream": false,
+      "text": " Paris.\nThe capital of France is"
+    },
+    {
+      "stream": false,
+      "text": " Paris.\nThe capital of France is"
+    },
+    {
+      "stream": false,
+      "text": " Paris.\nThe capital of France is"
+    },
+    {
+      "stream": false,
+      "text": " Paris.\nThe capital of France is"
+    }
+  ]
+}

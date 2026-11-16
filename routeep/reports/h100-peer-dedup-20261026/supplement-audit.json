@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 0,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 0,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 0,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 0,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 1,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 1,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 1,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 1,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 2,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 2,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 2,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "model": "Qwen3.5-35B-A3B",
+      "trial": 2,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 0,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 0,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 0,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 0,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 1,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 1,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 1,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 1,
+      "rank": 3,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 2,
+      "rank": 0,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 2,
+      "rank": 1,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 2,
+      "rank": 2,
+      "passed": true
+    },
+    {
+      "model": "Qwen3-30B-A3B",
+      "trial": 2,
+      "rank": 3,
+      "passed": true
+    }
+  ],
+  "unique_dp_generated_positions": 170820
+}

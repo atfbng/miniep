@@ -1,0 +1,582 @@
+{
+ "Qwen3-30B-A3B": {
+  "decode_b1": {
+   "llg64": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 31.008744949665594
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 31.007551360787367
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 31.03955870303582
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 30.607985581938674
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 30.718938528200773
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 30.877488144622074
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 30.88599857030891
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 30.9903478235241
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 30.86227307638784
+    }
+   ],
+   "ncclg": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 10.499479249119759
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 10.363910332556785
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 10.499328037533234
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 10.353253157002719
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 10.353779728253057
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 10.357842333321496
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 9.814740605945662
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 9.795862726691201
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 9.786201083636659
+    }
+   ]
+  },
+  "decode_b4": {
+   "llg64": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 30.799704640517085
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 30.84849545688141
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 30.710870224073176
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 30.890222624178946
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 30.81909536318047
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 30.92814618208277
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 31.07927515222801
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 31.006966915538932
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 30.942335006172264
+    }
+   ],
+   "ncclg": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 10.653270511176643
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 10.588599530261332
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 10.647344248970663
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 10.50126850311681
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 10.492285405556986
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 10.495071717369274
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 9.878586728389807
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 9.872763835656361
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 10.258847715582435
+    }
+   ]
+  },
+  "decode_b32": {
+   "llg64": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 37.937296921108654
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 37.8120402387512
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 37.85832871602276
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 37.79890291451469
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 37.760581747870745
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 37.92343370792434
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 37.88073536917919
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 38.10608303394374
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 38.29718096636412
+    }
+   ],
+   "ncclg": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 15.526178490927839
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 15.532400371052148
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 15.52783903174513
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 15.16838959880232
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 15.24616757363785
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 15.203456519039596
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 15.233857278514096
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 15.269406961174461
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 15.274095239015075
+    }
+   ]
+  }
+ },
+ "Qwen3.5-35B-A3B": {
+  "decode_b1": {
+   "llg64": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 26.698265708689615
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 26.778905835794653
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 26.897848048430728
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 26.617315898495395
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 26.68634403174318
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 26.68622900240534
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 26.810324758173913
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 26.701860760492604
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 26.813090800887018
+    }
+   ],
+   "ncclg": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 12.284810383488812
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 12.41648192774123
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 12.300072311181722
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 12.336863087504868
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 12.383028263534149
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 12.399485173422521
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 12.402494621323788
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 12.400130763297945
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 12.194380384143882
+    }
+   ]
+  },
+  "decode_b4": {
+   "llg64": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 27.058450607802925
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 26.94684443042034
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 26.998123946035
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 27.001975206878242
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 26.979815713533267
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 27.06888452993603
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 27.052521984290888
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 27.032777065719205
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 26.98843308731796
+    }
+   ],
+   "ncclg": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 12.413452064075807
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 12.459246177724966
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 13.74940558036012
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 13.303571124011137
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 13.418743357531667
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 13.412266764349825
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 13.505942782196472
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 13.401244231683062
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 13.47845122511462
+    }
+   ]
+  },
+  "decode_b32": {
+   "llg64": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 35.064513655746076
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 34.97757199477023
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 34.77565425000792
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 34.75586082932987
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 34.743500594783015
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 34.58124425584876
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 34.7597859213202
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 35.12811949696597
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 34.62284633259135
+    }
+   ],
+   "ncclg": [
+    {
+     "trial": "trial0",
+     "rep": 0,
+     "value": 19.8133084629699
+    },
+    {
+     "trial": "trial0",
+     "rep": 1,
+     "value": 19.986143511698003
+    },
+    {
+     "trial": "trial0",
+     "rep": 2,
+     "value": 19.72307085873574
+    },
+    {
+     "trial": "trial1",
+     "rep": 0,
+     "value": 19.69224746947683
+    },
+    {
+     "trial": "trial1",
+     "rep": 1,
+     "value": 19.641754620774524
+    },
+    {
+     "trial": "trial1",
+     "rep": 2,
+     "value": 20.09761173600756
+    },
+    {
+     "trial": "trial2",
+     "rep": 0,
+     "value": 19.37453057176954
+    },
+    {
+     "trial": "trial2",
+     "rep": 1,
+     "value": 19.405831106183097
+    },
+    {
+     "trial": "trial2",
+     "rep": 2,
+     "value": 19.45019261104854
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,261 @@
+{
+  "passed": true,
+  "errors": [],
+  "timing_jobs": [
+    {
+      "name": "bench-0-before",
+      "passed": true,
+      "errors": [],
+      "backend": "miniep",
+      "profile": "off",
+      "cases": 3,
+      "repetitions": 5,
+      "ranks": 4
+    },
+    {
+      "name": "bench-0-after",
+      "passed": true,
+      "errors": [],
+      "backend": "miniep",
+      "profile": "off",
+      "cases": 3,
+      "repetitions": 5,
+      "ranks": 4
+    },
+    {
+      "name": "bench-1-before",
+      "passed": true,
+      "errors": [],
+      "backend": "miniep",
+      "profile": "off",
+      "cases": 3,
+      "repetitions": 5,
+      "ranks": 4
+    },
+    {
+      "name": "bench-1-after",
+      "passed": true,
+      "errors": [],
+      "backend": "miniep",
+      "profile": "off",
+      "cases": 3,
+      "repetitions": 5,
+      "ranks": 4
+    }
+  ],
+  "cases": {
+    "decode_b1": {
+      "e2e_ms": {
+        "before": {
+          "median": 11236.174871213734,
+          "minimum": 10972.245126962662,
+          "maximum": 11935.983704403043,
+          "p10": 10973.434991762042,
+          "p90": 11614.648964069784,
+          "samples": 10
+        },
+        "after": {
+          "median": 11146.18656784296,
+          "minimum": 10889.26581479609,
+          "maximum": 12312.11599893868,
+          "p10": 10900.343048013747,
+          "p90": 11405.86928166449,
+          "samples": 10
+        },
+        "median_change_percent": -0.8008802319490194,
+        "p10_p90_overlap": true
+      },
+      "prefill_ms": {
+        "before": {
+          "median": 104.09688763320446,
+          "minimum": 101.00296884775162,
+          "maximum": 159.05811451375484,
+          "p10": 101.79820358753204,
+          "p90": 135.52414942532778,
+          "samples": 10
+        },
+        "after": {
+          "median": 103.77614293247461,
+          "minimum": 100.05930624902248,
+          "maximum": 156.1074424535036,
+          "p10": 102.29100473225117,
+          "p90": 154.6732435002923,
+          "samples": 10
+        },
+        "median_change_percent": -0.30812131661420716,
+        "p10_p90_overlap": true
+      },
+      "decode_step_ms": {
+        "before": {
+          "median": 87.63827797846767,
+          "minimum": 85.57951575013126,
+          "maximum": 92.70008018342998,
+          "p10": 85.59554209419356,
+          "p90": 90.36852257018249,
+          "samples": 10
+        },
+        "after": {
+          "median": 86.84146562664529,
+          "minimum": 84.91997504386846,
+          "maximum": 95.69299045040852,
+          "p10": 84.99962037619878,
+          "p90": 88.7433927403543,
+          "samples": 10
+        },
+        "median_change_percent": -0.9092058518289869,
+        "p10_p90_overlap": true
+      }
+    },
+    "decode_b32": {
+      "e2e_ms": {
+        "before": {
+          "median": 13308.344664052129,
+          "minimum": 13041.67185537517,
+          "maximum": 13676.837842911482,
+          "p10": 13095.727853663266,
+          "p90": 13516.646163351834,
+          "samples": 10
+        },
+        "after": {
+          "median": 13226.793952286243,
+          "minimum": 13149.227816611528,
+          "maximum": 13930.256858468056,
+          "p10": 13170.873206481338,
+          "p90": 13759.16596557945,
+          "samples": 10
+        },
+        "median_change_percent": -0.6127787777105431,
+        "p10_p90_overlap": true
+      },
+      "prefill_ms": {
+        "before": {
+          "median": 127.57176905870438,
+          "minimum": 123.69569204747677,
+          "maximum": 149.74690414965153,
+          "p10": 125.53275879472494,
+          "p90": 130.4796228185296,
+          "samples": 10
+        },
+        "after": {
+          "median": 127.34119221568108,
+          "minimum": 125.56191720068455,
+          "maximum": 131.49084523320198,
+          "p10": 126.59799586981535,
+          "p90": 130.21365609019995,
+          "samples": 10
+        },
+        "median_change_percent": -0.1807428435966818,
+        "p10_p90_overlap": true
+      },
+      "decode_step_ms": {
+        "before": {
+          "median": 103.72178210312222,
+          "minimum": 101.64892034033151,
+          "maximum": 106.64368910700317,
+          "p10": 102.06275194091354,
+          "p90": 105.36625106767642,
+          "samples": 10
+        },
+        "after": {
+          "median": 103.09573028999284,
+          "minimum": 102.49209999451487,
+          "maximum": 108.61665267115973,
+          "p10": 102.64605026486821,
+          "p90": 107.28889773709803,
+          "samples": 10
+        },
+        "median_change_percent": -0.6035875979328531,
+        "p10_p90_overlap": true
+      }
+    },
+    "prefill_b4_long": {
+      "e2e_ms": {
+        "before": {
+          "median": 226.05207469314337,
+          "minimum": 224.88335892558098,
+          "maximum": 230.10952584445477,
+          "p10": 225.23251716047525,
+          "p90": 229.1794380173087,
+          "samples": 10
+        },
+        "after": {
+          "median": 225.65594129264355,
+          "minimum": 222.77884744107723,
+          "maximum": 229.14381325244904,
+          "p10": 224.19339753687382,
+          "p90": 227.68964357674122,
+          "samples": 10
+        },
+        "median_change_percent": -0.17523988710900218,
+        "p10_p90_overlap": true
+      },
+      "prefill_ms": {
+        "before": {
+          "median": 221.45476192235947,
+          "minimum": 219.80504877865314,
+          "maximum": 223.59680943191051,
+          "p10": 220.7998063415289,
+          "p90": 223.0183307081461,
+          "samples": 10
+        },
+        "after": {
+          "median": 221.19663283228874,
+          "minimum": 218.834076076746,
+          "maximum": 223.96686859428883,
+          "p10": 220.12069150805473,
+          "p90": 222.71763812750578,
+          "samples": 10
+        },
+        "median_change_percent": -0.11656064102212316,
+        "p10_p90_overlap": true
+      },
+      "decode_step_ms": null
+    }
+  },
+  "accuracy": {
+    "passed": true,
+    "errors": [],
+    "request_sequences": 128,
+    "generation_positions": 8192,
+    "ranks": {
+      "0": {
+        "passed": true,
+        "rank": 0,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      },
+      "1": {
+        "passed": true,
+        "rank": 1,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      },
+      "2": {
+        "passed": true,
+        "rank": 2,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      },
+      "3": {
+        "passed": true,
+        "rank": 3,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      }
+    }
+  },
+  "statistic": "2 independent engines/version; AB then BA; 3 warmups plus 5 repeats/case/engine, 10 samples/version/case; maximum rank per repetition; median/p10/p90. Profiling/shadow disabled.",
+  "scope": "Incremental dead-code cleanup; not a fresh nine-configuration accuracy matrix or a new native DeepEP performance sweep."
+}

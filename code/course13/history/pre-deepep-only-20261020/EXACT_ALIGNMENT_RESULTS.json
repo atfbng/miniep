@@ -1,0 +1,51 @@
+{
+  "status": "running",
+  "model": "real Qwen3-30B-A3B BF16",
+  "vllm": "0.29.0",
+  "acceptance": "exact finite elementwise; no tolerance",
+  "performance": "not measured",
+  "historical_data_preserved": true,
+  "local_unit_tests": {
+    "total": 38,
+    "passed": 30,
+    "skipped_gpu": 8
+  },
+  "h100_unit_tests": {
+    "total": 38,
+    "passed": 38
+  },
+  "core_nccl": {
+    "ep1": "passed",
+    "ep2": "passed",
+    "ep4": "passed",
+    "transport_cases_per_rank": 720,
+    "default_dtype_checks_per_rank": 24,
+    "owner_partial_exact_checks_per_rank": 24
+  },
+  "runs": {
+    "agr2": "/experiment/default-exact-v4/agr2-full",
+    "deepep4": "/experiment/default-exact-v4/deep4-full",
+    "agr4": "/workspace/default-exact-v4-results/agr4-full"
+  },
+  "h100_exact_collective": {
+    "world_size": 4,
+    "cases_per_rank": 16,
+    "passed_ranks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "injections": [
+      "one-rank ULP",
+      "NaN",
+      "identical Inf",
+      "slot order",
+      "shape",
+      "dtype"
+    ]
+  },
+  "checkpoint_manifest_digest": "9b4fcbad645e5df727e2ace994e87e458adee69d0740d443f3810e0377ed803e",
+  "observer_update": "v4 preserves core sources; GPU exact flags and pinned native-output copies; reuses compatible completed independent native runs",
+  "smoke_deepep4": "passed; not full acceptance"
+}

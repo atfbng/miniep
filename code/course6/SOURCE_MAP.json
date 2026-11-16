@@ -1,0 +1,127 @@
+{
+  "lesson": 6,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/06_mini_ep_v1.py",
+      "original_sha256": "8b483c5662512f5abd31d7fd7b9f33f66e3d0506f12cc2d01ef2e5d33b91b82b",
+      "sha256": "81d2403eb78b3f07d544c0f4c9431aa948fff8a4a9496148d292b2e57f4e1fa1",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_mini_ep_v1.py": {
+      "source": "tests/test_mini_ep_v1.py",
+      "original_sha256": "533bd16fe1c71c89b5bac9abc15839426967469050ccb3649457cea25714e446",
+      "sha256": "e025e17d53e4e7285c6436281eefeb58cad43a46e27a085d4d4f150d3fd913cd",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Migrated test updated for renamed receive-layout metadata fields."
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "0e34805a4b7273b7a6355be517dbc4a7732dc5595a41a13838e447a5867ad7a7",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Receive-layout fields renamed to local_counts and rows_by_expert for the standalone course."
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "e006961176edc51bf267e1d56760d4f6ef7d5776ffd82dadeb9d9f375fc4cd0f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Local Expert loop adapted to the renamed receive-layout fields."
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "DistributedContext": [
+        "mini_ep.distributed.groups",
+        "DistributedContext"
+      ],
+      "ExpertParallelTopology": [
+        "mini_ep.distributed.topology",
+        "ExpertParallelTopology"
+      ],
+      "all_gather_expert_counts": [
+        "mini_ep.distributed.all_to_all",
+        "all_gather_expert_counts"
+      ],
+      "build_receive_layout": [
+        "mini_ep.distributed.topology",
+        "build_receive_layout"
+      ],
+      "combine_reference": [
+        "mini_ep.distributed.dispatch",
+        "combine_reference"
+      ],
+      "compute_send_splits": [
+        "mini_ep.distributed.topology",
+        "compute_send_splits"
+      ],
+      "dispatch_reference": [
+        "mini_ep.distributed.dispatch",
+        "dispatch_reference"
+      ],
+      "pack_by_destination_rank": [
+        "mini_ep.distributed.dispatch",
+        "pack_by_destination_rank"
+      ],
+      "variable_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "variable_split_all_to_all"
+      ],
+      "nccl_distributed": [
+        "mini_ep.distributed.groups",
+        "nccl_distributed"
+      ]
+    },
+    "mini_ep.model": {
+      "SingleGPUMoE": [
+        "mini_ep.model.moe",
+        "SingleGPUMoE"
+      ],
+      "distribute_single_gpu_moe": [
+        "mini_ep.model.moe",
+        "distribute_single_gpu_moe"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

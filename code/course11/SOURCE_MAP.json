@@ -1,0 +1,163 @@
+{
+  "lesson": 11,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/11_grouped_gemm.py",
+      "original_sha256": "2caa716b66e244e15f6393fe2d7236557646f56c82608749159d71a97b04f317",
+      "sha256": "2caa716b66e244e15f6393fe2d7236557646f56c82608749159d71a97b04f317",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "test/grouped_ep.py": {
+      "source": "examples/11_grouped_ep.py",
+      "original_sha256": "05c1b15dc46e81c1d4b93b6df3ab96776f525b337cf1bdf3b6e4ae59871ba4c7",
+      "sha256": "05c1b15dc46e81c1d4b93b6df3ab96776f525b337cf1bdf3b6e4ae59871ba4c7",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "a178d4028c6a04f4e63145161d7227dad7f6a134462ca4e12e86d277977ff853",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/histogram_triton.py": {
+      "source": "mini_ep/kernels/histogram_triton.py",
+      "original_sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/reference.py": {
+      "source": "mini_ep/kernels/grouped_gemm/reference.py",
+      "original_sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "source": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "original_sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "source": "mini_ep/kernels/dispatch_triton.py",
+      "original_sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "source": "mini_ep/kernels/combine_triton.py",
+      "original_sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_kernels.py": {
+      "source": "benchmarks/benchmark_kernels.py",
+      "original_sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "nccl_distributed": [
+        "mini_ep.distributed.groups",
+        "nccl_distributed"
+      ],
+      "DispatchOutput": [
+        "mini_ep.distributed.dispatch",
+        "DispatchOutput"
+      ],
+      "dispatch_reference": [
+        "mini_ep.distributed.dispatch",
+        "dispatch_reference"
+      ],
+      "pack_by_destination_rank": [
+        "mini_ep.distributed.dispatch",
+        "pack_by_destination_rank"
+      ],
+      "all_gather_expert_counts": [
+        "mini_ep.distributed.all_to_all",
+        "all_gather_expert_counts"
+      ],
+      "build_receive_layout": [
+        "mini_ep.distributed.topology",
+        "build_receive_layout"
+      ],
+      "variable_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "variable_split_all_to_all"
+      ],
+      "combine_reference": [
+        "mini_ep.distributed.dispatch",
+        "combine_reference"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

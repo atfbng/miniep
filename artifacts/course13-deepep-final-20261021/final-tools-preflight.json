@@ -1,0 +1,32 @@
+{
+  "validation_mode_environments": [
+    {
+      "mode": "deepep_native",
+      "same_effective_environment": true,
+      "fields": [
+        "MINIEP_BACKEND",
+        "MINIEP_REPORT_DIR",
+        "MINIEP_VALIDATION_MODE",
+        "VLLM_MOE_SKIP_PADDING",
+        "VLLM_PLUGINS",
+        "VLLM_WORKER_MULTIPROC_METHOD"
+      ]
+    },
+    {
+      "mode": "deepep_exact",
+      "same_effective_environment": true,
+      "fields": [
+        "MINIEP_BACKEND",
+        "MINIEP_REPORT_DIR",
+        "MINIEP_VALIDATION_MODE",
+        "VLLM_MOE_SKIP_PADDING",
+        "VLLM_PLUGINS",
+        "VLLM_WORKER_MULTIPROC_METHOD"
+      ]
+    }
+  ],
+  "native_dp1_server_guard": {
+    "exit_code": 2,
+    "stderr": "usage: serve.py [-h] --model MODEL [--backend {native,miniep}]\n                [--dp-size {1,2}]\n                [--gpu-memory-utilization GPU_MEMORY_UTILIZATION]\n                [--kv-cache-mib KV_CACHE_MIB] [--max-model-len MAX_MODEL_LEN]\n                [--max-batched-tokens MAX_BATCHED_TOKENS] [--host HOST]\n                [--port PORT]\nserve.py: error: native DeepEP requires TP=2/DP=2/EP=4; DP=1 NoDPEP is not a DeepEP control\n"
+  }
+}

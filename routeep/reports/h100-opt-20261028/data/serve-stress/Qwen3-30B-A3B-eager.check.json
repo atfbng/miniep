@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "requests": [
+    {
+      "stream": false,
+      "text": " Paris. The capital of the United Kingdom"
+    },
+    {
+      "stream": true,
+      "text": " Paris. The capital of the United Kingdom"
+    },
+    {
+      "chat": true,
+      "text": "A mixture of experts is a machine learning technique where multiple specialized models, or \""
+    },
+    {
+      "stream": false,
+      "text": " Paris. The capital of the United Kingdom"
+    },
+    {
+      "stream": false,
+      "text": " Paris. The capital of the United Kingdom"
+    },
+    {
+      "stream": false,
+      "text": " Paris. The capital of the United Kingdom"
+    },
+    {
+      "stream": false,
+      "text": " Paris. The capital of the United Kingdom"
+    }
+  ]
+}

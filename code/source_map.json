@@ -1,0 +1,1607 @@
+{
+  "1": {
+    "test/demo.py": {
+      "source": "examples/01_single_gpu_moe.py",
+      "original_sha256": "8965d954f160652015f288eec08537d3b9757a313d81e0c3fc881a4b50818d88",
+      "sha256": "8965d954f160652015f288eec08537d3b9757a313d81e0c3fc881a4b50818d88",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_single_gpu_moe.py": {
+      "source": "tests/test_single_gpu_moe.py",
+      "original_sha256": "3f2fb474807d95979895bbc03e7f7f1cf3d4d993a828a16e8a1941d88d1b7e4b",
+      "sha256": "3f2fb474807d95979895bbc03e7f7f1cf3d4d993a828a16e8a1941d88d1b7e4b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "2": {
+    "test/demo.py": {
+      "source": "examples/02_router_dispatch.py",
+      "original_sha256": "0ad14f4a40eaed293db51ec6d99400224b1ca847d3227f1d965758de12556a39",
+      "sha256": "0ad14f4a40eaed293db51ec6d99400224b1ca847d3227f1d965758de12556a39",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_router_dispatch.py": {
+      "source": "tests/test_router_dispatch.py",
+      "original_sha256": "96a8aa4153c8bf50eefc437aa7ff5c50717ea21c8884c0d24a7be0602f0fb7bf",
+      "sha256": "96a8aa4153c8bf50eefc437aa7ff5c50717ea21c8884c0d24a7be0602f0fb7bf",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "3": {
+    "test/demo.py": {
+      "source": "examples/03_gpu_execution.py",
+      "original_sha256": "0aa4ff0590bb01337d94d63394f7b4f03b6d339fe32d2f1b0ce6cb8a949bbec5",
+      "sha256": "0aa4ff0590bb01337d94d63394f7b4f03b6d339fe32d2f1b0ce6cb8a949bbec5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_gpu_execution.py": {
+      "source": "tests/test_gpu_execution.py",
+      "original_sha256": "0f71862d78a33a5adbd2b3b58dcd48410d490cccc9bca003b18b2d7231b5eb45",
+      "sha256": "0f71862d78a33a5adbd2b3b58dcd48410d490cccc9bca003b18b2d7231b5eb45",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_gemm.py": {
+      "source": "benchmarks/benchmark_gemm.py",
+      "original_sha256": "a2605e82bfa8abd4b3ba34eea0edf73b63dd8bce1c7e89fe6ccd01951daf00b1",
+      "sha256": "a2605e82bfa8abd4b3ba34eea0edf73b63dd8bce1c7e89fe6ccd01951daf00b1",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/__init__.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "727a5671b978d6770700c4b3a9efa1bb0736dde413cfc4dde52fb99a08f2e8fa"
+    },
+    "mini_ep/model/expert.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "52f76fd410328a7b5e0c0c694c4244d8fd2660c18f7aee5a50b85b76cbe654f3"
+    },
+    "mini_ep/kernels/__init__.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "a18d4ce81b71007feea26b823953177d45322402081e258ed427b758b46596e9"
+    },
+    "mini_ep/kernels/gemm_triton.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "757e71e05500f50a94fd581893bfe4d844dce4b7a024291d7ac9da16e2f22ddb"
+    },
+    "test/demo_triton_gemm.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "8f0f5c31414de06525777ff14c9a7acc658213f16f89246b27c205c16b82972f"
+    },
+    "benchmarks/benchmark_triton_gemm.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "4d8f859ba992007e8612d4f014b04003a665d518841c4b529af75ecfe63f382a"
+    },
+    "checks/test_triton_gemm.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "6c9327f0b89431dbd72804d7a5eceb5e75c3cdcf3bbbd255c83c641a7817cd4d"
+    },
+    "mini_ep/kernels/down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "562d1c009f3e4aa3c66fa6cc977d3d6c24a519e55a0abd8e9184695953258e27"
+    },
+    "checks/test_down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "dc712a766c809855fb9b119c58dcdb6ce7d24147a12b0d3dc2240538983a0f2f"
+    },
+    "benchmarks/benchmark_down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "13a3802057a128b20d094d1eed761240d66a12229118704f988a05f4d616d02b"
+    },
+    "test/demo_down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "ff0d5a555eea85b5446a549ee037a7649088b49cdd1c3733c016747bd2824721"
+    },
+    "benchmarks/profile_mlp.py": {
+      "origin": "new",
+      "description": "新增：预热后启动 Proton，分阶段比较 PyTorch 与 Triton Expert MLP",
+      "sha256": "2e6eb77a18f443d33d7c8fe9568fbb29d0260031a0e7a898c7ae0ff61599a848"
+    },
+    "requirements-profile.txt": {
+      "origin": "new",
+      "description": "新增：Proton Viewer 可选依赖",
+      "sha256": "d46a2054f9e4c79f7b8252e7dc128069a3066cfb0ef5b28f8ee9b0c316c12464"
+    },
+    "benchmarks/benchmark_down_search.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "821e284c1f7f66829a2045e27da65fd86f930e00411d8241ad0e48c1ffb16310"
+    },
+    "README_down_projection.md": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "082419ce9cc64a4a5dc1c46221be95486b74b67302537b6753f50373803030e6"
+    }
+  },
+  "4": {
+    "test/demo.py": {
+      "source": "examples/04_distributed_nccl.py",
+      "original_sha256": "ed9a3f3527c1a995267f4e448e0a4f43f80df5594d37470b1b72a689074980d9",
+      "sha256": "da736659898ccaea9c2aef91753f1fd566e7c7ba5008254dba26eb43f03bd349",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_distributed_nccl.py": {
+      "source": "tests/test_distributed_nccl.py",
+      "original_sha256": "d09a4e634ecf3b28ce45681189162f3399eb70973868c85698600cc463ad42db",
+      "sha256": "faca7cf03261c3dd2db8017d7ffd8525df9086f825594521a38fa97dcce26084",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "5": {
+    "test/demo.py": {
+      "source": "examples/05_all_to_all_ep.py",
+      "original_sha256": "205a7f58563fba21f8d7f6dcaa25f6091fb6068d4da2b3b257ee82623b3fed47",
+      "sha256": "205a7f58563fba21f8d7f6dcaa25f6091fb6068d4da2b3b257ee82623b3fed47",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_all_to_all_ep.py": {
+      "source": "tests/test_all_to_all_ep.py",
+      "original_sha256": "8663a9a4c7f59122fe7e34f7c6c784ec1623096ea055dabfe27d7d9c95045d68",
+      "sha256": "8663a9a4c7f59122fe7e34f7c6c784ec1623096ea055dabfe27d7d9c95045d68",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_all_to_all.py": {
+      "source": "benchmarks/benchmark_all_to_all.py",
+      "original_sha256": "40263df1735ce672be19c1d56e09e2784a3954ae304172dc98a5b5b061453ae2",
+      "sha256": "40263df1735ce672be19c1d56e09e2784a3954ae304172dc98a5b5b061453ae2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "6": {
+    "test/demo.py": {
+      "source": "examples/06_mini_ep_v1.py",
+      "original_sha256": "8b483c5662512f5abd31d7fd7b9f33f66e3d0506f12cc2d01ef2e5d33b91b82b",
+      "sha256": "81d2403eb78b3f07d544c0f4c9431aa948fff8a4a9496148d292b2e57f4e1fa1",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_mini_ep_v1.py": {
+      "source": "tests/test_mini_ep_v1.py",
+      "original_sha256": "533bd16fe1c71c89b5bac9abc15839426967469050ccb3649457cea25714e446",
+      "sha256": "e025e17d53e4e7285c6436281eefeb58cad43a46e27a085d4d4f150d3fd913cd",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Migrated test updated for renamed receive-layout metadata fields."
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "0e34805a4b7273b7a6355be517dbc4a7732dc5595a41a13838e447a5867ad7a7",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Receive-layout fields renamed to local_counts and rows_by_expert for the standalone course."
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "e006961176edc51bf267e1d56760d4f6ef7d5776ffd82dadeb9d9f375fc4cd0f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Local Expert loop adapted to the renamed receive-layout fields."
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "7": {
+    "test/demo.py": {
+      "source": "examples/07_ep_scaling.py",
+      "original_sha256": "3798d97465827f92861e83eea609f176dc401787244d41cdbda5975ca9b63677",
+      "sha256": "3798d97465827f92861e83eea609f176dc401787244d41cdbda5975ca9b63677",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "95a501f84d782007bff6a901a53f1b1a4b204a9336b1bccc3fc80f43e324d90d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_ep.py": {
+      "source": "benchmarks/benchmark_ep.py",
+      "original_sha256": "2c9a49aaa4a9bf37d2d10534969f39677a106a4f7be6742a90f0f328c8e1238e",
+      "sha256": "564dd63def0483165be14a82e4e0122c9fd9a7f802f6352d29e9d0cd8eeedb8c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Added routing fingerprints, stage samples and the Dispatch-breakdown benchmark hook."
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "326bedf1c12b9ab3e342dc2c3a7288c6477326f3f1acd1b2d248b3a92120cd73",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "adapted",
+      "description": "Added nested Dispatch scopes and receive-layout hooks for lesson 7 profiling."
+    }
+  },
+  "8": {
+    "test/demo.py": {
+      "source": "examples/08_profile_ep.py",
+      "original_sha256": "be40fe5dee624cff00930c8a451e1e130babed564ad28627860a16af084621e9",
+      "sha256": "be40fe5dee624cff00930c8a451e1e130babed564ad28627860a16af084621e9",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_overlap_analysis.py": {
+      "source": "tests/test_overlap_analysis.py",
+      "original_sha256": "12aa4ff9180a26521f916426086a215456a93187d881fd90c4ed3dfb975f40cb",
+      "sha256": "12aa4ff9180a26521f916426086a215456a93187d881fd90c4ed3dfb975f40cb",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/analyze_overlap.py": {
+      "source": "benchmarks/analyze_overlap.py",
+      "original_sha256": "b14ba50c4f93a502f337e5576ab767d9add7d823b12d9d1daa07b8aa78b814ce",
+      "sha256": "b14ba50c4f93a502f337e5576ab767d9add7d823b12d9d1daa07b8aa78b814ce",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "95a501f84d782007bff6a901a53f1b1a4b204a9336b1bccc3fc80f43e324d90d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_ep.py": {
+      "source": "benchmarks/benchmark_ep.py",
+      "original_sha256": "2c9a49aaa4a9bf37d2d10534969f39677a106a4f7be6742a90f0f328c8e1238e",
+      "sha256": "27bb15d4c45819e5f0747a7d8a1c5ee04248549cf384b6d16d96e4f764c69d78",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+      "origin": "new",
+      "description": "Course 8 benchmark extended with clock warm-up, per-rank stage medians, and profiler key-average serialization."
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "9": {
+    "test/demo.py": {
+      "source": "examples/09_triton_dispatch.py",
+      "original_sha256": "b9b0aa88ed3335e52f47e60ff3747daabeaa4d03071f12e9db6ca62cc2e9fbcd",
+      "sha256": "b9b0aa88ed3335e52f47e60ff3747daabeaa4d03071f12e9db6ca62cc2e9fbcd",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "366013ec2277656364297aa96cf5ad3fda1ac953420976ad08fb664dc88fcc29",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "source": "mini_ep/kernels/dispatch_triton.py",
+      "original_sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/histogram_triton.py": {
+      "source": "mini_ep/kernels/histogram_triton.py",
+      "original_sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_kernels.py": {
+      "source": "benchmarks/benchmark_kernels.py",
+      "original_sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "source": "mini_ep/kernels/combine_triton.py",
+      "original_sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/reference.py": {
+      "source": "mini_ep/kernels/grouped_gemm/reference.py",
+      "original_sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "source": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "original_sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "10": {
+    "test/demo.py": {
+      "source": "examples/10_triton_combine.py",
+      "original_sha256": "fdd6836d2931c560d0247ebee2e4e94e46e229baff993337b687d5d9610514d3",
+      "sha256": "fdd6836d2931c560d0247ebee2e4e94e46e229baff993337b687d5d9610514d3",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "e992919a1ae3f5f5687438ecca66802ae41bbf05311f83d3346e6a0bd2aba788",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "source": "mini_ep/kernels/combine_triton.py",
+      "original_sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/histogram_triton.py": {
+      "source": "mini_ep/kernels/histogram_triton.py",
+      "original_sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_kernels.py": {
+      "source": "benchmarks/benchmark_kernels.py",
+      "original_sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "source": "mini_ep/kernels/dispatch_triton.py",
+      "original_sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/reference.py": {
+      "source": "mini_ep/kernels/grouped_gemm/reference.py",
+      "original_sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "source": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "original_sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "11": {
+    "test/demo.py": {
+      "source": "examples/11_grouped_gemm.py",
+      "original_sha256": "2caa716b66e244e15f6393fe2d7236557646f56c82608749159d71a97b04f317",
+      "sha256": "2caa716b66e244e15f6393fe2d7236557646f56c82608749159d71a97b04f317",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "test/grouped_ep.py": {
+      "source": "examples/11_grouped_ep.py",
+      "original_sha256": "05c1b15dc46e81c1d4b93b6df3ab96776f525b337cf1bdf3b6e4ae59871ba4c7",
+      "sha256": "05c1b15dc46e81c1d4b93b6df3ab96776f525b337cf1bdf3b6e4ae59871ba4c7",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_course.py": {
+      "source": "tests/test_advanced_lessons.py",
+      "original_sha256": "30480caf31a8df388b7d76521ad5b999e46605e16fb2f4e4590980ffcd8267c0",
+      "sha256": "a178d4028c6a04f4e63145161d7227dad7f6a134462ca4e12e86d277977ff853",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/histogram_triton.py": {
+      "source": "mini_ep/kernels/histogram_triton.py",
+      "original_sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/reference.py": {
+      "source": "mini_ep/kernels/grouped_gemm/reference.py",
+      "original_sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "source": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "original_sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "source": "mini_ep/kernels/dispatch_triton.py",
+      "original_sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "source": "mini_ep/kernels/combine_triton.py",
+      "original_sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_kernels.py": {
+      "source": "benchmarks/benchmark_kernels.py",
+      "original_sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "12": {
+    "test/stream_pipeline.py": {
+      "source": "examples/12_stream_pipeline.py",
+      "original_sha256": "1f45a4e979b69e85d926a49639a34735d531b5f4b89711385774af85201315ce",
+      "sha256": "1f45a4e979b69e85d926a49639a34735d531b5f4b89711385774af85201315ce",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "test/nvshmem_reference.py": {
+      "source": "examples/12_nvshmem_reference.py",
+      "original_sha256": "b411c9b27b0b47ab20a460aa1e7d20ed0662ca0af2cea6cce678c39c4121dce2",
+      "sha256": "b411c9b27b0b47ab20a460aa1e7d20ed0662ca0af2cea6cce678c39c4121dce2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "test/demo.py": {
+      "source": "benchmarks/benchmark_triton_peer.py",
+      "original_sha256": "2d51d0f9e9fb2dc97dcca59084b330bdb6407c1377bc7882a76d166e4090c885",
+      "sha256": "2d51d0f9e9fb2dc97dcca59084b330bdb6407c1377bc7882a76d166e4090c885",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_overlap_analysis.py": {
+      "source": "tests/test_overlap_analysis.py",
+      "original_sha256": "12aa4ff9180a26521f916426086a215456a93187d881fd90c4ed3dfb975f40cb",
+      "sha256": "12aa4ff9180a26521f916426086a215456a93187d881fd90c4ed3dfb975f40cb",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_triton_peer.py": {
+      "source": "benchmarks/benchmark_triton_peer.py",
+      "original_sha256": "2d51d0f9e9fb2dc97dcca59084b330bdb6407c1377bc7882a76d166e4090c885",
+      "sha256": "2d51d0f9e9fb2dc97dcca59084b330bdb6407c1377bc7882a76d166e4090c885",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_fusion.py": {
+      "source": "benchmarks/benchmark_fusion.py",
+      "original_sha256": "c5b759fdfed4768417b2c4249b6cc7d5c3f1b2513f7c99bda69fc9804a8a566e",
+      "sha256": "c5b759fdfed4768417b2c4249b6cc7d5c3f1b2513f7c99bda69fc9804a8a566e",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_large_fusion.py": {
+      "source": "benchmarks/benchmark_large_fusion.py",
+      "original_sha256": "866a022bd55948ab2333d3967013781e3b84242a5907d6a8006ef5f6cd4872c0",
+      "sha256": "866a022bd55948ab2333d3967013781e3b84242a5907d6a8006ef5f6cd4872c0",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/analyze_overlap.py": {
+      "source": "benchmarks/analyze_overlap.py",
+      "original_sha256": "b14ba50c4f93a502f337e5576ab767d9add7d823b12d9d1daa07b8aa78b814ce",
+      "sha256": "b14ba50c4f93a502f337e5576ab767d9add7d823b12d9d1daa07b8aa78b814ce",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/overlap.py": {
+      "source": "mini_ep/distributed/overlap.py",
+      "original_sha256": "ce5df7a2a6ba974b5392ac06099d2faecfbb550b39ffc81f81b12922861db1fd",
+      "sha256": "ce5df7a2a6ba974b5392ac06099d2faecfbb550b39ffc81f81b12922861db1fd",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_ep.py": {
+      "source": "benchmarks/benchmark_ep.py",
+      "original_sha256": "2c9a49aaa4a9bf37d2d10534969f39677a106a4f7be6742a90f0f328c8e1238e",
+      "sha256": "2c9a49aaa4a9bf37d2d10534969f39677a106a4f7be6742a90f0f328c8e1238e",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_kernels.py": {
+      "source": "benchmarks/benchmark_kernels.py",
+      "original_sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "sha256": "4bc5d270bdeae55539f67ba475f8fd37f7eead65476f1415280041f379a7934b",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "source": "mini_ep/kernels/dispatch_triton.py",
+      "original_sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "sha256": "db7c3bd27e8e92584a9ac7fb9d5422a452e5a32c760809633ff289418ba5cd64",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "source": "mini_ep/kernels/combine_triton.py",
+      "original_sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "sha256": "3e13ad31bcac9c04405a18b04a821b55b5db0f77e37c92549154241ebee6be33",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/reference.py": {
+      "source": "mini_ep/kernels/grouped_gemm/reference.py",
+      "original_sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "sha256": "33c0e77cdd55d7ddde960da1ad4e8077f08f3966b231bf509b1a837e51099c77",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "source": "mini_ep/kernels/grouped_gemm/triton_impl.py",
+      "original_sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "sha256": "048bbf2c613399525ac13544fd38b76497cb1ac7735bf2258637e4115659bcd2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/histogram_triton.py": {
+      "source": "mini_ep/kernels/histogram_triton.py",
+      "original_sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "sha256": "ee9e6419f334ce7b11e9ffd11a4bc935201b16fceaf8e69918592f3985732f4a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/moe.py": {
+      "source": "mini_ep/model/moe.py",
+      "original_sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "sha256": "8853f148082fb0e2a8e1cf758cb31afca212bde0ed2eb309e21d2a0eb4d83450",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/stages.py": {
+      "source": "mini_ep/profiler/stages.py",
+      "original_sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "sha256": "3f15c012b25edf12435c1aa67f8b11b390a2d32abc92692aceac9d0de0e0452f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/utils/course_workload.py": {
+      "source": "mini_ep/utils/course_workload.py",
+      "original_sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "sha256": "559346e28770d35c20a68ded9240521f40ccb09e093d66cbd8bb9ddeb83bb438",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/nvtx.py": {
+      "source": "mini_ep/profiler/nvtx.py",
+      "original_sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "sha256": "d467abb757855f977fb75f846dba684423839b0f6ee5001346c87d07f5c725c5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/router.py": {
+      "source": "mini_ep/model/router.py",
+      "original_sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "sha256": "ab550520e40dbeab362b2ce9adadcaa79fcba3509adb413cbe3e92f2d9225722",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "mini_ep/model/expert.py",
+      "original_sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "sha256": "1cdd79c6dda137b293dbebd0ed470606a82f81bd113cda06bbe59699d5eb3f6d",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_stream_fusion.py": {
+      "source": "benchmarks/benchmark_stream_fusion.py",
+      "original_sha256": "cc310a5cd3a0381de2be47f97f6a19d900e8363d934b08f9b47b5ab9a7b4d6ea",
+      "sha256": "cc310a5cd3a0381de2be47f97f6a19d900e8363d934b08f9b47b5ab9a7b4d6ea",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/kernels/comm_compute/triton_peer.py": {
+      "source": "mini_ep/kernels/comm_compute/triton_peer.py",
+      "original_sha256": "5fb4d18c3638673fd233be242821a0513ced5ac02058cb31f94b5d3e5bd2fb3a",
+      "sha256": "5fb4d18c3638673fd233be242821a0513ced5ac02058cb31f94b5d3e5bd2fb3a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "extensions/nvshmem/token_exchange.cu": {
+      "source": "mini_ep/kernels/nvshmem/token_exchange.cu",
+      "sha256": "34559a193deae0b1514823d80f080e969ea2d8681fa144e0b1c2800d77c9a313",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "extensions/nvshmem/large_expert.cu": {
+      "source": "mini_ep/kernels/nvshmem/large_expert.cu",
+      "sha256": "0bb0774f9073c37b6d9d4d190923c46bc253e24de401d4b25f8e94b6c087f387",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "13": {
+    ".gitignore": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "ae26323bd170ae441ca68d341e3900c2c9625fd00cd5c8feb869651fb9b592d7"
+    },
+    "README.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "237336e58657c16a024f87f524ce827ddc255617595bdf95b6ecbd2b686ba28e"
+    },
+    "VALIDATION.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "1690b7280ddc3607729d34ca9b83a1c122645b073acf8385a06e4629c0d37f24"
+    },
+    "VALIDATION_EP4.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "074dc0b3be3bd3c0bdaa0c13100391e3ce893e5c311b79a2be245f9e10f0ec1c"
+    },
+    "benchmarks/__init__.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "0d1e42f3d25f72c32fa7bbb5de81540526ce750ce9dd30fab7e473d1146e4b02"
+    },
+    "benchmarks/benchmark_ep.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "7a65de07dca2eeef8a3b17f74621f6724cbe9ec89ebbdfd83e670021ff198599"
+    },
+    "benchmarks/timing.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "136c08a3c3a72b677c9d6bf7baf9303a9bc8f15108d4678bac070af556bb1bec"
+    },
+    "checks/distributed.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "a2534a06e9d41a1f22636fbd418b49f27ba4d1071e9d52b150143e1c0f32ab27"
+    },
+    "checks/test_core_boundary.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "667de4385eb6144d89aa31ad016a89d24abfbe3022747a54ecdc53b47a93d99d"
+    },
+    "checks/test_kernels.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "795050c32578247f7e827b545dab904a2b05a316594ec11be9cf10b338935afd"
+    },
+    "checks/test_reference.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "02b2bc0075a99b1bd20d3c7200b6163a92ac52a259d0d3b237532af4e2575721"
+    },
+    "checks/tp_dp.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "702f989936a3afc5e8594544bfe34f420be8d47badbe2180109efd3939df4c73"
+    },
+    "mini_ep/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "72a1c823970b85bf8616486f9c4492bba46c3a671da922de9cc04f616c25075c"
+    },
+    "mini_ep/distributed/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "556381dda31f53ed404b4ece18d2704a9d6741cdfaae865f9faa0eaed8b6f8c7"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "f34a4636b7162c1bda33db1101c47bad2ec0829b6903400b0a02175bf1e3f994"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "75133d6f5673b97fa0b709b1e54f5089b756754625dd35fe8ff99fba787505ee"
+    },
+    "mini_ep/distributed/topology.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "0c109a2d32f5e28ae048eb0daf16fb0e3ead22246f9b604aeba26dda814f6c02"
+    },
+    "mini_ep/integration/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "372c29a1097700607193424872a7724c25ced2fccf447979c059fc0076511087"
+    },
+    "mini_ep/integration/config.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "cb308cc5b7da93fe49cbb9f3314d96aca8496ff50e25306bcf1a8e17f1213c8c"
+    },
+    "mini_ep/integration/plugin.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "1cf1d49eb74b0cde34d6465a4f3616814b2078c8280235bc7e2811c6dac0e23d"
+    },
+    "mini_ep/integration/runner.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "332c5b4b1b214a3c85c953051c86a287b55d7072935ba810bbdad60ceea0efe7"
+    },
+    "mini_ep/kernels/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "6948aa3520bc747e701e9229bbd135533cb750cef6c73770eb0db3b980f3fefb"
+    },
+    "mini_ep/kernels/combine_triton.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "acc836096d4447c8f8f76076d96afe610bd3aaf8ad88ee152b23cd484125dccf"
+    },
+    "mini_ep/kernels/swiglu_triton.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "16715032da5ba0ca20cd875a7aa907902be28dfe96df0cb3d5bc72a37d7341fe"
+    },
+    "mini_ep/model/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "af676af7731f2fedc967d4c1252769976d01f286f6bb4a398e47ba0d8ced0a66"
+    },
+    "mini_ep/model/expert.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "afc372ee7e5efabe596a0218de74b7e18350c6fff2754b95cc5bcab4654382b2"
+    },
+    "mini_ep/model/moe.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "c8b5e4d21be26cea1debcd7b58a3caf15b4853e304dfb0a50291744a5e48df54"
+    },
+    "mini_ep/profiler/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "c3747a9e08ff3159195896d0672fde615939f0b532d15a6c57ab3830b5dbff46"
+    },
+    "mini_ep/profiler/stages.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "405976c5ef9e13c9a580caf770f2fa76cb0618e065aefda8903c403f5d4ef11c"
+    },
+    "pyproject.toml": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "9f3e5ff197952e26569651a069c399102ec1e92b5704e44099b0942fe8704922"
+    },
+    "reference/__init__.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "9af38542f434ba06cd177786715b2abe571cf62a17a18a40116fbad23056d7ee"
+    },
+    "reference/dispatch.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "e975cdf4702b4d3465763c5c5dc0350dd22ae2adb1c82ab48eb4774aa228f6e0"
+    },
+    "reference/expert.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "cb5b098f645256ebe59a02c7aac3a06cfe8668b01518f7f22986aaf3b483fcae"
+    },
+    "reference/moe.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "00123801cbc5f98b7a83cf41b2c7ec88f05309b1af055ec39741ad4a979d9102"
+    },
+    "reference/router.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "d301b18c0a1e37112bb922c8ba429f100d46aceb855bb467f7d3fdafe3e29673"
+    },
+    "requirements.txt": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "3d09b17e57cdd7f7a181c637c2817bf7972ea15962c718517f5a74f2d283541d"
+    },
+    "test/demo.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "578ef001329d85ff733ed00a67db84c3881b4f5c048a07141eca879b0887c825"
+    },
+    "test/serve.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "b324ed1c4aac6fc0235839f10e332ed7dd6eb329e2692ba0bc6e214a08d69b1a"
+    },
+    "test/service_check.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "d7f4bca795ef0844f5ef8ab95e9d59412ecc40e81cef95cff71b412a8cc8a67a"
+    },
+    "test/service_smoke.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "8309c262e15aed02ad1151690dc5bef4c24440f18c049348f25f91568447d973"
+    },
+    "validation/__init__.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "0156e10fcdb2183e54794b69aba209838a42125ab74e2b28f8afdd154932d7c4"
+    },
+    "validation/backends.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "63a4acc530825b681e5732e28e7388ac2f991161c5ee8a996b25401ce0b01e39"
+    },
+    "validation/config.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "1c9379fd6821b958b2a76a9250e8b8a0df85b65505ca27b3645db83d9e8ab380"
+    },
+    "validation/plugin.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "d0e227e2c15016260e097c66b32df99c0c22e69ed28cc20eff12e45d31fc2b31"
+    },
+    "validation/runner.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "0f57ce75163c6b6773f89f9f2c528c0eaee6de1a4d26a4f73e3d3b47f11792ad"
+    },
+    "PERFORMANCE.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local EP inference, independent reference and verification",
+      "sha256": "fe973fc799863914b17682b095083d7a23383a2f362906e6e9b0a6fffd6d17af"
+    },
+    "benchmarks/summarize_stages.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Stage JSONL aggregation for course13 profiling",
+      "sha256": "e879850cc1fbceb17c5c8abe69086c714d7d1a91fbff01f1e413e80ea99e1acb"
+    },
+    "reference/grouped_plan.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Independent PyTorch Host reference for Expert offsets and tile metadata",
+      "sha256": "876c13ab877bbf50cf3410e120630f500129c1a82537d669423e11643bf4972b"
+    },
+    "benchmarks/benchmark_metadata.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Alternating Host/Triton metadata benchmark with optional warmed CPU/CUDA traces",
+      "sha256": "31ac879c99a4c270c90e48f57259ac1c01620d4c1e0e3c0e21628df44e0704b5"
+    },
+    "TEACHING.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course continuity: stable packing, Grouped GEMM metadata and Qwen/vLLM boundaries",
+      "sha256": "8e4bd9aaa6525fb16752688b8389a3db12bc94192bc52a50f8a2ecd26170268d"
+    },
+    "reference/fixed_dispatch.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Independent Token/slot loop for fixed Rank capacity and inverse metadata",
+      "sha256": "29cac304dcfd07167d979a80657db20b372f52b89f53a16dd0667783800f8a73"
+    },
+    "benchmarks/benchmark_fixed_dispatch.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Alternating CUDA Event/wall benchmark of fixed-layout PyTorch and Triton packing",
+      "sha256": "1b01af471a9886564d4b012cd8e0f8c2fee44ba318613c2f5a866b83799769c5"
+    },
+    "validation/model_info.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Checkpoint-aware layer coverage for Qwen3 and Qwen3.5 acceptance",
+      "sha256": "8052f563ea00612e1aa253ff2ad03c23776a13f42be521c099f0c76bdbecb4eb"
+    },
+    "checks/test_model_config.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Model metadata and shared-expert rounding regressions",
+      "sha256": "59ed450b19299c704754054ec7af0ed7cd49f2433b088d5dc3bd51af887ca50c"
+    },
+    "QWEN35.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Qwen3.5 model acceptance and performance-first teaching cleanup decision",
+      "sha256": "55a21433c7359486598cb740e2bb6b6f92082931b8358e3963fd0e3dce579cd2"
+    },
+    "RETURN_TRANSPORT.md": {
+      "origin": "new",
+      "source": "course13-return-transport-experiment",
+      "description": "Independent return precision reference, validation and native A2A experiment",
+      "sha256": "c12bab44cd9c29cbb4c35f056b834991dde67ba67d2428c5fda7983b44e73563"
+    },
+    "checks/test_return_transport.py": {
+      "origin": "new",
+      "source": "course13-return-transport-experiment",
+      "description": "Independent return precision reference, validation and native A2A experiment",
+      "sha256": "994a0f0142e590ddeb517c6354e9f8b33ca3b241be6441e14e72aa32cc14a7fb"
+    },
+    "checks/return_transport.py": {
+      "origin": "new",
+      "source": "course13-return-transport-experiment",
+      "description": "Independent return precision reference, validation and native A2A experiment",
+      "sha256": "e919c416be28983d08634191d713373753bbc71e56099f475b625ee09b282c23"
+    },
+    "validation/corpus.py": {
+      "origin": "new",
+      "source": "course13-return-transport-experiment",
+      "description": "Independent return precision reference, validation and native A2A experiment",
+      "sha256": "e906957d0fb0f23559396d3261fe76706a6993e8cf935c8e56ef8fe1a776a1ae"
+    },
+    "RETURN_TRANSPORT_RESULTS.json": {
+      "origin": "new",
+      "source": "course13-return-transport-experiment",
+      "description": "H100 numerical validation, native backend controls and benchmark evidence",
+      "sha256": "6aafde27fabbad73fb76371d281fc7d75c8c3e73fd4ee9585527745da006e7b4"
+    },
+    "EXACT_ALIGNMENT.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "ab221c9fd5dc0052b7f4ef60a85b46b44824f05476dbe615ca1ea5d9ec2bdbf2"
+    },
+    "EXACT_ALIGNMENT_RESULTS.json": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "d41857411216c7308f672314882c98039697fd48898a883adc7eff4a7cf3635a"
+    },
+    "checks/test_exact_alignment.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "4a71fd8c3fceefd70464136cca9cae437ec4d7c4d355519ecac6e1af2272dd4d"
+    },
+    "test/deepep_alignment.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "3e23db194ecc1a2fceb7f67b76b44302816d7849fc12386797950a8e2513f3b7"
+    },
+    "test/deepep_alignment_run.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "653332cf0e0ed921cac89ba9db3a240f8aba8b4aba9c1b05897fb32074550e8c"
+    },
+    "test/replay_alignment_failure.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "34ce2743fc0ad9fb7b24f85a0a76a0291adee7090741f3d4d96f0a745d867306"
+    },
+    "validation/alignment_cases.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "a73c1c6d8185fb0804b097ead000bb0eb98059500ca999b43ef5f12a4ddae02e"
+    },
+    "validation/alignment_report.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "0ed94a36648cbd14d453c857037d9cc5ee466e1d3c77671779d6b253b5a1592a"
+    },
+    "validation/deepep_backend.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "9f141dc088b40cc00cc72f38b6f2842ef23001e55d313997d6b8119125c3cf10"
+    },
+    "validation/deepep_probe.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "706552c4edeae879fe1ee0595ca472ded30101b91a75c7ff1d2baf4a660151ea"
+    },
+    "validation/deepep_runner.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "c12a09e254fa921b5275227edd0fb505de9294f3c6e54044745a4146b2ac90db"
+    },
+    "validation/dp_cases.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "182466ddad185ee18c976afc18f45692a06dc9d0fde37f80af955618a16ce572"
+    },
+    "validation/exact.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "274b614c53a47e2f378f1b78f660f3bb4bade5cea2333f99f465b3627149a63b"
+    },
+    "checks/exact_collective.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "207589e934439dd6be1de0ba7b2644fa1498d4f265cfdf39d7e7824e28087cc6"
+    },
+    "checks/test_deepep_metrics.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local default transport and independent exact alignment validation",
+      "sha256": "e24ccf6472b575dc6544320c5b0591c61d3cc5c2029b43be44b20bde9a695987"
+    },
+    "SOURCE_AUDIT.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "ea5abe3d061cb8216c9204ee7152c4eef4bf4b2897dd421417808700a325805d"
+    },
+    "benchmarks/deepep_latency.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "4b0d9e97310604f66204a30ba5b622ff8948c0612ac2fce4742f9547edb559b8"
+    },
+    "benchmarks/deepep_latency_run.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "6991deaae0ca723b5b0a65f4c959848bb6268f75038928d21504198c6d419aed"
+    },
+    "benchmarks/deepep_metrics.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "c873a3dd5786bfa6667e38161a00e24b2500284c41c68e32252f83a3d959873f"
+    },
+    "benchmarks/deepep_plugin.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "c3eb80518770c0e7c7ced79bb70711b0d53117d8d779c33ab062ff953d7cd08c"
+    },
+    "benchmarks/deepep_report.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "7008acbd5963846780076dd0b54854cc8c58f9fb1e00b9ac7ace11f0767ce89b"
+    },
+    "benchmarks/deepep_workloads.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "4bcbcbf0f20a36e9917f01184c18ced664506712ce4ae214077ece5401e84ca1"
+    },
+    "checks/deepep_empty_rank.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "bc0b4034fa314814b55d698960eade18dacfed49dab844e988d2194a8522ac9e"
+    },
+    "history/README.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "68dee397feca011d479c878671f978a52b20e71311145e9a7382c10aad9929ba"
+    },
+    "history/pre-deepep-only-20261020/EXACT_ALIGNMENT.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "ce10b9766856e8a84a475094ab5deff40deb476815ea9e2ee9971eac997ea9f7"
+    },
+    "history/pre-deepep-only-20261020/EXACT_ALIGNMENT_RESULTS.json": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "772e4645426639f48c41aba7aaf95eb7f11af4330813371f062aa5fa22928b6c"
+    },
+    "history/pre-deepep-only-20261020/PERFORMANCE.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "87ffc017da16bf662ec2b5c1f0961009cf71fec2535c4885ab4cbed4334028ba"
+    },
+    "history/pre-deepep-only-20261020/QWEN35.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "ad9e04b61c0e954e53bad2fdd7e1c85a12075bb83a39ad7295f976aebed051a3"
+    },
+    "history/pre-deepep-only-20261020/README.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "25104c49c98f1061848ef84029a9c569a1573dd85c1bffbaea965e6bb12c332b"
+    },
+    "history/pre-deepep-only-20261020/RETURN_TRANSPORT.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "92bd16a068f8b065e6366c7f4f5689350a1e074c94567b19ee4100664f7517e4"
+    },
+    "history/pre-deepep-only-20261020/TEACHING.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "50f9cd2a27c86886a285204cc6dba51d6696ac3bee4c38aafa6e1f815b97013a"
+    },
+    "history/pre-deepep-only-20261020/VALIDATION.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "955bd1322d394ecddd445d6d74f8d0af3d7b286bc55363d5537b5919ea1fed21"
+    },
+    "history/pre-deepep-only-20261020/VALIDATION_EP4.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "76c151d4fcd7c114dbdad96803813dca314b8b0b3c0182be2f05ade44d054704"
+    },
+    "mini_ep/integration/input_layout.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "0c39559649054e4e2f013dd5d825bd8cd955e8b921ecb1573bf2bd97d25b4c0e"
+    },
+    "mini_ep/kernels/dispatch_triton.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "2e32e43445c3dd0f27823f036dcd740ff9741c37123236d1253729242144d475"
+    },
+    "mini_ep/kernels/grouped_gemm/__init__.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "7cba262d73a724d3587587aa8a4085160a0ea8d645899e7562cb6eb4d40e28a0"
+    },
+    "mini_ep/kernels/grouped_gemm/plan.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "10bdd954a0894750ddacc3471955a00d4a53900a73714845d8f1fef00cd1ed3d"
+    },
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "aea0f227558becb7e1d540b2872d683c349f7b0fb2c39b34a23895fbac3f3b60"
+    },
+    "mini_ep/model/contracts.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "eb84ffc90d86cef435cc2255e41257193c6bfa51f6aced640a60430a35f61a22"
+    },
+    "mini_ep/model/router.py": {
+      "origin": "adapted",
+      "source": "course13-original",
+      "description": "Course13 tensor/layout API aligned with earlier lessons; single DeepEP rounding path. See TEACHING.md and SOURCE_AUDIT.md.",
+      "sha256": "39f6cb7aa694e1ebf6638b5d479b0910d173534eb509ee0a194ae13076523bf5"
+    },
+    "validation/native_reuse.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "dc5f92dd7f15e3408c027aab7e5e78b7c9b2eb43545f1a36b590751f5d1e8a38"
+    },
+    "checks/test_stage_summary.py": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course-local DeepEP-only EP inference, independent reference, exact validation or reproducible history",
+      "sha256": "e636a616c4e0b075b6e45482ece751ff0ba0f029f0265d3dc2a7adcd594faf3e"
+    },
+    "DEEPEP_REPORT.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Course13 independent DeepEP-only implementation, validation, measurement or historical evidence",
+      "sha256": "8b63fe86b3e6851e9932f82b6190e4c925db3b49713da026f75b88d3bd0d019e"
+    },
+    "CORE_CLEANUP.md": {
+      "origin": "new",
+      "source": "course13-original",
+      "description": "Core dead-code cleanup provenance, incremental precision checks and before/after measurements",
+      "sha256": "0bef9df466adee72386e728c438a2a2f12b7f98f7008e85091a70b8c1e4a450e"
+    }
+  }
+}

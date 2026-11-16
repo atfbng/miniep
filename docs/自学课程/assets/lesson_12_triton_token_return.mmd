@@ -1,0 +1,10 @@
+flowchart LR
+    A[Rank 0：Token A] --> B[slot 0：Expert 0]
+    A --> C[slot 1：Expert 2]
+    B --> D[Rank 0：本地 Expert 0]
+    C --> E[Rank 1：本地 Expert 0]
+    D --> F[来源 Rank 0：returned 行 0]
+    E --> G[来源 Rank 0：returned 行 16]
+    F --> H[restore A 为 0 和 16]
+    G --> H
+    H --> I[按两个分支权重合并]

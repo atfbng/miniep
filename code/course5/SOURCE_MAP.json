@@ -1,0 +1,83 @@
+{
+  "lesson": 5,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/05_all_to_all_ep.py",
+      "original_sha256": "205a7f58563fba21f8d7f6dcaa25f6091fb6068d4da2b3b257ee82623b3fed47",
+      "sha256": "205a7f58563fba21f8d7f6dcaa25f6091fb6068d4da2b3b257ee82623b3fed47",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_all_to_all_ep.py": {
+      "source": "tests/test_all_to_all_ep.py",
+      "original_sha256": "8663a9a4c7f59122fe7e34f7c6c784ec1623096ea055dabfe27d7d9c95045d68",
+      "sha256": "8663a9a4c7f59122fe7e34f7c6c784ec1623096ea055dabfe27d7d9c95045d68",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_all_to_all.py": {
+      "source": "benchmarks/benchmark_all_to_all.py",
+      "original_sha256": "40263df1735ce672be19c1d56e09e2784a3954ae304172dc98a5b5b061453ae2",
+      "sha256": "40263df1735ce672be19c1d56e09e2784a3954ae304172dc98a5b5b061453ae2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/topology.py": {
+      "source": "mini_ep/distributed/topology.py",
+      "original_sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "sha256": "015e994acac98482225f26329c70cc1e4affdb167dc77a51ca7b72cf3a5e614c",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/dispatch.py": {
+      "source": "mini_ep/distributed/dispatch.py",
+      "original_sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "sha256": "4d379947b99a5689fe5eb501ba84acd1348087f3c3b3b941128cc1e82b9aab1a",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "equal_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "equal_split_all_to_all"
+      ],
+      "nccl_distributed": [
+        "mini_ep.distributed.groups",
+        "nccl_distributed"
+      ],
+      "ExpertParallelTopology": [
+        "mini_ep.distributed.topology",
+        "ExpertParallelTopology"
+      ],
+      "combine_reference": [
+        "mini_ep.distributed.dispatch",
+        "combine_reference"
+      ],
+      "dispatch_reference": [
+        "mini_ep.distributed.dispatch",
+        "dispatch_reference"
+      ],
+      "variable_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "variable_split_all_to_all"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

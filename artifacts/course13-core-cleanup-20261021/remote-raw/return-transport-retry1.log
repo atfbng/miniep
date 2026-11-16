@@ -1,0 +1,100 @@
+CASE rank=0 dtype=torch.float32 H=32 K=1 skew=False
+CASE rank=2 dtype=torch.float32 H=32 K=1 skew=False
+CASE rank=1 dtype=torch.float32 H=32 K=1 skew=False
+CASE rank=3 dtype=torch.float32 H=32 K=1 skew=False
+CASE rank=0 dtype=torch.float32 H=32 K=1 skew=True
+CASE rank=1 dtype=torch.float32 H=32 K=1 skew=TrueCASE rank=2 dtype=torch.float32 H=32 K=1 skew=True
+
+CASE rank=3 dtype=torch.float32 H=32 K=1 skew=True
+CASE rank=0 dtype=torch.float32 H=32 K=2 skew=False
+CASE rank=1 dtype=torch.float32 H=32 K=2 skew=FalseCASE rank=2 dtype=torch.float32 H=32 K=2 skew=False
+
+CASE rank=3 dtype=torch.float32 H=32 K=2 skew=False
+CASE rank=0 dtype=torch.float32 H=32 K=2 skew=True
+CASE rank=1 dtype=torch.float32 H=32 K=2 skew=TrueCASE rank=2 dtype=torch.float32 H=32 K=2 skew=True
+
+CASE rank=3 dtype=torch.float32 H=32 K=2 skew=True
+CASE rank=0 dtype=torch.float32 H=32 K=8 skew=False
+CASE rank=1 dtype=torch.float32 H=32 K=8 skew=FalseCASE rank=2 dtype=torch.float32 H=32 K=8 skew=False
+
+CASE rank=3 dtype=torch.float32 H=32 K=8 skew=False
+CASE rank=0 dtype=torch.float32 H=32 K=8 skew=True
+CASE rank=1 dtype=torch.float32 H=32 K=8 skew=TrueCASE rank=2 dtype=torch.float32 H=32 K=8 skew=True
+
+CASE rank=3 dtype=torch.float32 H=32 K=8 skew=True
+CASE rank=1 dtype=torch.float32 H=128 K=1 skew=False
+CASE rank=0 dtype=torch.float32 H=128 K=1 skew=False
+CASE rank=2 dtype=torch.float32 H=128 K=1 skew=False
+CASE rank=3 dtype=torch.float32 H=128 K=1 skew=False
+CASE rank=0 dtype=torch.float32 H=128 K=1 skew=True
+CASE rank=1 dtype=torch.float32 H=128 K=1 skew=TrueCASE rank=2 dtype=torch.float32 H=128 K=1 skew=True
+
+CASE rank=3 dtype=torch.float32 H=128 K=1 skew=True
+CASE rank=0 dtype=torch.float32 H=128 K=2 skew=False
+CASE rank=2 dtype=torch.float32 H=128 K=2 skew=FalseCASE rank=1 dtype=torch.float32 H=128 K=2 skew=False
+CASE rank=3 dtype=torch.float32 H=128 K=2 skew=False
+
+CASE rank=0 dtype=torch.float32 H=128 K=2 skew=True
+CASE rank=1 dtype=torch.float32 H=128 K=2 skew=True
+CASE rank=2 dtype=torch.float32 H=128 K=2 skew=True
+CASE rank=3 dtype=torch.float32 H=128 K=2 skew=True
+CASE rank=0 dtype=torch.float32 H=128 K=8 skew=False
+CASE rank=2 dtype=torch.float32 H=128 K=8 skew=False
+CASE rank=3 dtype=torch.float32 H=128 K=8 skew=False
+CASE rank=1 dtype=torch.float32 H=128 K=8 skew=False
+CASE rank=0 dtype=torch.float32 H=128 K=8 skew=True
+CASE rank=1 dtype=torch.float32 H=128 K=8 skew=True
+CASE rank=2 dtype=torch.float32 H=128 K=8 skew=True
+CASE rank=3 dtype=torch.float32 H=128 K=8 skew=True
+CASE rank=0 dtype=torch.bfloat16 H=32 K=1 skew=False
+CASE rank=1 dtype=torch.bfloat16 H=32 K=1 skew=FalseCASE rank=2 dtype=torch.bfloat16 H=32 K=1 skew=False
+
+CASE rank=3 dtype=torch.bfloat16 H=32 K=1 skew=False
+CASE rank=0 dtype=torch.bfloat16 H=32 K=1 skew=True
+CASE rank=2 dtype=torch.bfloat16 H=32 K=1 skew=TrueCASE rank=3 dtype=torch.bfloat16 H=32 K=1 skew=True
+CASE rank=1 dtype=torch.bfloat16 H=32 K=1 skew=True
+
+CASE rank=0 dtype=torch.bfloat16 H=32 K=2 skew=False
+CASE rank=2 dtype=torch.bfloat16 H=32 K=2 skew=FalseCASE rank=3 dtype=torch.bfloat16 H=32 K=2 skew=False
+
+CASE rank=1 dtype=torch.bfloat16 H=32 K=2 skew=False
+CASE rank=0 dtype=torch.bfloat16 H=32 K=2 skew=True
+CASE rank=2 dtype=torch.bfloat16 H=32 K=2 skew=True
+CASE rank=1 dtype=torch.bfloat16 H=32 K=2 skew=True
+CASE rank=3 dtype=torch.bfloat16 H=32 K=2 skew=True
+CASE rank=0 dtype=torch.bfloat16 H=32 K=8 skew=False
+CASE rank=2 dtype=torch.bfloat16 H=32 K=8 skew=False
+CASE rank=3 dtype=torch.bfloat16 H=32 K=8 skew=FalseCASE rank=1 dtype=torch.bfloat16 H=32 K=8 skew=False
+
+CASE rank=0 dtype=torch.bfloat16 H=32 K=8 skew=True
+CASE rank=1 dtype=torch.bfloat16 H=32 K=8 skew=True
+CASE rank=2 dtype=torch.bfloat16 H=32 K=8 skew=True
+CASE rank=3 dtype=torch.bfloat16 H=32 K=8 skew=True
+CASE rank=0 dtype=torch.bfloat16 H=128 K=1 skew=False
+CASE rank=1 dtype=torch.bfloat16 H=128 K=1 skew=False
+CASE rank=2 dtype=torch.bfloat16 H=128 K=1 skew=False
+CASE rank=3 dtype=torch.bfloat16 H=128 K=1 skew=False
+CASE rank=0 dtype=torch.bfloat16 H=128 K=1 skew=True
+CASE rank=2 dtype=torch.bfloat16 H=128 K=1 skew=True
+CASE rank=1 dtype=torch.bfloat16 H=128 K=1 skew=TrueCASE rank=3 dtype=torch.bfloat16 H=128 K=1 skew=True
+
+CASE rank=0 dtype=torch.bfloat16 H=128 K=2 skew=False
+CASE rank=1 dtype=torch.bfloat16 H=128 K=2 skew=False
+CASE rank=2 dtype=torch.bfloat16 H=128 K=2 skew=False
+CASE rank=3 dtype=torch.bfloat16 H=128 K=2 skew=False
+CASE rank=0 dtype=torch.bfloat16 H=128 K=2 skew=True
+CASE rank=1 dtype=torch.bfloat16 H=128 K=2 skew=True
+CASE rank=2 dtype=torch.bfloat16 H=128 K=2 skew=True
+CASE rank=3 dtype=torch.bfloat16 H=128 K=2 skew=True
+CASE rank=0 dtype=torch.bfloat16 H=128 K=8 skew=False
+CASE rank=1 dtype=torch.bfloat16 H=128 K=8 skew=FalseCASE rank=2 dtype=torch.bfloat16 H=128 K=8 skew=False
+
+CASE rank=3 dtype=torch.bfloat16 H=128 K=8 skew=False
+CASE rank=0 dtype=torch.bfloat16 H=128 K=8 skew=True
+CASE rank=1 dtype=torch.bfloat16 H=128 K=8 skew=True
+CASE rank=2 dtype=torch.bfloat16 H=128 K=8 skew=True
+CASE rank=3 dtype=torch.bfloat16 H=128 K=8 skew=True
+PASS rank=3 ep=4 cases=432
+PASS rank=1 ep=4 cases=432
+PASS rank=2 ep=4 cases=432
+PASS rank=0 ep=4 cases=432

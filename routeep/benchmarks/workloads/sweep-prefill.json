@@ -1,0 +1,42 @@
+{
+ "seed": 13,
+ "corpus": 0,
+ "cases": [
+  {
+   "name": "prefill_b4_s128",
+   "batch_size": 4,
+   "seq_len": 128,
+   "steps": 1
+  },
+  {
+   "name": "prefill_b4_s256",
+   "batch_size": 4,
+   "seq_len": 256,
+   "steps": 1
+  },
+  {
+   "name": "prefill_b4_s512",
+   "batch_size": 4,
+   "seq_len": 512,
+   "steps": 1
+  },
+  {
+   "name": "prefill_b4_s1024",
+   "batch_size": 4,
+   "seq_len": 1024,
+   "steps": 1
+  },
+  {
+   "name": "prefill_b4_s2048",
+   "batch_size": 4,
+   "seq_len": 2048,
+   "steps": 1
+  },
+  {
+   "name": "prefill_b4_s4096",
+   "batch_size": 4,
+   "seq_len": 4096,
+   "steps": 1
+  }
+ ]
+}

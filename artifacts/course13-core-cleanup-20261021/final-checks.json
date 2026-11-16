@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "core_python_files": 24,
+  "core_lines_before": 2592,
+  "core_lines_after": 2575,
+  "h100_unit": {
+    "passed": 42,
+    "skipped": 0
+  },
+  "local_unit": {
+    "passed": 34,
+    "skipped": 8
+  },
+  "tp_dp_nccl": {
+    "ranks": 4,
+    "cases_per_rank": 72
+  },
+  "return_transport_nccl": {
+    "ranks": 4,
+    "cases_per_rank": 432
+  },
+  "exact_precision": {
+    "passed": true,
+    "errors": [],
+    "request_sequences": 128,
+    "generation_positions": 8192,
+    "ranks": {
+      "0": {
+        "passed": true,
+        "rank": 0,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      },
+      "1": {
+        "passed": true,
+        "rank": 1,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      },
+      "2": {
+        "passed": true,
+        "rank": 2,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      },
+      "3": {
+        "passed": true,
+        "rank": 3,
+        "kind": "candidate",
+        "signature": "612041b9d068655a956e081bc698def4e08eccec77fd5704d48317c5a0d48929",
+        "errors": [],
+        "expected_sequences": 64,
+        "expected_positions": 4096
+      }
+    }
+  },
+  "performance_fairness_passed": true,
+  "performance": {
+    "independent_engines_per_version": 2,
+    "samples_per_case_per_version": 10,
+    "cases": {
+      "decode_b1": -0.8008802319490194,
+      "decode_b32": -0.6127787777105431,
+      "prefill_b4_long": -0.17523988710900218
+    },
+    "all_available_metric_p10_p90_ranges_overlap": true,
+    "scope": "decode_b1, decode_b32, prefill_b4_long; no claim of universal zero overhead or stable speedup"
+  },
+  "kernel_sources_byte_identical": true,
+  "validated_source_matches_current_core": true,
+  "static_isolation": true,
+  "compileall": true,
+  "git_diff_check": true,
+  "dual_source_maps_valid": true,
+  "other_course_map_entries_unchanged": true,
+  "prior_experiment_archives_sha256_unchanged": true,
+  "prior_archive_count": 10,
+  "resolved_tooling_invocation_failure": "first return_transport call omitted --output; argparse rejected it before compute; corrected retry passed; both logs preserved",
+  "not_rerun": [
+    "prior nine-configuration precision matrix in full",
+    "fresh native DeepEP performance sweep",
+    "other model/dtype/topology/backend versions",
+    "Nsight timeline or overlap"
+  ]
+}

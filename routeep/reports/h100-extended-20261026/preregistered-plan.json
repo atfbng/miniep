@@ -1,0 +1,227 @@
+{
+  "questions": [
+    "where does owner dedup outperform native DeepEP HT?",
+    "when does added packing/reduction cost erase the benefit?"
+  ],
+  "models": [
+    "Qwen3.5-35B-A3B",
+    "Qwen3-30B-A3B"
+  ],
+  "topologies": [
+    {
+      "tp": 2,
+      "dp": 2,
+      "ep": 4
+    },
+    {
+      "tp": 1,
+      "dp": 2,
+      "ep": 2
+    }
+  ],
+  "blocks": 5,
+  "repeats": 3,
+  "warmup": 2,
+  "seeds": [
+    13,
+    37,
+    123,
+    321,
+    777
+  ],
+  "corpora": [
+    "technical English",
+    "code reasoning",
+    "Chinese-English mixed"
+  ],
+  "cases": [
+    {
+      "name": "prefill_b1_s128",
+      "batch_size": 1,
+      "seq_len": 128,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b1_s512",
+      "batch_size": 1,
+      "seq_len": 512,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b1_s2048",
+      "batch_size": 1,
+      "seq_len": 2048,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b4_s128",
+      "batch_size": 4,
+      "seq_len": 128,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b4_s512",
+      "batch_size": 4,
+      "seq_len": 512,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b4_s2048",
+      "batch_size": 4,
+      "seq_len": 2048,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b8_s128",
+      "batch_size": 8,
+      "seq_len": 128,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b8_s512",
+      "batch_size": 8,
+      "seq_len": 512,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b8_s2048",
+      "batch_size": 8,
+      "seq_len": 2048,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b16_s128",
+      "batch_size": 16,
+      "seq_len": 128,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b16_s512",
+      "batch_size": 16,
+      "seq_len": 512,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b16_s2048",
+      "batch_size": 16,
+      "seq_len": 2048,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b32_s128",
+      "batch_size": 32,
+      "seq_len": 128,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b32_s512",
+      "batch_size": 32,
+      "seq_len": 512,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b32_s1024",
+      "batch_size": 32,
+      "seq_len": 1024,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b1_s4096",
+      "batch_size": 1,
+      "seq_len": 4096,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b4_s4096",
+      "batch_size": 4,
+      "seq_len": 4096,
+      "steps": 1
+    },
+    {
+      "name": "prefill_b8_s4096",
+      "batch_size": 8,
+      "seq_len": 4096,
+      "steps": 1
+    },
+    {
+      "name": "decode_b1_s128",
+      "batch_size": 1,
+      "seq_len": 128,
+      "steps": 64
+    },
+    {
+      "name": "decode_b4_s128",
+      "batch_size": 4,
+      "seq_len": 128,
+      "steps": 64
+    },
+    {
+      "name": "decode_b8_s128",
+      "batch_size": 8,
+      "seq_len": 128,
+      "steps": 64
+    },
+    {
+      "name": "decode_b16_s128",
+      "batch_size": 16,
+      "seq_len": 128,
+      "steps": 64
+    },
+    {
+      "name": "decode_b32_s128",
+      "batch_size": 32,
+      "seq_len": 128,
+      "steps": 64
+    },
+    {
+      "name": "decode_b1_s2048",
+      "batch_size": 1,
+      "seq_len": 2048,
+      "steps": 64
+    },
+    {
+      "name": "decode_b16_s2048",
+      "batch_size": 16,
+      "seq_len": 2048,
+      "steps": 64
+    },
+    {
+      "name": "ragged_b8_o1",
+      "batch_size": 8,
+      "seq_len": null,
+      "lengths": [
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        256
+      ],
+      "steps": 1
+    },
+    {
+      "name": "ragged_b8_o64",
+      "batch_size": 8,
+      "seq_len": null,
+      "lengths": [
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        256
+      ],
+      "steps": 64
+    }
+  ],
+  "backend_order": "balanced AB/BA by model and block",
+  "statistical_unit": "paired fresh-engine block, not individual repeat",
+  "confidence": "paired log latency ratio; bootstrap whole blocks, 95% interval",
+  "practical_margin": 0.02,
+  "scope": "BF16 eager, native DeepEP HT, same hardware/options within topology; no universal DeepEP claim",
+  "folder": "Md1rfWPPRlGDfRdXFsqcG9zlnig"
+}

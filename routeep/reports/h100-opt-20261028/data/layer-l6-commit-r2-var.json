@@ -1,0 +1,72 @@
+{
+  "label": "l6-commit-r2-var",
+  "expert_backend": "grouped",
+  "fixed": false,
+  "ep_size": 2,
+  "hidden_size": 2048,
+  "expert_hidden_size": 768,
+  "num_experts": 128,
+  "top_k": 8,
+  "skew": 0.0,
+  "dtype": "bfloat16",
+  "layers_per_repeat": 8,
+  "warmup": 5,
+  "repeats": 20,
+  "statistic": "per-repeat max-rank mean ms/layer, median over repeats",
+  "routing": "synthetic softmax top-k",
+  "device": "NVIDIA H100 80GB HBM3",
+  "torch": "2.13.0+cu130",
+  "nccl": "2.29.7",
+  "results": [
+    {
+      "tokens_per_rank": 4,
+      "ms_per_layer_median": 1.2002019882202148,
+      "ms_per_layer_min": 1.119379997253418,
+      "ms_per_layer_max": 1.7796159982681274,
+      "host_ms_per_layer_rank0": 1.194340584333986,
+      "send_rows": 8,
+      "recv_rows": 8,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 32,
+      "ms_per_layer_median": 1.208407998085022,
+      "ms_per_layer_min": 1.1354800462722778,
+      "ms_per_layer_max": 1.710155963897705,
+      "host_ms_per_layer_rank0": 1.2077660067006946,
+      "send_rows": 64,
+      "recv_rows": 64,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 256,
+      "ms_per_layer_median": 1.3324880003929138,
+      "ms_per_layer_min": 1.1534559726715088,
+      "ms_per_layer_max": 1.765444040298462,
+      "host_ms_per_layer_rank0": 1.3326893094927073,
+      "send_rows": 511,
+      "recv_rows": 511,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 2048,
+      "ms_per_layer_median": 1.835666000843048,
+      "ms_per_layer_min": 1.7305279970169067,
+      "ms_per_layer_max": 2.15911602973938,
+      "host_ms_per_layer_rank0": 1.8381441477686167,
+      "send_rows": 4085,
+      "recv_rows": 4092,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 8192,
+      "ms_per_layer_median": 3.905621886253357,
+      "ms_per_layer_min": 3.878920078277588,
+      "ms_per_layer_max": 4.1027398109436035,
+      "host_ms_per_layer_rank0": 3.908454382326454,
+      "send_rows": 16328,
+      "recv_rows": 16330,
+      "received_branches": null
+    }
+  ]
+}

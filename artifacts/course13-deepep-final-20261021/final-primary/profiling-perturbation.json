@@ -1,0 +1,74 @@
+{
+  "decode_b1": {
+    "native": {
+      "profile_e2e_median_ms": 10947.69386574626,
+      "primary_e2e_median_ms": 10400.214975699782,
+      "observed_profile_change_percent": 5.264111283523154
+    },
+    "miniep": {
+      "profile_e2e_median_ms": 11445.09096071124,
+      "primary_e2e_median_ms": 11163.72305713594,
+      "observed_profile_change_percent": 2.5203769578953095
+    }
+  },
+  "decode_b4": {
+    "native": {
+      "profile_e2e_median_ms": 10750.422047451138,
+      "primary_e2e_median_ms": 10234.82533171773,
+      "observed_profile_change_percent": 5.037669906642894
+    },
+    "miniep": {
+      "profile_e2e_median_ms": 11303.648188710213,
+      "primary_e2e_median_ms": 10814.08441439271,
+      "observed_profile_change_percent": 4.527094070635629
+    }
+  },
+  "decode_b32": {
+    "native": {
+      "profile_e2e_median_ms": 10830.144984647632,
+      "primary_e2e_median_ms": 10332.621889188886,
+      "observed_profile_change_percent": 4.81507114839177
+    },
+    "miniep": {
+      "profile_e2e_median_ms": 13177.375439554453,
+      "primary_e2e_median_ms": 12994.039215147495,
+      "observed_profile_change_percent": 1.4109255895829342
+    }
+  },
+  "prefill_b1_long": {
+    "native": {
+      "profile_e2e_median_ms": 90.71805141866207,
+      "primary_e2e_median_ms": 107.17454738914967,
+      "observed_profile_change_percent": -15.354854647283211
+    },
+    "miniep": {
+      "profile_e2e_median_ms": 116.66319705545902,
+      "primary_e2e_median_ms": 111.57024092972279,
+      "observed_profile_change_percent": 4.56479799926599
+    }
+  },
+  "prefill_b4_short": {
+    "native": {
+      "profile_e2e_median_ms": 89.9281483143568,
+      "primary_e2e_median_ms": 83.41291174292564,
+      "observed_profile_change_percent": 7.810825009335232
+    },
+    "miniep": {
+      "profile_e2e_median_ms": 106.27411864697933,
+      "primary_e2e_median_ms": 103.86615060269833,
+      "observed_profile_change_percent": 2.318337620397437
+    }
+  },
+  "prefill_b4_long": {
+    "native": {
+      "profile_e2e_median_ms": 180.79210817813873,
+      "primary_e2e_median_ms": 179.35992777347565,
+      "observed_profile_change_percent": 0.7984951947972885
+    },
+    "miniep": {
+      "profile_e2e_median_ms": 226.46512649953365,
+      "primary_e2e_median_ms": 225.664921104908,
+      "observed_profile_change_percent": 0.3545989295578922
+    }
+  }
+}

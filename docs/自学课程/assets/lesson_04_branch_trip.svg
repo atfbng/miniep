@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450">
+<rect width="1000" height="450" fill="white"/>
+<text x="32" y="42" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#243247" font-weight="700">一条分支的往返：Rank 0 的 T0 → E2</text>
+<text x="32" y="80" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#64748b">Expert 放置：Rank 0 持有 E0/E1，Rank 1 持有 E2/E3</text>
+<rect x="42" y="116" width="336" height="207" rx="8" fill="#eff6ff" stroke="#60a5fa" stroke-width="2"/>
+<rect x="615" y="116" width="340" height="207" rx="8" fill="#ecfdf5" stroke="#34d399" stroke-width="2"/>
+<text x="64" y="154" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">Rank 0 · 原 Token 所在处</text>
+<text x="638" y="154" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">Rank 1 · 目标 Expert 所在处</text>
+<text x="72" y="205" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">按目标 1 打包 T0 输入</text>
+<text x="641" y="205" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">读取输入，运行 E2(T0)</text>
+<line x1="381" y1="190" x2="609" y2="190" stroke="#64748b" stroke-width="2"/>
+<text x="404" y="170" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#b45309">前向 All-to-All</text>
+<polygon points="609,190 597,183 597,197" fill="#64748b"/>
+<text x="74" y="293" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">恢复 T0 分支位置</text>
+<text x="641" y="293" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">按来源 0 返回结果</text>
+<line x1="609" y1="267" x2="382" y2="267" stroke="#64748b" stroke-width="2"/>
+<text x="404" y="248" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#b45309">返回 All-to-All</text>
+<polygon points="382,267 394,260 394,274" fill="#64748b"/>
+<text x="32" y="371" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">返回后：该分支乘路由权重，与 T0 的其他分支求和。</text>
+<text x="32" y="413" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#64748b">前向按目标 Rank 打包，结果按原来源 Rank 返回；权重在源端用于 Combine。</text>
+</svg>

@@ -1,0 +1,72 @@
+{
+  "label": "l6-new-r1-fixed",
+  "expert_backend": "grouped",
+  "fixed": true,
+  "ep_size": 2,
+  "hidden_size": 2048,
+  "expert_hidden_size": 768,
+  "num_experts": 128,
+  "top_k": 8,
+  "skew": 0.0,
+  "dtype": "bfloat16",
+  "layers_per_repeat": 8,
+  "warmup": 5,
+  "repeats": 20,
+  "statistic": "per-repeat max-rank mean ms/layer, median over repeats",
+  "routing": "synthetic softmax top-k",
+  "device": "NVIDIA H100 80GB HBM3",
+  "torch": "2.13.0+cu130",
+  "nccl": "2.29.7",
+  "results": [
+    {
+      "tokens_per_rank": 4,
+      "ms_per_layer_median": 0.6579959988594055,
+      "ms_per_layer_min": 0.6285319924354553,
+      "ms_per_layer_max": 1.9428800344467163,
+      "host_ms_per_layer_rank0": 0.6607765681110322,
+      "send_rows": 8,
+      "recv_rows": 8,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 32,
+      "ms_per_layer_median": 0.6433700025081635,
+      "ms_per_layer_min": 0.621616005897522,
+      "ms_per_layer_max": 0.8874880075454712,
+      "host_ms_per_layer_rank0": 0.6455877446569502,
+      "send_rows": 64,
+      "recv_rows": 64,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 256,
+      "ms_per_layer_median": 0.6628120243549347,
+      "ms_per_layer_min": 0.6370959877967834,
+      "ms_per_layer_max": 0.9651359915733337,
+      "host_ms_per_layer_rank0": 0.6642742664553225,
+      "send_rows": 512,
+      "recv_rows": 512,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 2048,
+      "ms_per_layer_median": 1.1199640035629272,
+      "ms_per_layer_min": 1.1105519533157349,
+      "ms_per_layer_max": 1.5045440196990967,
+      "host_ms_per_layer_rank0": 1.1219150619581342,
+      "send_rows": 4096,
+      "recv_rows": 4096,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 8192,
+      "ms_per_layer_median": 2.69883394241333,
+      "ms_per_layer_min": 2.6900439262390137,
+      "ms_per_layer_max": 2.8405439853668213,
+      "host_ms_per_layer_rank0": 2.7020637644454837,
+      "send_rows": 16384,
+      "recv_rows": 16384,
+      "received_branches": null
+    }
+  ]
+}

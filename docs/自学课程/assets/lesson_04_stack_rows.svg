@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="575" viewBox="0 0 1000 575">
+<rect width="1000" height="575" fill="white"/>
+<text x="32" y="42" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#243247" font-weight="700">从两列标签到按目标排列的发送行</text>
+<text x="32" y="79" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#64748b">以 Rank 0 为例：world_size=2，source 与 destination 均为 [2]</text>
+<text x="55" y="128" font-family="Noto Sans SC, sans-serif" font-size="24" fill="#243247" font-weight="700">来源 source</text>
+<text x="311" y="128" font-family="Noto Sans SC, sans-serif" font-size="24" fill="#243247" font-weight="700">目标 destination</text>
+<text x="664" y="128" font-family="Noto Sans SC, sans-serif" font-size="24" fill="#243247" font-weight="700">send_buffer [2,2]</text>
+<rect x="62" y="150" width="135" height="65" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<text x="117" y="193" font-family="Noto Sans SC, sans-serif" font-size="30" fill="#243247">0</text>
+<rect x="310" y="150" width="135" height="65" rx="8" fill="#ffedd5" stroke="#fb923c" stroke-width="2"/>
+<text x="362" y="193" font-family="Noto Sans SC, sans-serif" font-size="30" fill="#243247">0</text>
+<line x1="476" y1="183" x2="635" y2="183" stroke="#64748b" stroke-width="2"/>
+<text x="483" y="168" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#64748b">逐项配对</text>
+<rect x="655" y="150" width="135" height="65" rx="8" fill="#dcfce7" stroke="#34d399" stroke-width="2"/>
+<text x="674" y="193" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#243247">[ 0, 0 ]</text>
+<text x="801" y="192" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#243247">第 0 行 → Rank 0</text>
+<rect x="62" y="235" width="135" height="65" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<text x="117" y="278" font-family="Noto Sans SC, sans-serif" font-size="30" fill="#243247">0</text>
+<rect x="310" y="235" width="135" height="65" rx="8" fill="#ffedd5" stroke="#fb923c" stroke-width="2"/>
+<text x="362" y="278" font-family="Noto Sans SC, sans-serif" font-size="30" fill="#243247">1</text>
+<line x1="476" y1="268" x2="635" y2="268" stroke="#64748b" stroke-width="2"/>
+<text x="483" y="253" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#64748b">逐项配对</text>
+<rect x="655" y="235" width="135" height="65" rx="8" fill="#dcfce7" stroke="#34d399" stroke-width="2"/>
+<text x="674" y="278" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#243247">[ 0, 1 ]</text>
+<text x="801" y="277" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#243247">第 1 行 → Rank 1</text>
+<text x="32" y="349" font-family="Noto Sans SC, sans-serif" font-size="25" fill="#243247" font-weight="700">torch.stack((source, destination), dim=1)</text>
+<text x="32" y="388" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">在每个位置新增一维，把来源与目标两个数放进同一行。</text>
+<line x1="32" y1="416" x2="966" y2="416" stroke="#64748b" stroke-width="2"/>
+<text x="32" y="459" font-family="Noto Sans SC, sans-serif" font-size="23" fill="#243247" font-weight="700">All-to-All 按行位置发送，行内标签帮助追踪数据：</text>
+<text x="55" y="508" font-family="Noto Sans SC, sans-serif" font-size="24" fill="#065f46">Rank 0 发出的 [0,1] → Rank 1 的 recv_buffer[0]</text>
+<text x="55" y="550" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#64748b">发送第 1 行表示目标 1；接收第 0 行表示来源 0。</text>
+</svg>

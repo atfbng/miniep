@@ -1,0 +1,180 @@
+{
+  "lesson": 3,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/03_gpu_execution.py",
+      "original_sha256": "0aa4ff0590bb01337d94d63394f7b4f03b6d339fe32d2f1b0ce6cb8a949bbec5",
+      "sha256": "0aa4ff0590bb01337d94d63394f7b4f03b6d339fe32d2f1b0ce6cb8a949bbec5",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_gpu_execution.py": {
+      "source": "tests/test_gpu_execution.py",
+      "original_sha256": "0f71862d78a33a5adbd2b3b58dcd48410d490cccc9bca003b18b2d7231b5eb45",
+      "sha256": "0f71862d78a33a5adbd2b3b58dcd48410d490cccc9bca003b18b2d7231b5eb45",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "benchmarks/benchmark_gemm.py": {
+      "source": "benchmarks/benchmark_gemm.py",
+      "original_sha256": "a2605e82bfa8abd4b3ba34eea0edf73b63dd8bce1c7e89fe6ccd01951daf00b1",
+      "sha256": "a2605e82bfa8abd4b3ba34eea0edf73b63dd8bce1c7e89fe6ccd01951daf00b1",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/profiler/timer.py": {
+      "source": "mini_ep/profiler/timer.py",
+      "original_sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "sha256": "2e1271bb6f0500c341e77cbc76d8d79b920c1b3a0d0b5faaed5fbff634b9a3d2",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/model/__init__.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "727a5671b978d6770700c4b3a9efa1bb0736dde413cfc4dde52fb99a08f2e8fa"
+    },
+    "mini_ep/model/expert.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "52f76fd410328a7b5e0c0c694c4244d8fd2660c18f7aee5a50b85b76cbe654f3"
+    },
+    "mini_ep/kernels/__init__.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "a18d4ce81b71007feea26b823953177d45322402081e258ed427b758b46596e9"
+    },
+    "mini_ep/kernels/gemm_triton.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "757e71e05500f50a94fd581893bfe4d844dce4b7a024291d7ac9da16e2f22ddb"
+    },
+    "test/demo_triton_gemm.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "8f0f5c31414de06525777ff14c9a7acc658213f16f89246b27c205c16b82972f"
+    },
+    "benchmarks/benchmark_triton_gemm.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "4d8f859ba992007e8612d4f014b04003a665d518841c4b529af75ecfe63f382a"
+    },
+    "checks/test_triton_gemm.py": {
+      "origin": "new",
+      "description": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "6c9327f0b89431dbd72804d7a5eceb5e75c3cdcf3bbbd255c83c641a7817cd4d"
+    },
+    "mini_ep/kernels/down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "562d1c009f3e4aa3c66fa6cc977d3d6c24a519e55a0abd8e9184695953258e27"
+    },
+    "checks/test_down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "dc712a766c809855fb9b119c58dcdb6ce7d24147a12b0d3dc2240538983a0f2f"
+    },
+    "benchmarks/benchmark_down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "13a3802057a128b20d094d1eed761240d66a12229118704f988a05f4d616d02b"
+    },
+    "test/demo_down_projection.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "ff0d5a555eea85b5446a549ee037a7649088b49cdd1c3733c016747bd2824721"
+    },
+    "benchmarks/profile_mlp.py": {
+      "origin": "new",
+      "description": "新增：预热后启动 Proton，分阶段比较 PyTorch 与 Triton Expert MLP",
+      "sha256": "2e6eb77a18f443d33d7c8fe9568fbb29d0260031a0e7a898c7ae0ff61599a848"
+    },
+    "requirements-profile.txt": {
+      "origin": "new",
+      "description": "新增：Proton Viewer 可选依赖",
+      "sha256": "d46a2054f9e4c79f7b8252e7dc128069a3066cfb0ef5b28f8ee9b0c316c12464"
+    },
+    "benchmarks/benchmark_down_search.py": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "821e284c1f7f66829a2045e27da65fd86f930e00411d8241ad0e48c1ffb16310"
+    },
+    "README_down_projection.md": {
+      "origin": "new",
+      "description": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "082419ce9cc64a4a5dc1c46221be95486b74b67302537b6753f50373803030e6"
+    }
+  },
+  "package_exports": {
+    "mini_ep.profiler": {
+      "LatencyStats": [
+        "mini_ep.profiler.timer",
+        "LatencyStats"
+      ],
+      "measure_latency": [
+        "mini_ep.profiler.timer",
+        "measure_latency"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787",
+  "additions": {
+    "mini_ep/model/__init__.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "727a5671b978d6770700c4b3a9efa1bb0736dde413cfc4dde52fb99a08f2e8fa"
+    },
+    "mini_ep/model/expert.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "52f76fd410328a7b5e0c0c694c4244d8fd2660c18f7aee5a50b85b76cbe654f3"
+    },
+    "mini_ep/kernels/__init__.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "a18d4ce81b71007feea26b823953177d45322402081e258ed427b758b46596e9"
+    },
+    "mini_ep/kernels/gemm_triton.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "757e71e05500f50a94fd581893bfe4d844dce4b7a024291d7ac9da16e2f22ddb"
+    },
+    "test/demo_triton_gemm.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "8f0f5c31414de06525777ff14c9a7acc658213f16f89246b27c205c16b82972f"
+    },
+    "benchmarks/benchmark_triton_gemm.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "4d8f859ba992007e8612d4f014b04003a665d518841c4b529af75ecfe63f382a"
+    },
+    "checks/test_triton_gemm.py": {
+      "source": "新增：第3课 Triton GEMM/MLP demo，与课件3.8计算路径一致",
+      "sha256": "6c9327f0b89431dbd72804d7a5eceb5e75c3cdcf3bbbd255c83c641a7817cd4d"
+    },
+    "mini_ep/kernels/down_projection.py": {
+      "source": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "562d1c009f3e4aa3c66fa6cc977d3d6c24a519e55a0abd8e9184695953258e27"
+    },
+    "checks/test_down_projection.py": {
+      "source": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "dc712a766c809855fb9b119c58dcdb6ce7d24147a12b0d3dc2240538983a0f2f"
+    },
+    "benchmarks/benchmark_down_projection.py": {
+      "source": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "13a3802057a128b20d094d1eed761240d66a12229118704f988a05f4d616d02b"
+    },
+    "test/demo_down_projection.py": {
+      "source": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "ff0d5a555eea85b5446a549ee037a7649088b49cdd1c3733c016747bd2824721"
+    },
+    "benchmarks/profile_mlp.py": {
+      "source": "新增：预热后启动 Proton，分阶段比较 PyTorch 与 Triton Expert MLP",
+      "sha256": "2e6eb77a18f443d33d7c8fe9568fbb29d0260031a0e7a898c7ae0ff61599a848"
+    },
+    "requirements-profile.txt": {
+      "source": "新增：Proton Viewer 可选依赖",
+      "sha256": "d46a2054f9e4c79f7b8252e7dc128069a3066cfb0ef5b28f8ee9b0c316c12464"
+    },
+    "benchmarks/benchmark_down_search.py": {
+      "source": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "821e284c1f7f66829a2045e27da65fd86f930e00411d8241ad0e48c1ffb16310"
+    },
+    "README_down_projection.md": {
+      "source": "下投影分块与流水线搜索；本课独立实现和测量",
+      "sha256": "082419ce9cc64a4a5dc1c46221be95486b74b67302537b6753f50373803030e6"
+    }
+  }
+}

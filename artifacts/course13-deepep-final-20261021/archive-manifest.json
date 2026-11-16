@@ -1,0 +1,42 @@
+{
+  "course13-final-delivery.tgz": {
+    "bytes": 205525,
+    "sha256": "3abe0c42c1bf7afa5dbbbeff35031d24da79d36b42248bcb823ec398a8286bb8"
+  },
+  "raw-final-precision.tgz": {
+    "bytes": 189394373,
+    "sha256": "8dee719e090ce7180cda456107d0ee2a92015cf69f3d1c207fa22e1fc47f35e0"
+  },
+  "raw-performance.tgz": {
+    "bytes": 38542088,
+    "sha256": "9be67b90414d3e43056bb441f62390368c6224583b8cccd11804c4530475ebaf"
+  },
+  "course13-candidate-v6.tgz": {
+    "bytes": 101378,
+    "sha256": "e7f98495cd717b92abce7319190d45894b96b51f9ba82e0cf6e767d26aefe293"
+  },
+  "course13-delivery-candidate-v7.tgz": {
+    "bytes": 191831,
+    "sha256": "02b0104cd8dd80bcb406e70222c59de1d89f97febe652671a33b4b13ef629549"
+  },
+  "final-accuracy.tgz": {
+    "bytes": 102372,
+    "sha256": "77c543de181ccab84b4220554193d967f597269396932b352abc365ca2d30a9e"
+  },
+  "before-summaries.tgz": {
+    "bytes": 12959,
+    "sha256": "1c7a31da79bc87b9779bf704cd2e92593826038b844b081995e5b3ff854eecb5"
+  },
+  "final-primary.tgz": {
+    "bytes": 8293,
+    "sha256": "a10c9cfa5d46ec6bcbcdcea67fb7b232789b243fa04a5e556e8cb2db3e23888a"
+  },
+  "v7-startup-unit.tgz": {
+    "bytes": 314096,
+    "sha256": "1b45cfc8c4544963f533c3393b16e8ab7891eb4e50d69d08f4df492c47f2c44e"
+  },
+  "v6-unit-empty.tgz": {
+    "bytes": 58888,
+    "sha256": "eac6136c4600d6a1b1a3f7039de9e418e05af768a7767383bab3ecd5196ecce4"
+  }
+}

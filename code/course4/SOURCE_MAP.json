@@ -1,0 +1,51 @@
+{
+  "lesson": 4,
+  "files": {
+    "test/demo.py": {
+      "source": "examples/04_distributed_nccl.py",
+      "original_sha256": "ed9a3f3527c1a995267f4e448e0a4f43f80df5594d37470b1b72a689074980d9",
+      "sha256": "da736659898ccaea9c2aef91753f1fd566e7c7ba5008254dba26eb43f03bd349",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "checks/test_distributed_nccl.py": {
+      "source": "tests/test_distributed_nccl.py",
+      "original_sha256": "d09a4e634ecf3b28ce45681189162f3399eb70973868c85698600cc463ad42db",
+      "sha256": "faca7cf03261c3dd2db8017d7ffd8525df9086f825594521a38fa97dcce26084",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/all_to_all.py": {
+      "source": "mini_ep/distributed/all_to_all.py",
+      "original_sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "sha256": "4271e9902f8a962612dc85499829d811f115d4a111315953bd23d85ba26c269f",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    },
+    "mini_ep/distributed/groups.py": {
+      "source": "mini_ep/distributed/groups.py",
+      "original_sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "sha256": "40909731577ef0297f8fd8d5e9a13f58e2d482072c5a2eca79900f06e79aab67",
+      "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+    }
+  },
+  "package_exports": {
+    "mini_ep.distributed": {
+      "equal_split_all_to_all": [
+        "mini_ep.distributed.all_to_all",
+        "equal_split_all_to_all"
+      ],
+      "read_torchrun_environment": [
+        "mini_ep.distributed.groups",
+        "read_torchrun_environment"
+      ],
+      "DistributedContext": [
+        "mini_ep.distributed.groups",
+        "DistributedContext"
+      ],
+      "nccl_distributed": [
+        "mini_ep.distributed.groups",
+        "nccl_distributed"
+      ]
+    }
+  },
+  "dependency_policy": "Only local copies and declared third-party dependencies; no sibling course or repository root imports.",
+  "source_revision": "9222afe9955e40569e82297a25d4ac4baefbb787"
+}

@@ -1,0 +1,19 @@
+{
+  "mode": "static-only",
+  "courses": [
+    {
+      "course": 13,
+      "python_files": 78,
+      "isolated_import_graph_complete": true,
+      "source_semantics_preserved": null,
+      "source_status": "new integration"
+    }
+  ],
+  "not_executed": [
+    "teaching examples",
+    "unit tests",
+    "GPU/NCCL",
+    "benchmarks",
+    "profiling"
+  ]
+}

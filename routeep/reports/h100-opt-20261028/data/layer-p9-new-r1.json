@@ -1,0 +1,73 @@
+{
+  "label": "current",
+  "expert_backend": "grouped",
+  "fixed": false,
+  "transport": "peer",
+  "ep_size": 2,
+  "hidden_size": 2048,
+  "expert_hidden_size": 768,
+  "num_experts": 128,
+  "top_k": 8,
+  "skew": 0.0,
+  "dtype": "bfloat16",
+  "layers_per_repeat": 8,
+  "warmup": 5,
+  "repeats": 20,
+  "statistic": "per-repeat max-rank mean ms/layer, median over repeats",
+  "routing": "synthetic softmax top-k",
+  "device": "NVIDIA H100 80GB HBM3",
+  "torch": "2.13.0+cu130",
+  "nccl": "2.29.7",
+  "results": [
+    {
+      "tokens_per_rank": 4,
+      "ms_per_layer_median": 0.5528479814529419,
+      "ms_per_layer_min": 0.4840080142021179,
+      "ms_per_layer_max": 0.6751959919929504,
+      "host_ms_per_layer_rank0": 0.5560482968576252,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 32,
+      "ms_per_layer_median": 0.5021860003471375,
+      "ms_per_layer_min": 0.48185598850250244,
+      "ms_per_layer_max": 0.7610759735107422,
+      "host_ms_per_layer_rank0": 0.5045412108302116,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 256,
+      "ms_per_layer_median": 0.5760180056095123,
+      "ms_per_layer_min": 0.5156599879264832,
+      "ms_per_layer_max": 0.7174199819564819,
+      "host_ms_per_layer_rank0": 0.5784347304143012,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 2048,
+      "ms_per_layer_median": 0.8795959949493408,
+      "ms_per_layer_min": 0.8698880076408386,
+      "ms_per_layer_max": 0.9095240235328674,
+      "host_ms_per_layer_rank0": 0.8823300595395267,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 8192,
+      "ms_per_layer_median": 2.253391981124878,
+      "ms_per_layer_min": 2.245863914489746,
+      "ms_per_layer_max": 2.301100015640259,
+      "host_ms_per_layer_rank0": 2.2557571646757424,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    }
+  ]
+}

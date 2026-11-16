@@ -1,0 +1,46 @@
+{
+  "before.tgz": {
+    "bytes": 36185,
+    "sha256": "b0ccdc9c7e8518e6f1f117b53cbc26858db8623c1524cf637164b29c261e456e"
+  },
+  "after-source.tgz": {
+    "bytes": 104408,
+    "sha256": "0a9249e5c1a384cb3461d9e713a36a8bbeceff2f530cf568ecfacb85d34e3869"
+  },
+  "final-course13.tgz": {
+    "bytes": 210318,
+    "sha256": "79ca09e1f41f6e473f2c051912dd49542a54de11c36a87611a54a85c9b94ebc0"
+  },
+  "remote-raw.tgz": {
+    "bytes": 12223419,
+    "sha256": "2b83c3ec269a4280a44e2519042cfef347bad198b8a54e43afacf31525cd9fe7"
+  },
+  "source-audit.json": {
+    "bytes": 8289,
+    "sha256": "3f58722d7eb814ba23d17b141e0e3ee89e250450dc9e62560bfd014636a956d2"
+  },
+  "results.json": {
+    "bytes": 7462,
+    "sha256": "a7c0e18af742d20c7383d4436e8ec41b375e3dee6965b783de2da09bd10e41a8"
+  },
+  "final-checks.json": {
+    "bytes": 2774,
+    "sha256": "f36c8e65cbe6aa02e6918f8f551ae36e3de40c3cc0929190d9551685698b365f"
+  },
+  "cleanup-only.patch": {
+    "bytes": 4833,
+    "sha256": "068c4e805c32aab6c087f4fe41acafb38306ff71751010ad1882d751e9d28551"
+  },
+  "local-unit.log": {
+    "bytes": 3062,
+    "sha256": "b676c9bce7443507ee90c72632e7172abd5a38e17940a51b28ea7f024cf2e6be"
+  },
+  "layout.json": {
+    "bytes": 352,
+    "sha256": "1567ca86a6161af09cf9c43ee38f24f95b54de039fe68ce428d1106926d18403"
+  },
+  "course13-source-map-entry.json": {
+    "bytes": 30064,
+    "sha256": "e6ab079d6613efacb791c46311a7ecd75e9562a6b69878270492b1290549b86d"
+  }
+}

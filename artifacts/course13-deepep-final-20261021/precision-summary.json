@@ -1,0 +1,230 @@
+{
+  "status": "precision_passed_performance_pending",
+  "precision_passed": true,
+  "target": "real Qwen3-30B-A3B BF16 / vLLM 0.29.0 DeepEP HT / TP2 DP2 EP4",
+  "model_checkpoint_sha256": "9b4fcbad645e5df727e2ace994e87e458adee69d0740d443f3810e0377ed803e",
+  "scope": {
+    "same-13-r1": {
+      "passed": true,
+      "unique_sequences": 128,
+      "unique_generated_tokens": 8192,
+      "teacher_positions_including_tp": 16384,
+      "native_check_positions_including_tp": 16384,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "rotated-13-r1": {
+      "passed": true,
+      "unique_sequences": 128,
+      "unique_generated_tokens": 8192,
+      "teacher_positions_including_tp": 16384,
+      "native_check_positions_including_tp": 16384,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "rotated-13-r2": {
+      "passed": true,
+      "unique_sequences": 128,
+      "unique_generated_tokens": 8192,
+      "teacher_positions_including_tp": 16384,
+      "native_check_positions_including_tp": 16384,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "rotated-13-r3": {
+      "passed": true,
+      "unique_sequences": 128,
+      "unique_generated_tokens": 8192,
+      "teacher_positions_including_tp": 16384,
+      "native_check_positions_including_tp": 16384,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "boundaries-13": {
+      "passed": true,
+      "unique_sequences": 26,
+      "unique_generated_tokens": 1426,
+      "teacher_positions_including_tp": 2852,
+      "native_check_positions_including_tp": 2852,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "long-13": {
+      "passed": true,
+      "unique_sequences": 16,
+      "unique_generated_tokens": 4096,
+      "teacher_positions_including_tp": 8192,
+      "native_check_positions_including_tp": 8192,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "rotated-37": {
+      "passed": true,
+      "unique_sequences": 128,
+      "unique_generated_tokens": 8192,
+      "teacher_positions_including_tp": 16384,
+      "native_check_positions_including_tp": 16384,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "rotated-123": {
+      "passed": true,
+      "unique_sequences": 128,
+      "unique_generated_tokens": 8192,
+      "teacher_positions_including_tp": 16384,
+      "native_check_positions_including_tp": 16384,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    },
+    "performance-13": {
+      "passed": true,
+      "unique_sequences": 92,
+      "unique_generated_tokens": 9490,
+      "teacher_positions_including_tp": 18980,
+      "native_check_positions_including_tp": 18980,
+      "actual_return_buffer_dtypes": [
+        "torch.bfloat16"
+      ],
+      "return_policy": [
+        "auto"
+      ]
+    }
+  },
+  "totals": {
+    "independent_candidate_sequences": 902,
+    "unique_generated_tokens_across_candidate_runs": 64164,
+    "teacher_positions_including_tp": 128328
+  },
+  "native_reproducibility": {
+    "independent_starts": 3,
+    "passed": true,
+    "checks": [
+      "all-rank per-layer MoE SHA256",
+      "complete vocabulary tensors",
+      "all generated tokens"
+    ]
+  },
+  "physical_empty_layer_api": {
+    "0": {
+      "passed": true,
+      "rank": 0,
+      "layers": 48,
+      "cases": 768,
+      "physical_empty_cases": 384,
+      "scope": "direct real-weight 48-layer API; independent from scheduler dummy padding"
+    },
+    "1": {
+      "passed": true,
+      "rank": 1,
+      "layers": 48,
+      "cases": 768,
+      "physical_empty_cases": 384,
+      "scope": "direct real-weight 48-layer API; independent from scheduler dummy padding"
+    },
+    "2": {
+      "passed": true,
+      "rank": 2,
+      "layers": 48,
+      "cases": 768,
+      "physical_empty_cases": 384,
+      "scope": "direct real-weight 48-layer API; independent from scheduler dummy padding"
+    },
+    "3": {
+      "passed": true,
+      "rank": 3,
+      "layers": 48,
+      "cases": 768,
+      "physical_empty_cases": 384,
+      "scope": "direct real-weight 48-layer API; independent from scheduler dummy padding"
+    }
+  },
+  "full_vocab": {
+    "columns": 151936,
+    "captured_dtype": "torch.bfloat16",
+    "scope": "compute_logits before teacher forcing; exact shape/dtype/device/value and finite checked"
+  },
+  "numerical_source_sha256": {
+    "mini_ep/__init__.py": "72a1c823970b85bf8616486f9c4492bba46c3a671da922de9cc04f616c25075c",
+    "mini_ep/profiler/stages.py": "405976c5ef9e13c9a580caf770f2fa76cb0618e065aefda8903c403f5d4ef11c",
+    "mini_ep/profiler/__init__.py": "c3747a9e08ff3159195896d0672fde615939f0b532d15a6c57ab3830b5dbff46",
+    "mini_ep/integration/input_layout.py": "0c39559649054e4e2f013dd5d825bd8cd955e8b921ecb1573bf2bd97d25b4c0e",
+    "mini_ep/integration/__init__.py": "b2747fd3bdd7eb14f5bb3f339dcdb91c137fd0949a3d03fd4de93f7b2806abc3",
+    "mini_ep/integration/config.py": "cb308cc5b7da93fe49cbb9f3314d96aca8496ff50e25306bcf1a8e17f1213c8c",
+    "mini_ep/integration/plugin.py": "1cf1d49eb74b0cde34d6465a4f3616814b2078c8280235bc7e2811c6dac0e23d",
+    "mini_ep/integration/runner.py": "82420aacaadee2f4128b8bca0b497a278c0873b2c0892e4a23efb0781a2fb4ab",
+    "mini_ep/model/expert.py": "c99d64fdb044bafa8c2d20f5c895442db64457f12bfcc5c67767ea16444bbfe5",
+    "mini_ep/model/moe.py": "5fd17b1e109ed5e07c6ba71bd074781ca473a412122391c38793186eb881ef45",
+    "mini_ep/model/__init__.py": "af676af7731f2fedc967d4c1252769976d01f286f6bb4a398e47ba0d8ced0a66",
+    "mini_ep/model/contracts.py": "eb84ffc90d86cef435cc2255e41257193c6bfa51f6aced640a60430a35f61a22",
+    "mini_ep/model/router.py": "9d57cbbdabcc784914f30cd0d63244e6dcbae3e8b5b6c24614c07ce6c0019861",
+    "mini_ep/kernels/swiglu_triton.py": "16715032da5ba0ca20cd875a7aa907902be28dfe96df0cb3d5bc72a37d7341fe",
+    "mini_ep/kernels/combine_triton.py": "acc836096d4447c8f8f76076d96afe610bd3aaf8ad88ee152b23cd484125dccf",
+    "mini_ep/kernels/__init__.py": "6948aa3520bc747e701e9229bbd135533cb750cef6c73770eb0db3b980f3fefb",
+    "mini_ep/kernels/dispatch_triton.py": "d82772c77a0b3ce19be6ab387674180650603b4c6041c6d7fe4bb4237a3f850f",
+    "mini_ep/distributed/all_to_all.py": "f34a4636b7162c1bda33db1101c47bad2ec0829b6903400b0a02175bf1e3f994",
+    "mini_ep/distributed/__init__.py": "556381dda31f53ed404b4ece18d2704a9d6741cdfaae865f9faa0eaed8b6f8c7",
+    "mini_ep/distributed/topology.py": "0c109a2d32f5e28ae048eb0daf16fb0e3ead22246f9b604aeba26dda814f6c02",
+    "mini_ep/distributed/dispatch.py": "75133d6f5673b97fa0b709b1e54f5089b756754625dd35fe8ff99fba787505ee",
+    "mini_ep/kernels/grouped_gemm/plan.py": "10bdd954a0894750ddacc3471955a00d4a53900a73714845d8f1fef00cd1ed3d",
+    "mini_ep/kernels/grouped_gemm/__init__.py": "7cba262d73a724d3587587aa8a4085160a0ea8d645899e7562cb6eb4d40e28a0",
+    "mini_ep/kernels/grouped_gemm/triton_impl.py": "f3d23d10f62fa7f4b3061a49b42634a0bac8a0f13858663382ffe6c968848ca1"
+  },
+  "delivery_core_docstring_only_audit_passed": true,
+  "checks": {
+    "h100_unit_tests": 42,
+    "h100_skips": 0,
+    "nccl_ep_sizes": [
+      1,
+      2,
+      4
+    ],
+    "nccl_cases_per_rank": 432,
+    "distributed_exact_negative_cases_per_rank": 16
+  },
+  "performance": {
+    "status": "pending final timed suite; valid before-cleanup primary samples retained",
+    "before_summary": "artifacts/course13-deepep-final-20261021/before-summaries/primary-summary.json"
+  },
+  "evidence": "artifacts/course13-deepep-final-20261021/final-accuracy/final-accuracy.json",
+  "not_claimed": [
+    "other models",
+    "full FP16 model",
+    "other DeepEP binaries/hardware/topologies",
+    "performance from precision-run timings",
+    "Qwen3.5 new DeepEP accuracy; DP1 shared/routed joint rounding explicitly unsupported",
+    "native detailed-stage/transport-byte breakdown",
+    "communication-compute overlap"
+  ]
+}

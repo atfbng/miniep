@@ -1,0 +1,191 @@
+{
+  "attribution": "mean of matched critical-Rank parent and child CUDA Event intervals; controls use trial median of repetition-wise max Rank medians",
+  "rows": [
+    {
+      "case": "large",
+      "ep_size": 1,
+      "trials": 3,
+      "parent_mean_ms": 1.9438996295134225,
+      "boundary_mean_ms": 0.17134357745448747,
+      "control_median_ms": 1.6438080072402954,
+      "cpu_metadata_median_ms": 1.3353439569473267,
+      "parts_mean_ms": {
+        "EXPERT_PACK": 0.6048394656181335,
+        "RANK_PACK": 0.25618090669314064,
+        "COUNT_ALLGATHER": 0.12229439998666446,
+        "RECEIVE_LAYOUT": 0.7892412797609966
+      },
+      "host_parts_mean_ms": {
+        "EXPERT_PACK": 0.6243409588932991,
+        "RANK_PACK": 0.27699343860149384,
+        "COUNT_ALLGATHER": 0.14076150332887968,
+        "RECEIVE_LAYOUT": 0.8075042876104513
+      },
+      "scalar_reads_per_forward": {
+        "EXPERT_PACK": 3.0,
+        "RANK_PACK": 0,
+        "COUNT_ALLGATHER": 0,
+        "RECEIVE_LAYOUT": 25.999999999999975
+      },
+      "largest_part": "RECEIVE_LAYOUT",
+      "largest_part_share": 0.4060092752620934,
+      "cpu_metadata_speedup": 1.2309996976345596,
+      "dispatch_reduction_fraction": 0.18765211565724949
+    },
+    {
+      "case": "large",
+      "ep_size": 2,
+      "trials": 3,
+      "parent_mean_ms": 1.9547761078675587,
+      "boundary_mean_ms": 0.17344224065542221,
+      "control_median_ms": 1.6128640174865723,
+      "cpu_metadata_median_ms": 1.299776017665863,
+      "parts_mean_ms": {
+        "EXPERT_PACK": 0.5881990389029185,
+        "RANK_PACK": 0.2591873063147068,
+        "COUNT_ALLGATHER": 0.16005205328265826,
+        "RECEIVE_LAYOUT": 0.773895468711853
+      },
+      "host_parts_mean_ms": {
+        "EXPERT_PACK": 0.6077977083623409,
+        "RANK_PACK": 0.2804208608965079,
+        "COUNT_ALLGATHER": 0.16956481461723646,
+        "RECEIVE_LAYOUT": 0.8011012710630894
+      },
+      "scalar_reads_per_forward": {
+        "EXPERT_PACK": 3.0,
+        "RANK_PACK": 0,
+        "COUNT_ALLGATHER": 0,
+        "RECEIVE_LAYOUT": 24.888888888888868
+      },
+      "largest_part": "RECEIVE_LAYOUT",
+      "largest_part_share": 0.39589979926452346,
+      "cpu_metadata_speedup": 1.2408784248711962,
+      "dispatch_reduction_fraction": 0.19411927876512125
+    },
+    {
+      "case": "large",
+      "ep_size": 4,
+      "trials": 3,
+      "parent_mean_ms": 1.9101781324545544,
+      "boundary_mean_ms": 0.17579615838825702,
+      "control_median_ms": 1.5045920014381409,
+      "cpu_metadata_median_ms": 1.1166719794273376,
+      "parts_mean_ms": {
+        "EXPERT_PACK": 0.5123739730318387,
+        "RANK_PACK": 0.22559093336264294,
+        "COUNT_ALLGATHER": 0.22717429322501023,
+        "RECEIVE_LAYOUT": 0.7692427744468053
+      },
+      "host_parts_mean_ms": {
+        "EXPERT_PACK": 0.533192561318477,
+        "RANK_PACK": 0.24772736554344496,
+        "COUNT_ALLGATHER": 0.18278194591403008,
+        "RECEIVE_LAYOUT": 0.8436259130636851
+      },
+      "scalar_reads_per_forward": {
+        "EXPERT_PACK": 3.0,
+        "RANK_PACK": 0,
+        "COUNT_ALLGATHER": 0,
+        "RECEIVE_LAYOUT": 25.999999999999975
+      },
+      "largest_part": "RECEIVE_LAYOUT",
+      "largest_part_share": 0.40270735036545424,
+      "cpu_metadata_speedup": 1.347389411714029,
+      "dispatch_reduction_fraction": 0.257824062363761
+    },
+    {
+      "case": "small",
+      "ep_size": 1,
+      "trials": 3,
+      "parent_mean_ms": 1.7740106654167176,
+      "boundary_mean_ms": 0.17374762463072935,
+      "control_median_ms": 1.458672046661377,
+      "cpu_metadata_median_ms": 1.1216480135917664,
+      "parts_mean_ms": {
+        "EXPERT_PACK": 0.4582005336880684,
+        "RANK_PACK": 0.22062336032589278,
+        "COUNT_ALLGATHER": 0.1190633598715067,
+        "RECEIVE_LAYOUT": 0.8023757869005204
+      },
+      "host_parts_mean_ms": {
+        "EXPERT_PACK": 0.47762497638662654,
+        "RANK_PACK": 0.24159195522467294,
+        "COUNT_ALLGATHER": 0.13780982544024786,
+        "RECEIVE_LAYOUT": 0.8209187040726343
+      },
+      "scalar_reads_per_forward": {
+        "EXPERT_PACK": 3.0,
+        "RANK_PACK": 0,
+        "COUNT_ALLGATHER": 0,
+        "RECEIVE_LAYOUT": 24.666666666666647
+      },
+      "largest_part": "RECEIVE_LAYOUT",
+      "largest_part_share": 0.45229479311616266,
+      "cpu_metadata_speedup": 1.300472188231658,
+      "dispatch_reduction_fraction": 0.2310485306419593
+    },
+    {
+      "case": "small",
+      "ep_size": 2,
+      "trials": 3,
+      "parent_mean_ms": 1.8045861315727234,
+      "boundary_mean_ms": 0.1677508258074522,
+      "control_median_ms": 1.4742720127105713,
+      "cpu_metadata_median_ms": 1.1107680201530457,
+      "parts_mean_ms": {
+        "EXPERT_PACK": 0.4528815997640292,
+        "RANK_PACK": 0.2128020267188549,
+        "COUNT_ALLGATHER": 0.23302517287433147,
+        "RECEIVE_LAYOUT": 0.7381265064080557
+      },
+      "host_parts_mean_ms": {
+        "EXPERT_PACK": 0.4721295088529587,
+        "RANK_PACK": 0.23386495808760324,
+        "COUNT_ALLGATHER": 0.17263907939195633,
+        "RECEIVE_LAYOUT": 0.8276502539714178
+      },
+      "scalar_reads_per_forward": {
+        "EXPERT_PACK": 3.0,
+        "RANK_PACK": 0,
+        "COUNT_ALLGATHER": 0,
+        "RECEIVE_LAYOUT": 25.999999999999975
+      },
+      "largest_part": "RECEIVE_LAYOUT",
+      "largest_part_share": 0.4090281386373991,
+      "cpu_metadata_speedup": 1.3272546436000567,
+      "dispatch_reduction_fraction": 0.24656507715234544
+    },
+    {
+      "case": "small",
+      "ep_size": 4,
+      "trials": 3,
+      "parent_mean_ms": 1.9469335480531056,
+      "boundary_mean_ms": 0.15559541463851928,
+      "control_median_ms": 1.4768159985542297,
+      "cpu_metadata_median_ms": 1.1194719672203064,
+      "parts_mean_ms": {
+        "EXPERT_PACK": 0.46031200071175893,
+        "RANK_PACK": 0.2175846399863561,
+        "COUNT_ALLGATHER": 0.3827138125896454,
+        "RECEIVE_LAYOUT": 0.730727680126826
+      },
+      "host_parts_mean_ms": {
+        "EXPERT_PACK": 0.4803573340177536,
+        "RANK_PACK": 0.23949376617868742,
+        "COUNT_ALLGATHER": 0.18617158134778342,
+        "RECEIVE_LAYOUT": 0.9414921142160892
+      },
+      "scalar_reads_per_forward": {
+        "EXPERT_PACK": 3.0,
+        "RANK_PACK": 0,
+        "COUNT_ALLGATHER": 0,
+        "RECEIVE_LAYOUT": 25.999999999999975
+      },
+      "largest_part": "RECEIVE_LAYOUT",
+      "largest_part_share": 0.37532235286486226,
+      "cpu_metadata_speedup": 1.3192076637892263,
+      "dispatch_reduction_fraction": 0.24196923088844868
+    }
+  ]
+}

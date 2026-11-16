@@ -1,0 +1,73 @@
+{
+  "label": "current",
+  "expert_backend": "grouped",
+  "fixed": false,
+  "transport": "peer",
+  "ep_size": 2,
+  "hidden_size": 2048,
+  "expert_hidden_size": 768,
+  "num_experts": 128,
+  "top_k": 8,
+  "skew": 0.0,
+  "dtype": "bfloat16",
+  "layers_per_repeat": 8,
+  "warmup": 5,
+  "repeats": 20,
+  "statistic": "per-repeat max-rank mean ms/layer, median over repeats",
+  "routing": "synthetic softmax top-k",
+  "device": "NVIDIA H100 80GB HBM3",
+  "torch": "2.13.0+cu130",
+  "nccl": "2.29.7",
+  "results": [
+    {
+      "tokens_per_rank": 4,
+      "ms_per_layer_median": 0.7011539936065674,
+      "ms_per_layer_min": 0.5520480275154114,
+      "ms_per_layer_max": 0.7681840062141418,
+      "host_ms_per_layer_rank0": 0.7038194453343749,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 32,
+      "ms_per_layer_median": 0.7302619814872742,
+      "ms_per_layer_min": 0.6540840268135071,
+      "ms_per_layer_max": 1.1122759580612183,
+      "host_ms_per_layer_rank0": 0.7324902690015733,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 256,
+      "ms_per_layer_median": 0.675139993429184,
+      "ms_per_layer_min": 0.6397200226783752,
+      "ms_per_layer_max": 0.9531999826431274,
+      "host_ms_per_layer_rank0": 0.6770360632799566,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 2048,
+      "ms_per_layer_median": 1.158873975276947,
+      "ms_per_layer_min": 1.0883280038833618,
+      "ms_per_layer_max": 1.3138840198516846,
+      "host_ms_per_layer_rank0": 1.1583168525248766,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    },
+    {
+      "tokens_per_rank": 8192,
+      "ms_per_layer_median": 2.692262053489685,
+      "ms_per_layer_min": 2.660979986190796,
+      "ms_per_layer_max": 2.8380041122436523,
+      "host_ms_per_layer_rank0": 2.6948520680889487,
+      "send_rows": null,
+      "recv_rows": null,
+      "received_branches": null
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="648pt" height="972pt" viewBox="0 0 648 972" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-23T00:06:21.221573</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.9, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 972
+L 648 972
+L 648 0
+L 0 0
+z
+" style="fill: #f5f7f5"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 40.824 646.38
+L 607.176 646.38
+Q 612.36 646.38 612.36 638.604
+L 612.36 109.836
+Q 612.36 102.06 607.176 102.06
+L 40.824 102.06
+Q 35.64 102.06 35.64 109.836
+L 35.64 638.604
+Q 35.64 646.38 40.824 646.38
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #0b2231; stroke: #0b2231; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 69.984 559.872
+L 578.016 559.872
+Q 583.2 559.872 583.2 552.096
+L 583.2 414.072
+Q 583.2 406.296 578.016 406.296
+L 69.984 406.296
+Q 64.8 406.296 64.8 414.072
+L 64.8 552.096
+Q 64.8 559.872 69.984 559.872
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #163647; stroke: #537783; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 88.776 512.244
+L 209.304 512.244
+Q 213.84 512.244 213.84 505.44
+L 213.84 460.728
+Q 213.84 453.924 209.304 453.924
+L 88.776 453.924
+Q 84.24 453.924 84.24 460.728
+L 84.24 505.44
+Q 84.24 512.244 88.776 512.244
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #122f40; stroke: #7e9aa7; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 241.056 512.244
+L 426.384 512.244
+Q 430.92 512.244 430.92 505.44
+L 430.92 460.728
+Q 430.92 453.924 426.384 453.924
+L 241.056 453.924
+Q 236.52 453.924 236.52 460.728
+L 236.52 505.44
+Q 236.52 512.244 241.056 512.244
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #122f40; stroke: #78d9d4; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 451.656 512.244
+L 559.224 512.244
+Q 563.76 512.244 563.76 505.44
+L 563.76 460.728
+Q 563.76 453.924 559.224 453.924
+L 451.656 453.924
+Q 447.12 453.924 447.12 460.728
+L 447.12 505.44
+Q 447.12 512.244 451.656 512.244
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #122f40; stroke: #7e9aa7; stroke-width: 1.25; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 241.704 735.0264
+L 529.416 735.0264
+Q 531.36 735.0264 531.36 732.1104
+L 531.36 727.8336
+Q 531.36 724.9176 529.416 724.9176
+L 241.704 724.9176
+Q 239.76 724.9176 239.76 727.8336
+L 239.76 732.1104
+Q 239.76 735.0264 241.704 735.0264
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #d9e3e3"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 241.704 735.0264
+L 524.949697 735.0264
+Q 526.893697 735.0264 526.893697 732.1104
+L 526.893697 727.8336
+Q 526.893697 724.9176 524.949697 724.9176
+L 241.704 724.9176
+Q 239.76 724.9176 239.76 727.8336
+L 239.76 732.1104
+Q 239.76 735.0264 241.704 735.0264
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #168f8d"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 241.704 784.5984
+L 529.416 784.5984
+Q 531.36 784.5984 531.36 781.6824
+L 531.36 777.4056
+Q 531.36 774.4896 529.416 774.4896
+L 241.704 774.4896
+Q 239.76 774.4896 239.76 777.4056
+L 239.76 781.6824
+Q 239.76 784.5984 241.704 784.5984
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #d9e3e3"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 241.704 784.5984
+L 480.911112 784.5984
+Q 482.855112 784.5984 482.855112 781.6824
+L 482.855112 777.4056
+Q 482.855112 774.4896 480.911112 774.4896
+L 241.704 774.4896
+Q 239.76 774.4896 239.76 777.4056
+L 239.76 781.6824
+Q 239.76 784.5984 241.704 784.5984
+z
+" clip-path="url(#p2f1ad7a2f6)" style="fill: #496e82"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 45.36 70.956
+L 602.64 70.956
+" clip-path="url(#p2f1ad7a2f6)" style="fill: none; stroke: #b4c4c7; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 64.8 381.996
+L 583.2 381.996
+" clip-path="url(#p2f1ad7a2f6)" style="fill: none; stroke: #42616e; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 64.8 602.64
+L 583.2 602.64
+" clip-path="url(#p2f1ad7a2f6)" style="fill: none; stroke: #42616e; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 45.36 859.248
+L 602.64 859.248
+" clip-path="url(#p2f1ad7a2f6)" style="fill: none; stroke: #b4c4c7; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #102633" x="45.36" y="48.476813" transform="rotate(-0 45.36 48.476813)">RouteEP</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.7px; font-family: 'Noto Sans SC'; text-anchor: end; fill: #58707a" x="602.64" y="43.573344" transform="rotate(-0 602.64 43.573344)">EXPERT PARALLEL  /  COURSE</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #78d9d4" x="64.8" y="154.693125" transform="rotate(-0 64.8 154.693125)">VLLM  ×  EXPERT PARALLEL</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 45px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #ffffff" x="64.8" y="244.797188" transform="rotate(-0 64.8 244.797188)">大模型 MoE</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 47px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #ffffff" x="64.8" y="305.681063" transform="rotate(-0 64.8 305.681063)">专家并行实战</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 15.7px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #c9dadd" x="64.8" y="344.649969" transform="rotate(-0 64.8 344.649969)">接入 vLLM 的 MoE 计算与通信流程</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11.2px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #78d9d4" x="84.24" y="431.8265" transform="rotate(-0 84.24 431.8265)">vLLM 推理链路</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10.8px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #ffffff" x="95.904" y="480.313125" transform="rotate(-0 95.904 480.313125)">调度 / Attention</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #b8cbcf" x="95.904" y="502.158937" transform="rotate(-0 95.904 502.158937)">请求与 KV Cache</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #ffffff" x="248.184" y="481.787" transform="rotate(-0 248.184 481.787)">RouteEP</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #b8cbcf" x="248.184" y="502.158937" transform="rotate(-0 248.184 502.158937)">MoE 计算与通信</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11.6px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #ffffff" x="458.784" y="480.539875" transform="rotate(-0 458.784 480.539875)">模型输出</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #b8cbcf" x="458.784" y="502.158937" transform="rotate(-0 458.784 502.158937)">继续推理</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 215.841665 483.084
+Q 225.179983 483.084 232.84125 483.084
+" style="fill: none; stroke: #78d9d4; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 228.84125 481.084
+L 232.84125 483.084
+L 228.84125 485.084
+z
+" style="fill: #78d9d4; stroke: #78d9d4; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 432.917314 483.084
+Q 439.018297 483.084 443.442229 483.084
+" style="fill: none; stroke: #78d9d4; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 439.442229 481.084
+L 443.442229 483.084
+L 439.442229 485.084
+z
+" style="fill: #78d9d4; stroke: #78d9d4; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.1px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #d6e8e9" x="84.24" y="540.616227" transform="rotate(-0 84.24 540.616227)">性能对照：DeepEP HT · DeepSeek 高性能 MoE 通信库</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10.4px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #78d9d4" x="64.8" y="627.94375" transform="rotate(-0 64.8 627.94375)">同模型同请求  /  BF16  /  TP=2 · DP=2 · EP=4  /  4×H100</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #102633" x="45.36" y="688.042992" transform="rotate(-0 45.36 688.042992)">Qwen3.5 · H100 实测性能</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.2px; font-family: 'Noto Sans SC'; text-anchor: end; fill: #627884" x="602.64" y="686.207063" transform="rotate(-0 602.64 686.207063)">DeepEP HT = 100%</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 13px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #102633" x="45.36" y="733.656687" transform="rotate(-0 45.36 733.656687)">解码</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 11.8px; font-family: 'Noto Sans SC'; text-anchor: end; fill: #102633" x="602.64" y="733.316563" transform="rotate(-0 602.64 733.316563)">98.5%</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 13px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #102633" x="45.36" y="783.228687" transform="rotate(-0 45.36 783.228687)">预填充</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 11.8px; font-family: 'Noto Sans SC'; text-anchor: end; fill: #102633" x="602.64" y="782.888563" transform="rotate(-0 602.64 782.888563)">83.4%</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9.2px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #627884" x="45.36" y="837.790656" transform="rotate(-0 45.36 837.790656)">相对 DeepEP HT 的端到端速度；每组为三个场景的中位数</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 11.2px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #102633" x="45.36" y="894.74" transform="rotate(-0 45.36 894.74)">vLLM 接入  ·  NCCL All-to-All  ·  Triton / Grouped GEMM</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 9.2px; font-family: 'Noto Sans SC'; text-anchor: end; fill: #82949a" x="602.64" y="921.147625" transform="rotate(-0 602.64 921.147625)">ROUTEEP  /  GPU SYSTEMS</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2f1ad7a2f6">
+   <rect x="0" y="0" width="648" height="972"/>
+  </clipPath>
+ </defs>
+</svg>

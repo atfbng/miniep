@@ -1,0 +1,331 @@
+{
+  "statistic": "median of independent trial medians; each trial uses median of repetition-wise max Rank CUDA latency",
+  "rows": [
+    {
+      "case": "large",
+      "ep_size": 1,
+      "trials": 3,
+      "config": {
+        "tokens": 8192,
+        "hidden_size": 1024,
+        "expert_hidden_size": 2048,
+        "num_experts": 8,
+        "top_k": 2,
+        "dtype": "float16",
+        "scenario": "uniform",
+        "warmup": 50,
+        "repeats": 100,
+        "seed": 0,
+        "timeout_seconds": 120,
+        "profile": "none",
+        "trace_dir": "results/ep-traces",
+        "output": "/results/scaling/raw/large/ep1/trial0.json",
+        "ep_size": 1,
+        "batch_size": 1,
+        "seq_len": 8192,
+        "chunk_size": null
+      },
+      "latency_ms": 2.8463040590286255,
+      "trial_min_ms": 2.8291040658950806,
+      "trial_max_ms": 2.857327938079834,
+      "tokens_per_second": 2878118.3703879234,
+      "communication_bytes": 0,
+      "tokens_per_expert": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ],
+      "rows_per_rank": [
+        16384
+      ],
+      "stages_ms": {
+        "ROUTER": 0.2590720057487488,
+        "DISPATCH": 1.598800003528595,
+        "A2A_FORWARD": 0.14641600102186203,
+        "EXPERT": 0.641295999288559,
+        "A2A_RETURN": 0.12489599734544754,
+        "COMBINE": 0.20372799783945084
+      },
+      "speedup": 1.0,
+      "parallel_efficiency": 1.0
+    },
+    {
+      "case": "large",
+      "ep_size": 2,
+      "trials": 3,
+      "config": {
+        "tokens": 8192,
+        "hidden_size": 1024,
+        "expert_hidden_size": 2048,
+        "num_experts": 8,
+        "top_k": 2,
+        "dtype": "float16",
+        "scenario": "uniform",
+        "warmup": 50,
+        "repeats": 100,
+        "seed": 0,
+        "timeout_seconds": 120,
+        "profile": "none",
+        "trace_dir": "results/ep-traces",
+        "output": "/results/scaling/raw/large/ep2/trial0.json",
+        "ep_size": 2,
+        "batch_size": 1,
+        "seq_len": 8192,
+        "chunk_size": null
+      },
+      "latency_ms": 2.5064960718154907,
+      "trial_min_ms": 2.464400053024292,
+      "trial_max_ms": 2.5432480573654175,
+      "tokens_per_second": 3268307.5358129,
+      "communication_bytes": 33554432,
+      "tokens_per_expert": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ],
+      "rows_per_rank": [
+        8192,
+        8192
+      ],
+      "stages_ms": {
+        "ROUTER": 0.2630879878997803,
+        "DISPATCH": 1.5805439949035645,
+        "A2A_FORWARD": 0.21199999749660492,
+        "EXPERT": 0.40270400047302246,
+        "A2A_RETURN": 0.20827200263738632,
+        "COMBINE": 0.13952000439167023
+      },
+      "speedup": 1.1355709235031863,
+      "parallel_efficiency": 0.5677854617515932
+    },
+    {
+      "case": "large",
+      "ep_size": 4,
+      "trials": 3,
+      "config": {
+        "tokens": 8192,
+        "hidden_size": 1024,
+        "expert_hidden_size": 2048,
+        "num_experts": 8,
+        "top_k": 2,
+        "dtype": "float16",
+        "scenario": "uniform",
+        "warmup": 50,
+        "repeats": 100,
+        "seed": 0,
+        "timeout_seconds": 120,
+        "profile": "none",
+        "trace_dir": "results/ep-traces",
+        "output": "/results/scaling/raw/large/ep4/trial0.json",
+        "ep_size": 4,
+        "batch_size": 1,
+        "seq_len": 8192,
+        "chunk_size": null
+      },
+      "latency_ms": 2.888335943222046,
+      "trial_min_ms": 2.266256093978882,
+      "trial_max_ms": 2.9361599683761597,
+      "tokens_per_second": 2836235.175213559,
+      "communication_bytes": 50331648,
+      "tokens_per_expert": [
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048,
+        2048
+      ],
+      "rows_per_rank": [
+        4096,
+        4096,
+        4096,
+        4096
+      ],
+      "stages_ms": {
+        "ROUTER": 0.27244800329208374,
+        "DISPATCH": 1.466319978237152,
+        "A2A_FORWARD": 0.21385600417852402,
+        "EXPERT": 0.2824479937553406,
+        "A2A_RETURN": 0.20795200020074844,
+        "COMBINE": 0.14401599764823914
+      },
+      "speedup": 0.9854477162561179,
+      "parallel_efficiency": 0.24636192906402948
+    },
+    {
+      "case": "small",
+      "ep_size": 1,
+      "trials": 3,
+      "config": {
+        "tokens": 1024,
+        "hidden_size": 128,
+        "expert_hidden_size": 256,
+        "num_experts": 8,
+        "top_k": 2,
+        "dtype": "float16",
+        "scenario": "uniform",
+        "warmup": 50,
+        "repeats": 100,
+        "seed": 0,
+        "timeout_seconds": 120,
+        "profile": "none",
+        "trace_dir": "results/ep-traces",
+        "output": "/results/scaling/raw/small/ep1/trial0.json",
+        "ep_size": 1,
+        "batch_size": 1,
+        "seq_len": 1024,
+        "chunk_size": null
+      },
+      "latency_ms": 2.529439926147461,
+      "trial_min_ms": 2.401103973388672,
+      "trial_max_ms": 2.5907520055770874,
+      "tokens_per_second": 404832.702059714,
+      "communication_bytes": 0,
+      "tokens_per_expert": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "rows_per_rank": [
+        2048
+      ],
+      "stages_ms": {
+        "ROUTER": 0.2561279982328415,
+        "DISPATCH": 1.4166560173034668,
+        "A2A_FORWARD": 0.14263999462127686,
+        "EXPERT": 0.6381759941577911,
+        "A2A_RETURN": 0.12030399963259697,
+        "COMBINE": 0.1358880028128624
+      },
+      "speedup": 1.0,
+      "parallel_efficiency": 1.0
+    },
+    {
+      "case": "small",
+      "ep_size": 2,
+      "trials": 3,
+      "config": {
+        "tokens": 1024,
+        "hidden_size": 128,
+        "expert_hidden_size": 256,
+        "num_experts": 8,
+        "top_k": 2,
+        "dtype": "float16",
+        "scenario": "uniform",
+        "warmup": 50,
+        "repeats": 100,
+        "seed": 0,
+        "timeout_seconds": 120,
+        "profile": "none",
+        "trace_dir": "results/ep-traces",
+        "output": "/results/scaling/raw/small/ep2/trial0.json",
+        "ep_size": 2,
+        "batch_size": 1,
+        "seq_len": 1024,
+        "chunk_size": null
+      },
+      "latency_ms": 2.3457438945770264,
+      "trial_min_ms": 2.286463975906372,
+      "trial_max_ms": 3.082095980644226,
+      "tokens_per_second": 436535.293715277,
+      "communication_bytes": 524288,
+      "tokens_per_expert": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "rows_per_rank": [
+        1024,
+        1024
+      ],
+      "stages_ms": {
+        "ROUTER": 0.25969600677490234,
+        "DISPATCH": 1.424560010433197,
+        "A2A_FORWARD": 0.16257600486278534,
+        "EXPERT": 0.40278400480747223,
+        "A2A_RETURN": 0.1449279934167862,
+        "COMBINE": 0.13892799615859985
+      },
+      "speedup": 1.0783103526327447,
+      "parallel_efficiency": 0.5391551763163723
+    },
+    {
+      "case": "small",
+      "ep_size": 4,
+      "trials": 3,
+      "config": {
+        "tokens": 1024,
+        "hidden_size": 128,
+        "expert_hidden_size": 256,
+        "num_experts": 8,
+        "top_k": 2,
+        "dtype": "float16",
+        "scenario": "uniform",
+        "warmup": 50,
+        "repeats": 100,
+        "seed": 0,
+        "timeout_seconds": 120,
+        "profile": "none",
+        "trace_dir": "results/ep-traces",
+        "output": "/results/scaling/raw/small/ep4/trial0.json",
+        "ep_size": 4,
+        "batch_size": 1,
+        "seq_len": 1024,
+        "chunk_size": null
+      },
+      "latency_ms": 2.2165279388427734,
+      "trial_min_ms": 2.2058240175247192,
+      "trial_max_ms": 2.8197439908981323,
+      "tokens_per_second": 461983.8000032699,
+      "communication_bytes": 786432,
+      "tokens_per_expert": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "rows_per_rank": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "stages_ms": {
+        "ROUTER": 0.264272004365921,
+        "DISPATCH": 1.452015995979309,
+        "A2A_FORWARD": 0.21276799589395523,
+        "EXPERT": 0.2780959904193878,
+        "A2A_RETURN": 0.20822399854660034,
+        "COMBINE": 0.1414400041103363
+      },
+      "speedup": 1.1411721376578072,
+      "parallel_efficiency": 0.2852930344144518
+    }
+  ]
+}

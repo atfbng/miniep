@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>部署基线：decode 每步耗时，RouteEP Peer eager vs DeepEP LL（eager / CUDA Graph），EP4</title>
+<style>
+.viz-root { color-scheme: light; --surface-1:#fcfcfb; --surface-2:#f3f2ef; --text-primary:#0b0b0b;
+  --text-secondary:#52514e; --text-muted:#7a7974; --grid:#e4e3df; --axis:#c9c8c3;
+  --peer:#1baf7a; --lle:#eda100; --llg:#6250d6; }
+@media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .viz-root { color-scheme: dark;
+  --surface-1:#1a1a19; --surface-2:#242423; --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#94938b;
+  --grid:#33332f; --axis:#4a4945; --peer:#199e70; --lle:#c98500; --llg:#9085e9; } }
+:root[data-theme="dark"] .viz-root { color-scheme: dark; --surface-1:#1a1a19; --surface-2:#242423; --text-primary:#f0efec;
+  --text-secondary:#c3c2b7; --text-muted:#94938b; --grid:#33332f; --axis:#4a4945; --peer:#199e70; --lle:#c98500; --llg:#9085e9; }
+body { margin:0; }
+.viz-root { background:var(--surface-1); color:var(--text-primary); font:14px/1.5 "Noto Sans SC",system-ui,sans-serif; padding:24px; }
+h1 { font-size:18px; margin:0 0 4px; font-weight:600; } .sub { color:var(--text-secondary); margin:0 0 12px; font-size:13px; }
+.legend { display:flex; gap:20px; flex-wrap:wrap; margin:0 0 12px; font-size:13px; color:var(--text-secondary); }
+.legend span { display:inline-flex; align-items:center; gap:6px; } .legend svg { width:12px; height:12px; flex:none; }
+.controls { margin:0 0 12px; } .controls button { font:inherit; font-size:13px; color:var(--text-primary); background:var(--surface-2);
+  border:1px solid var(--grid); border-radius:6px; padding:4px 10px; cursor:pointer; }
+.panels { display:grid; grid-template-columns:repeat(auto-fit,minmax(460px,1fr)); gap:24px; }
+.panel h2 { font-size:14px; font-weight:600; margin:0 0 4px; }
+.panel svg { width:100%; height:auto; display:block; overflow:visible; }
+.grid-line { stroke:var(--grid); stroke-width:1; } .axis-line { stroke:var(--axis); stroke-width:1; }
+.tick { fill:var(--text-muted); font-size:11px; } .value { fill:var(--text-secondary); font-size:11px; }
+.series-name { fill:var(--text-primary); font-size:10px; font-weight:600; }
+.whisker { stroke:var(--text-secondary); stroke-width:1; }
+.bar { outline:none; } .bar:hover .mark, .bar:focus .mark { opacity:.8; } .bar:focus .hit { stroke:var(--text-primary); stroke-width:1.5; }
+.texture { display:none; pointer-events:none; } .viz-root[data-texture="on"] .texture { display:inline; }
+.hatch line { stroke:var(--text-primary); stroke-opacity:.45; }
+@media print { .texture { display:inline; } .controls, .tooltip { display:none !important; } }
+@media (forced-colors: active) { .texture { display:inline; } .hatch line { stroke:CanvasText; } .mark { fill:Canvas; stroke:CanvasText; } }
+.tooltip { position:fixed; pointer-events:none; background:var(--surface-2); color:var(--text-primary); border:1px solid var(--grid);
+  border-radius:6px; padding:8px 10px; font-size:12px; box-shadow:0 2px 8px rgba(0,0,0,.15); display:none; z-index:10; min-width:240px; }
+.tooltip .v { font-size:15px; font-weight:600; } .tooltip .row { display:flex; align-items:center; gap:6px; color:var(--text-secondary); }
+.tooltip .row b { color:var(--text-primary); font-weight:600; margin-left:auto; } .tooltip .k { width:12px; height:2px; display:inline-block; }
+table { border-collapse:collapse; margin-top:8px; font-size:13px; font-variant-numeric:tabular-nums; }
+th, td { padding:4px 10px; border-bottom:1px solid var(--grid); text-align:right; } th:first-child, td:first-child { text-align:left; }
+th { color:var(--text-secondary); font-weight:600; } .note { color:var(--text-muted); font-size:12px; margin-top:16px; }
+details { margin-top:20px; } summary { cursor:pointer; color:var(--text-secondary); }
+</style></head>
+<body><div class="viz-root">
+<h1>部署基线：decode 每步耗时，RouteEP Peer eager vs DeepEP LL（eager / CUDA Graph），EP4</h1>
+<p class="sub">EP4（TP2/DP2），gpu3 物理 GPU4–7，三组在同一组卡上交替运行。纵轴为 decode 每步耗时，越低越好；柱 = 9 个样本中位数，细须 = min–max。只标出 Peer 和 LL+Graph 的数值，悬停或 Tab 聚焦可看每根柱，完整数值见下方数据表。</p>
+<div class="legend" aria-hidden="true">
+ <span><svg viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="var(--peer)"/></svg>RouteEP Peer + eager</span>
+ <span><svg viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="var(--lle)"/><rect width="12" height="12" rx="2" fill="url(#h45)" class="texture"/></svg>DeepEP LL + eager</span>
+ <span><svg viewBox="0 0 12 12"><rect width="12" height="12" rx="2" fill="var(--llg)"/><rect width="12" height="12" rx="2" fill="url(#h135)" class="texture"/></svg>DeepEP LL + CUDA Graph</span>
+</div>
+<div class="controls"><button type="button" id="tex" aria-pressed="false">纹理：关</button></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+ <pattern id="h45" class="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke-width="2"/></pattern>
+ <pattern id="h135" class="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(135)"><line x1="0" y1="0" x2="0" y2="6" stroke-width="2"/></pattern>
+</defs></svg>
+<div class="panels" id="panels"></div>
+<details open><summary>数据表</summary><div id="tables"></div></details>
+<p class="note">口径：所有请求都出首 Token 之后的稳态区间 ÷ (步数−1)，每次重复取 4 个 Rank 中最慢者。LL 两组用 512 Token 预算 + chunked prefill（与 decode 部署一致），Peer 用默认调度；稳态口径排除了 chunked prefill 对 decode_b32 的影响。三组 Peer 均实测走 Peer/TMA 去重，LL 两组 48/40 层均为 DeepEPLLAll2AllManager，Graph 组为 FULL_DECODE_ONLY。</p>
+<div class="tooltip" id="tip" role="status" aria-live="polite"></div>
+</div>
+<script>
+const DATA = {"Qwen3-30B-A3B": {"decode_b1": {"peer": {"median": 78.79636895762185, "min": 76.04168747060412, "max": 84.97611698731194, "n": 9}, "lle": {"median": 60.4683508084515, "min": 57.98875826491615, "max": 64.000121882464, "n": 9}, "llg": {"median": 38.1550664067503, "min": 37.84057474511815, "max": 38.51686764185823, "n": 9}}, "decode_b4": {"peer": {"median": 77.15363823992061, "min": 74.80304906746065, "max": 79.25030699102427, "n": 9}, "lle": {"median": 59.0676215337956, "min": 57.981836470210645, "max": 70.20725474113554, "n": 9}, "llg": {"median": 38.33833580293993, "min": 38.21230773616025, "max": 41.76734580005717, "n": 9}}, "decode_b32": {"peer": {"median": 78.69027109127344, "min": 77.43313754578745, "max": 82.16320952092569, "n": 9}, "lle": {"median": 58.831770090371606, "min": 58.37409182151002, "max": 65.9995499968998, "n": 9}, "llg": {"median": 43.65837254275487, "min": 43.38312242913434, "max": 43.849919563320675, "n": 9}}}, "Qwen3.5-35B-A3B": {"decode_b1": {"peer": {"median": 82.21665048223781, "min": 81.09340051145065, "max": 83.62561467242992, "n": 9}, "lle": {"median": 71.62548638293593, "min": 70.61485196720427, "max": 77.57154249358834, "n": 9}, "llg": {"median": 34.324593094038214, "min": 34.03694514097191, "max": 36.57484463760703, "n": 9}}, "decode_b4": {"peer": {"median": 83.19652472131365, "min": 81.5178824104662, "max": 84.73728293567662, "n": 9}, "lle": {"median": 72.53595441579819, "min": 71.92750248735345, "max": 72.97443159980567, "n": 9}, "llg": {"median": 34.51720559162887, "min": 34.38823237487181, "max": 34.80232747520987, "n": 9}}, "decode_b32": {"peer": {"median": 84.61871067076687, "min": 83.76160167216317, "max": 85.96808192004838, "n": 9}, "lle": {"median": 73.70131077083546, "min": 73.29170663995068, "max": 74.438753222504, "n": 9}, "llg": {"median": 42.7531478559877, "min": 42.272213949110565, "max": 43.189642686895496, "n": 9}}}}, CASES = ["decode_b1", "decode_b4", "decode_b32"], SERIES = ["peer","lle","llg"], LABELLED = new Set(["peer","llg"]);
+const NAMES = {peer:"RouteEP Peer + eager", lle:"DeepEP LL + eager", llg:"DeepEP LL + CUDA Graph"};
+const SHORT = {peer:"Peer", lle:"LL", llg:"LL+G"}, HATCH = {lle:"h45", llg:"h135"};
+const NS = "http://www.w3.org/2000/svg", W = 520, H = 280, M = {t:20, r:8, b:36, l:44};
+const TOP = Math.max(...Object.values(DATA).flatMap(m => Object.values(m).flatMap(c => SERIES.map(s => c[s].max))));
+const tip = document.getElementById("tip");
+function el(t, a, p) { const n = document.createElementNS(NS, t); for (const [k,v] of Object.entries(a||{})) n.setAttribute(k, v); if (p) p.appendChild(n); return n; }
+function show(e, model, cs, s) {
+  const d = DATA[model][cs]; tip.replaceChildren();
+  const h = document.createElement("div"); h.style.color = "var(--text-secondary)"; h.textContent = model + " · " + cs; tip.append(h);
+  const v = document.createElement("div"); v.className = "v"; v.textContent = d[s].median.toFixed(1) + " ms  " + NAMES[s]; tip.append(v);
+  for (const k of SERIES) { const r = document.createElement("div"); r.className = "row";
+    const key = document.createElement("i"); key.className = "k"; key.style.background = "var(--" + k + ")";
+    const n = document.createElement("span"); n.textContent = NAMES[k];
+    const b = document.createElement("b"); b.textContent = d[k].median.toFixed(1) + " ms [" + d[k].min.toFixed(1) + ", " + d[k].max.toFixed(1) + "]";
+    r.append(key, n, b); tip.append(r); }
+  const f = document.createElement("div"); f.style.color = "var(--text-muted)";
+  f.textContent = "Peer ÷ LL+Graph = " + (d.peer.median / d.llg.median).toFixed(2) + "×，n=" + d[s].n; tip.append(f);
+  tip.style.display = "block";
+  let x, y; if (e.type === "focus") { const b = e.target.getBoundingClientRect(); x = b.right + 8; y = b.top; } else { x = e.clientX + 14; y = e.clientY + 14; }
+  tip.style.left = Math.min(x, innerWidth - tip.offsetWidth - 8) + "px"; tip.style.top = Math.min(y, innerHeight - tip.offsetHeight - 8) + "px";
+}
+function hide() { tip.style.display = "none"; }
+function panel(model) {
+  const wrap = document.createElement("div"); wrap.className = "panel";
+  const h = document.createElement("h2"); h.textContent = model; wrap.append(h);
+  const svg = el("svg", {viewBox:`0 0 ${W} ${H}`, role:"img", "aria-label": model + " decode 每步耗时三组对比"}, wrap);
+  const iw = W - M.l - M.r, ih = H - M.t - M.b, step = 20, ymax = Math.ceil(TOP * 1.18 / step) * step, Y = v => M.t + ih - v / ymax * ih;
+  for (let v = 0; v <= ymax; v += step) {
+    el("line", {x1:M.l, x2:W-M.r, y1:Y(v), y2:Y(v), class: v ? "grid-line" : "axis-line"}, svg);
+    el("text", {x:M.l-6, y:Y(v)+4, "text-anchor":"end", class:"tick"}, svg).textContent = v;
+  }
+  const band = iw / CASES.length, bw = Math.min(30, band * 0.24), gap = 2;
+  CASES.forEach((cs, i) => {
+    const cx = M.l + band * (i + .5);
+    SERIES.forEach((s, k) => {
+      const d = DATA[model][cs][s], x = cx + (k - 1) * (bw + gap) - bw / 2, t = Y(d.median), r = 4;
+      const g = el("g", {class:"bar", tabindex:0, role:"graphics-symbol", "aria-label": `${cs} ${NAMES[s]} ${d.median.toFixed(1)} ms`}, svg);
+      el("rect", {class:"hit", x:x-gap, y:M.t, width:bw+gap*2, height:ih, fill:"transparent", rx:3}, g);
+      const shape = `M${x},${Y(0)} V${t+r} Q${x},${t} ${x+r},${t} H${x+bw-r} Q${x+bw},${t} ${x+bw},${t+r} V${Y(0)} Z`;
+      el("path", {class:"mark", fill:`var(--${s})`, d:shape}, g);
+      if (HATCH[s]) el("path", {class:"texture", fill:`url(#${HATCH[s]})`, d:shape}, g);
+      const mx = x + bw / 2;
+      el("line", {class:"whisker", x1:mx, x2:mx, y1:Y(d.min), y2:Y(d.max)}, g);
+      for (const v of [d.min, d.max]) el("line", {class:"whisker", x1:mx-3, x2:mx+3, y1:Y(v), y2:Y(v)}, g);
+      if (LABELLED.has(s)) el("text", {x:mx, y:Y(d.max)-4, "text-anchor":"middle", class:"value"}, g).textContent = d.median.toFixed(1);
+      if (i === 0) el("text", {x:mx, y:Y(0)-6, "text-anchor":"start", class:"series-name",
+        transform:`rotate(-90 ${mx+3} ${Y(0)-6})`}, g).textContent = SHORT[s];
+      g.addEventListener("pointermove", e => show(e, model, cs, s)); g.addEventListener("pointerleave", hide);
+      g.addEventListener("focus", e => show(e, model, cs, s)); g.addEventListener("blur", hide);
+    });
+    el("text", {x:cx, y:H-M.b+16, "text-anchor":"middle", class:"tick"}, svg).textContent = cs;
+  });
+  el("text", {x:4, y:M.t-6, class:"tick"}, svg).textContent = "ms";
+  return wrap;
+}
+function table(model) {
+  const w = document.createElement("div"), h = document.createElement("h2"); h.style.fontSize = "13px";
+  h.textContent = model + "（decode 每步 ms，中位数 [min, max]）"; w.append(h);
+  const t = document.createElement("table"), hr = t.createTHead().insertRow();
+  for (const s of ["场景", ...SERIES.map(k => NAMES[k]), "Peer ÷ LL+Graph"]) { const th = document.createElement("th"); th.textContent = s; hr.append(th); }
+  const b = t.createTBody();
+  for (const cs of CASES) { const d = DATA[model][cs], r = b.insertRow();
+    for (const v of [cs, ...SERIES.map(s => `${d[s].median.toFixed(1)} [${d[s].min.toFixed(1)}, ${d[s].max.toFixed(1)}]`),
+        (d.peer.median / d.llg.median).toFixed(2) + "×"]) r.insertCell().textContent = v; }
+  w.append(t); return w;
+}
+const panels = document.getElementById("panels"), tables = document.getElementById("tables");
+for (const m of Object.keys(DATA)) { panels.append(panel(m)); tables.append(table(m)); }
+const root = document.querySelector(".viz-root"), tb = document.getElementById("tex");
+tb.addEventListener("click", () => { const on = tb.getAttribute("aria-pressed") !== "true"; tb.setAttribute("aria-pressed", String(on));
+  tb.textContent = on ? "纹理：开" : "纹理：关"; root.dataset.texture = on ? "on" : "off"; });
+</script></body></html>

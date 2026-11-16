@@ -1,0 +1,4 @@
+PASS TP=2 DP=2 EP=4 rank=3 cases=72
+PASS TP=2 DP=2 EP=4 rank=2 cases=72
+PASS TP=2 DP=2 EP=4 rank=1 cases=72
+PASS TP=2 DP=2 EP=4 rank=0 cases=72

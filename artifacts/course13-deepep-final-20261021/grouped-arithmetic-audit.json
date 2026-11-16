@@ -1,0 +1,27 @@
+[
+  {
+    "before": "_grouped_linear_kernel",
+    "after": "grouped_gemm_kernel",
+    "arithmetic_ast_equal": true
+  },
+  {
+    "before": "_plan_kernel",
+    "after": "_plan_kernel",
+    "arithmetic_ast_equal": true
+  },
+  {
+    "before": "_restore_received_kernel",
+    "after": "_restore_received_kernel",
+    "arithmetic_ast_equal": true
+  },
+  {
+    "before": "_tile_config",
+    "after": "_tile_config",
+    "arithmetic_ast_equal": true
+  },
+  {
+    "before": "code/course13/mini_ep/kernels/swiglu_triton.py",
+    "after": "/tmp/course13-deepep-final-draft/mini_ep/kernels/swiglu_triton.py",
+    "full_ast_equal": true
+  }
+]

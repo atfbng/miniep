@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490">
+<rect width="1000" height="490" fill="white"/>
+<text x="32" y="42" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#243247" font-weight="700">CPU 提交结束，GPU 继续执行</text>
+<text x="32" y="80" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#64748b">示意时间线：提交 4 μs，计算 20 μs；数值仅用于说明位置</text>
+<line x1="185" y1="135" x2="936" y2="135" stroke="#64748b" stroke-width="2"/>
+<line x1="185" y1="128" x2="185" y2="142" stroke="#64748b" stroke-width="2"/>
+<text x="177" y="121" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#243247">0</text>
+<line x1="310" y1="128" x2="310" y2="142" stroke="#64748b" stroke-width="2"/>
+<text x="302" y="121" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#243247">4</text>
+<line x1="935" y1="128" x2="935" y2="142" stroke="#64748b" stroke-width="2"/>
+<text x="927" y="121" font-family="Noto Sans SC, sans-serif" font-size="20" fill="#243247">24 μs</text>
+<text x="32" y="200" font-family="Noto Sans SC, sans-serif" font-size="24" fill="#243247" font-weight="700">CPU</text>
+<rect x="185" y="167" width="125" height="60" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<text x="194" y="205" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#243247">提交调用</text>
+<text x="338" y="205" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#64748b">返回后可以继续组织后续调用</text>
+<text x="32" y="305" font-family="Noto Sans SC, sans-serif" font-size="24" fill="#243247" font-weight="700">GPU 流</text>
+<rect x="310" y="267" width="625" height="65" rx="8" fill="#dcfce7" stroke="#34d399" stroke-width="2"/>
+<text x="487" y="308" font-family="Noto Sans SC, sans-serif" font-size="25" fill="#065f46" font-weight="700">GEMM 计算：20 μs</text>
+<line x1="310" y1="244" x2="310" y2="350" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="310" cy="267" r="6" fill="#f59e0b"/>
+<text x="285" y="379" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#b45309" font-weight="700">Start</text>
+<line x1="935" y1="244" x2="935" y2="350" stroke="#f59e0b" stroke-width="2"/>
+<circle cx="935" cy="267" r="6" fill="#f59e0b"/>
+<text x="917" y="379" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#b45309" font-weight="700">End</text>
+<text x="32" y="433" font-family="Noto Sans SC, sans-serif" font-size="22" fill="#243247">Event 在 GPU 到达标记时记录时间；等待 End 完成后才能读取时间差。</text>
+<text x="32" y="467" font-family="Noto Sans SC, sans-serif" font-size="21" fill="#64748b">两个标记之间的设备流区间，与 CPU 提交区间分别计量。</text>
+</svg>
